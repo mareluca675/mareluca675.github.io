@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Bear Detection System — Real-time, Modular, Field-ready</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Real-time bear detection from drone and ground cameras. Modular inputs (USB, RTSP), YOLOv8 inference, and practical docs." />
+  <link rel="icon" href="assets/logo.svg">
+  <!-- Pico.css (classless, accessible, lightweight) -->
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li class="brand">
+          <a href="index.html" class="contrast">
+            <img src="assets/logo.svg" alt="" width="28" height="28" style="vertical-align:middle;margin-right:.4rem">
+            <strong>Bear Detection System</strong>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="index.html" aria-current="page">Understand the System</a></li>
+        <li><a href="team.html">Meet the Team</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Real-time bear detection for drones & ground cams</h1>
+      <p class="lead">A modular, edge-ready computer-vision pipeline that ingests <strong>USB webcams</strong> and <strong>RTSP streams</strong>, runs <strong>YOLOv8</strong> inference, and provides clear detections for wildlife research and safety.</p>
+      <div class="cta-row">
+        <a class="contrast button" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="secondary button" href="#get-started">Get Started</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Why this system</h2>
+      <div class="grid">
+        <article>
+          <h3>Real-time</h3>
+          <p>Optimized pipeline with fast models, practical defaults, and optional GPU usage to keep latency low during field operations.</p>
+        </article>
+        <article>
+          <h3>Modular inputs</h3>
+          <p>Drop-in sources: local cameras via device index and network cameras via RTSP, plus video files for offline testing.</p>
+        </article>
+        <article>
+          <h3>Extensible</h3>
+          <p>Swap model sizes, adjust thresholds, log detections, or add species later. The codebase is intentionally simple to modify.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>How it works</h2>
+      <p>The system reads frames from a camera or RTSP stream, preprocesses them, runs YOLOv8 detection, applies non-max suppression, and outputs detection events and overlays.</p>
+
+      <!-- Minimal inline SVG diagram (no JS needed) -->
+      <figure class="diagram">
+        <svg viewBox="0 0 920 180" role="img" aria-label="Pipeline diagram">
+          <defs>
+            <style>
+              .b{fill:#111;}.box{fill:#fff;stroke:#222;stroke-width:1.5;}
+              .arrow{stroke:#555;stroke-width:2;marker-end:url(#arrowHead);}
+            </style>
+            <marker id="arrowHead" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <polygon points="0 0, 6 3, 0 6" fill="#555"/>
+            </marker>
+          </defs>
+          <rect class="box" x="10" y="40" width="180" height="100" rx="10"></rect>
+          <text x="100" y="95" text-anchor="middle">Video Input<br/>(USB / RTSP / file)</text>
+
+          <line class="arrow" x1="190" y1="90" x2="240" y2="90"/>
+          <rect class="box" x="240" y="40" width="160" height="100" rx="10"></rect>
+          <text x="320" y="95" text-anchor="middle">Preprocess</text>
+
+          <line class="arrow" x1="400" y1="90" x2="450" y2="90"/>
+          <rect class="box" x="450" y="40" width="160" height="100" rx="10"></rect>
+          <text x="530" y="95" text-anchor="middle">YOLOv8<br/>Inference</text>
+
+          <line class="arrow" x1="610" y1="90" x2="660" y2="90"/>
+          <rect class="box" x="660" y="40" width="160" height="100" rx="10"></rect>
+          <text x="740" y="82" text-anchor="middle">NMS &amp;<br/>Thresholding</text>
+
+          <line class="arrow" x1="740" y1="140" x2="740" y2="160"/>
+          <text x="740" y="175" text-anchor="middle">Detection Events / Overlay</text>
+        </svg>
+      </figure>
+    </section>
+
+    <section id="get-started">
+      <h2>Get started (10 seconds)</h2>
+      <details open>
+        <summary><strong>Instant run</strong> (uses the launcher)</summary>
+<pre><code>python bear_launcher.py
+</code></pre>
+        <p>Opens your default camera and starts detection with sensible defaults.</p>
+      </details>
+
+      <details>
+        <summary><strong>Manual run</strong> (with options)</summary>
+<pre><code># Use a different camera
+python bear_launcher.py --source 1
+
+# Use an RTSP drone stream
+python bear_launcher.py --source "rtsp://192.168.1.100:8554/stream"
+
+# Adjust confidence threshold
+python bear_launcher.py --conf 0.3
+
+# Use a different model size
+python bear_launcher.py --model yolov8s.pt
+</code></pre>
+        <p>See the README in the GitHub repo for full examples and configuration.</p>
+      </details>
+
+      <p class="note">Tip: For RTSP/IP cameras, use the full RTSP URL provided by your camera/drone. OpenCV’s <code>VideoCapture</code> can take a device index (e.g., <code>0</code>) or a stream URL.</p>
+      <p><a class="button" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">Open GitHub README</a></p>
+    </section>
+
+    <section class="ethics">
+      <h2>Ethics & Safety</h2>
+      <p>Use responsibly. Respect local wildlife laws, avoid harassment or disturbance, and maintain safe distances from animals. This system is intended to support conservation and safety.</p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>
+      © <span id="y"></span> Bear Detection System •
+      <a href="https://docs.ultralytics.com/models/yolov8/" target="_blank" rel="noopener">YOLOv8</a> •
+      <a href="https://docs.opencv.org/4.x/dd/d43/tutorial_py_video_display.html" target="_blank" rel="noopener">OpenCV VideoCapture</a>
+    </small>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

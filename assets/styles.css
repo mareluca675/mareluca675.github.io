@@ -1,0 +1,21 @@
+/* Minimal extras on top of Pico.css */
+:root {
+  --brand: #1b4d3e;
+}
+.brand strong { letter-spacing: .2px; }
+.hero { padding: 3rem 0 2rem; }
+.lead { font-size: 1.15rem; max-width: 70ch; }
+.cta-row { display: flex; gap: .75rem; flex-wrap: wrap; }
+.diagram { background: var(--muted, #f7f7f7); padding: 1rem; border-radius: 12px; }
+.team-grid { align-items: stretch; }
+.team-card { text-align: center; padding: 1rem; border: 1px solid #e8e8e8; border-radius: 12px; }
+.team-card .avatar { border-radius: 50%; display: inline-block; }
+.team-card .placeholder { width: 120px; height: 120px; border-radius: 50%; background: #eee; display: inline-grid; place-items: center; font-weight: 700; color: #666; }
+.ethics { background: #f7faf8; padding: 1.25rem; border: 1px solid #e6f0eb; border-radius: 12px; }
+.button { --pico-background-color: var(--brand) !important; }
+.secondary.button { --pico-background-color: transparent !important; --pico-border-color: var(--brand) !important; --pico-color: var(--brand) !important; }
+@media (prefers-color-scheme: dark) {
+  .diagram { background: #111; }
+  .team-card { border-color: #2b2b2b; }
+  .ethics { background: #0d1613; border-color: #123; }
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>FAQ — Bear Detection System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li class="brand"><a href="index.html" class="contrast"><img src="assets/logo.svg" alt="" width="28" height="28" style="vertical-align:middle;margin-right:.4rem"><strong>Bear Detection System</strong></a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Understand the System</a></li>
+        <li><a href="team.html">Meet the Team</a></li>
+        <li><a href="faq.html" aria-current="page">FAQ</a></li>
+        <li><a href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <article>
+      <h3>What model does the system use?</h3>
+      <p>It uses the Ultralytics YOLOv8 family (choose size per hardware: n/s/m/l/x). YOLOv8 offers a strong speed/accuracy trade-off and works well on both CPU and GPU.</p>
+      <p><small>References: YOLOv8 overview and model variants.</small></p>
+    </article>
+
+    <article>
+      <h3>Which inputs are supported?</h3>
+      <p>USB webcams (device indices like <code>0</code>, <code>1</code>) and RTSP network streams (e.g., from drones or IP cameras). OpenCV’s <code>VideoCapture</code> accepts either a device index or a stream/file URL.</p>
+    </article>
+
+    <article>
+      <h3>How do I run it quickly?</h3>
+      <p>From the repo root: <code>python bear_launcher.py</code>. This launches with defaults and opens your default camera. For RTSP, pass <code>--source "rtsp://..."</code>. See the README for more examples and configuration.</p>
+    </article>
+
+    <article>
+      <h3>What FPS should I expect?</h3>
+      <p>Depends on model size, resolution, and hardware. Smaller YOLOv8 variants (e.g., <code>yolov8n</code>/<code>yolov8s</code>) are much faster; larger ones are more accurate but heavier.</p>
+    </article>
+
+    <article>
+      <h3>Can I add more species or log detections?</h3>
+      <p>Yes. The code is modular — you can add classes, change thresholds, or hook custom logging/alerts.</p>
+    </article>
+
+    <article>
+      <h3>Ethics & privacy?</h3>
+      <p>Use responsibly: avoid disturbing wildlife and follow local regulations. The system is intended for conservation and safety use cases.</p>
+    </article>
+
+    <hr>
+    <p>Docs & resources: 
+      <a href="https://docs.ultralytics.com/models/yolov8/" target="_blank" rel="noopener">YOLOv8 Docs</a> · 
+      <a href="https://docs.opencv.org/4.x/dd/d43/tutorial_py_video_display.html" target="_blank" rel="noopener">OpenCV VideoCapture</a> · 
+      <a href="https://github.com/ultralytics/ultralytics" target="_blank" rel="noopener">Ultralytics on GitHub</a>
+    </p>
+  </main>
+
+  <footer class="container">
+    <small>© <span id="y"></span> Bear Detection System</small>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
