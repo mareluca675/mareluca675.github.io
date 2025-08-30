@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" aria-hidden="true">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#1b4d3e"></stop>
+      <stop offset="1" stop-color="#2e7d6b"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="20" fill="url(#g)"></rect>
+  <!-- simplified bear silhouette -->
+  <path fill="white" d="M32 74c0-12 10-22 22-22h28c7 0 12 5 12 12 6 0 10 4 10 10s-4 10-10 10H54c-8 0-14 6-14 14H32c0-7 0-17 0-24z"></path>
+  <circle cx="84" cy="46" r="6" fill="white"></circle>
+</svg>

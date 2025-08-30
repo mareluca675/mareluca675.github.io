@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Team · Bear Detection System</title>
+  <title>Studies · Bear Detection System</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -19,9 +19,9 @@
       <ul id="navlist">
         <li><a href="index.html">Home</a></li>
         <li><a href="installation.html">Install</a></li>
-        <li><a href="team.html" class="active">Team</a></li>
+        <li><a href="team.html">Team</a></li>
         <li><a href="faq.html">FAQ</a></li>
-        <li><a href="studies.html">Studies</a></li>
+        <li><a href="studies.html" class="active">Studies</a></li>
         <li><a href="troubleshooting.html">Troubleshooting</a></li>
         <li><a class="cta" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
@@ -31,56 +31,27 @@
 <main class="container">
 
 <section class="card">
-  <h1>Our Team</h1>
-  <p class="lead">This page mirrors the old project’s Team tab. Replace the placeholders below with the exact names/roles/photos from your existing team page.</p>
+  <h1>Studies</h1>
+  <p class="lead">Attach PDFs, DOCX files, and other references. To add items, commit your files into the <code>/studies</code> folder of this site and list them in <code>/studies/studies.json</code>.</p>
+  <ol>
+    <li>Drop your documents into <code>/studies/</code> (e.g., <code>studies/bear-paper.pdf</code>).</li>
+    <li>Edit <code>studies/studies.json</code> and add a new entry with the filename and metadata.</li>
+    <li>Commit and push — this page will auto-render the list.</li>
+  </ol>
 </section>
 
-<section class="grid two">
-  <article class="card person">
-    <div class="avatar"></div>
-    <h3>Member Name</h3>
-    <p class="muted">Role / Responsibility</p>
-    <ul class="bullets">
-      <li>Worked on YOLO integration</li>
-      <li>Implemented detection filtering</li>
-      <li>Helped with testing</li>
-    </ul>
-  </article>
+<section id="studies-root" class="grid two"></section>
 
-  <article class="card person">
-    <div class="avatar"></div>
-    <h3>Member Name</h3>
-    <p class="muted">Role / Responsibility</p>
-    <ul class="bullets">
-      <li>Built the OpenCV pipeline</li>
-      <li>Set up CLI options</li>
-      <li>Prepared demo videos</li>
-    </ul>
-  </article>
-</section>
-
-<section class="grid two">
-  <article class="card person">
-    <div class="avatar"></div>
-    <h3>Member Name</h3>
-    <p class="muted">Role / Responsibility</p>
-    <ul class="bullets">
-      <li>Wrote setup script</li>
-      <li>Benchmarked models</li>
-      <li>Improved performance</li>
-    </ul>
-  </article>
-
-  <article class="card person">
-    <div class="avatar"></div>
-    <h3>Member Name</h3>
-    <p class="muted">Role / Responsibility</p>
-    <ul class="bullets">
-      <li>Documentation & FAQ</li>
-      <li>Roadmap planning</li>
-      <li>UI content</li>
-    </ul>
-  </article>
+<section class="card">
+  <h2>Example JSON entry</h2>
+  <pre><code>{
+  "title": "Bear Activity and Habitat 2025",
+  "filename": "bear-activity-2025.pdf",
+  "authors": "A. Researcher, B. Scientist",
+  "year": 2025,
+  "tags": ["behavior","habitat"]
+}</code></pre>
+  <p class="muted">Note: PDFs can be previewed inline below each card. DOCX and other formats will show a download link (browser preview support varies).</p>
 </section>
 
 </main>

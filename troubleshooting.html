@@ -28,34 +28,28 @@
 <main class="container">
 
 <section class="card">
-  <h1>FAQ</h1>
-  <h3>What AI model is used?</h3>
-  <p>A pre‑trained YOLOv8 model (e.g., <code>yolov8x.pt</code>) for real‑time bear detection.</p>
+  <h1>Troubleshooting</h1>
 
-  <h3>How does detection work?</h3>
-  <p>Each frame is resized to ~640×640 and processed once by YOLO. We keep detections where the class is <code>bear</code> and confidence exceeds the threshold, then draw boxes and scores.</p>
-
-  <h3>How do I run it?</h3>
-  <pre><code>pip install -r requirements.txt
-python setup_script.py
-python bear_detection.py                 # webcam
-python bear_detection.py --source video.mp4   # video file</code></pre>
-
-  <h3>What options are available?</h3>
-  <pre><code>--model yolov8x.pt
---confidence 0.3
---source 1
---no-display
---width 1080 --height 720</code></pre>
-
-  <h3>Minimum &amp; recommended specs?</h3>
+  <h3>No bears detected?</h3>
   <ul>
-    <li><strong>Minimum:</strong> Python 3.8+, 4 GB RAM, CPU, webcam/video file</li>
-    <li><strong>Recommended:</strong> Python 3.10+, 8 GB+ RAM, NVIDIA GPU with CUDA, 1080p+ camera</li>
+    <li>Lower confidence threshold: <code>--confidence 0.3</code></li>
+    <li>Ensure good lighting and test with clear images</li>
+    <li>Try a larger model: <code>--model yolov8x.pt</code></li>
   </ul>
 
-  <h3>Is there a Python API?</h3>
-  <p>Yes — import <code>BearDetector</code> and use <code>process_video_stream</code> or <code>detect_bears</code> for single frames.</p>
+  <h3>Too slow?</h3>
+  <ul>
+    <li>Use a smaller model: <code>--model yolov8n.pt</code></li>
+    <li>Check that GPU is enabled</li>
+    <li>Reduce video resolution or process every nth frame</li>
+  </ul>
+
+  <h3>Camera not working?</h3>
+  <ul>
+    <li>Try a different camera index: <code>--source 1</code> or <code>--source 2</code></li>
+    <li>Check camera permissions</li>
+    <li>Test with a video file instead</li>
+  </ul>
 </section>
 
 </main>

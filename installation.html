@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Installation Guide · Bear Detection System</title>
+  <meta name="description" content="Bear Detection System — YOLOv8-based real-time bear detection." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><img id="brandLogoPng" src="assets/logo.png" alt="Bear Detection System logo" onerror="this.classList.add('hide');document.getElementById('brandLogoSvg').classList.remove('hide');" /><img id="brandLogoSvg" class="hide" src="assets/logo-placeholder.svg" alt="Bear Detection System logo placeholder" /><span class="brand-text">Bear Detection System</span></a>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">☰</button>
+      <ul id="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="installation.html">Install</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="studies.html">Studies</a></li>
+        <li><a href="troubleshooting.html">Troubleshooting</a></li>
+        <li><a class="cta" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="container">
+
+<section class="card">
+  <h1>Installation Guide</h1>
+  <p class="lead">Everything you need to install, configure, and use the Bear Detection System.</p>
+</section>
+
+<section class="card">
+  <h2>Installation</h2>
+  <pre><code>pip install -r requirements.txt</code></pre>
+</section>
+
+<section class="card">
+  <h2>Setup</h2>
+  <p>Run the setup script to verify dependencies, download the YOLO model, and check your camera and GPU support.</p>
+  <pre><code>python setup_script.py</code></pre>
+</section>
+
+<section class="card">
+  <h2>Usage</h2>
+  <pre><code># Use your camera
+python bear_detection.py
+
+# Use a video file
+python bear_detection.py --source video.mp4</code></pre>
+</section>
+
+<section class="card">
+  <h2>Command‑line options</h2>
+  <pre><code>--model yolov8x.pt          # choose model size
+--confidence 0.3            # confidence threshold
+--source 1                  # select different camera
+--no-display                # run headless (no window)
+--width 1080 --height 720   # set window size</code></pre>
+</section>
+
+<section class="card">
+  <h2>Python API</h2>
+  <pre><code>from bear_detection import BearDetector
+
+detector = BearDetector(model_path='yolov8x.pt', confidence_threshold=0.5)
+detector.process_video_stream(source=0, display=True)
+
+# Detect in a single image
+import cv2
+frame = cv2.imread('image.jpg')
+detections = detector.detect_bears(frame)</code></pre>
+</section>
+
+<section class="card">
+  <h2>System requirements</h2>
+  <div class="grid two">
+    <div>
+      <h3>Minimum</h3>
+      <ul>
+        <li>Python 3.8+</li>
+        <li>4 GB RAM</li>
+        <li>Any modern CPU</li>
+        <li>Webcam or video file</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Recommended</h3>
+      <ul>
+        <li>Python 3.10+</li>
+        <li>8 GB+ RAM</li>
+        <li>NVIDIA GPU with CUDA</li>
+        <li>1080p+ camera</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Roadmap ideas</h2>
+  <ul class="checklist">
+    <li>Detection logging (CSV/DB) and alerting (email/SMS)</li>
+    <li>Multi‑camera support</li>
+    <li>Species classification (e.g., black vs grizzly)</li>
+    <li>Object tracking across frames</li>
+    <li>Motion detection pre‑filter</li>
+    <li>Web interface</li>
+  </ul>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 Bear Detection System · Built with static HTML/CSS/JS</p>
+    <p><a href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">Project Repository</a></p>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+</body>
+</html>
