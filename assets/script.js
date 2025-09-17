@@ -66,8 +66,8 @@ function animateCounter(element, target, duration = 2000) {
 
 // Intersection Observer for triggering animations when stats come into view
 const observerOptions = {
-  threshold: 0.5,
-  rootMargin: '0px 0px -100px 0px'
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
 };
 
 const statsObserver = new IntersectionObserver((entries) => {
@@ -76,7 +76,9 @@ const statsObserver = new IntersectionObserver((entries) => {
       const statNumbers = entry.target.querySelectorAll('.stat-number');
       statNumbers.forEach(stat => {
         const target = parseInt(stat.getAttribute('data-target'));
-        animateCounter(stat, target);
+        if (!isNaN(target) && target > 0) {
+          animateCounter(stat, target);
+        }
       });
       statsObserver.unobserve(entry.target);
     }

@@ -12,7 +12,7 @@
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;height:100%}
-body{font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; background:var(--bg); color:var(--text); line-height:1.6; transition: all 0.3s ease}
+body{font-family: system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial, sans-serif; background:var(--bg); color:var(--text); line-height:1.6; transition: all 0.3s ease; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility}
 
 /* Smooth animations for all interactive elements */
 *, *::before, *::after {
@@ -40,7 +40,7 @@ body {
 }
 
 .card {
-  animation: slideUp 0.6s ease-out both;
+  animation: slideUp 0.6s ease-out 0.2s both;
 }
 
 .grid .card:nth-child(1) { animation-delay: 0.4s; }
@@ -50,7 +50,7 @@ body {
 
 .container{width:min(1100px, 92%); margin:0 auto}
 
-.site-header{position:sticky; top:0; z-index:10; backdrop-filter: blur(8px); background: rgba(11,16,32,.7); border-bottom: 1px solid rgba(255,255,255,.06)}
+.site-header{position:sticky; top:0; z-index:10; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); background: rgba(11,16,32,.8); border-bottom: 1px solid rgba(255,255,255,.06)}
 .header-inner{display:flex; align-items:center; justify-content:space-between; padding:.75rem 0}
 .brand{display:flex; align-items:center; gap:.6rem; text-decoration:none; color:var(--text)}
 .brand img{height:36px}
@@ -140,7 +140,7 @@ h2{font-size: clamp(1.4rem, 2.2vw, 1.8rem); margin:.2rem 0 .6rem}
   opacity: 0.6;
 }
 pre{background:#0b1328; border:1px solid rgba(255,255,255,.08); padding:.9rem; border-radius:10px; overflow:auto}
-code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace}
+code{font-family: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace}
 
 .checklist{padding-left:1.1rem}
 .checklist li{margin:.35rem 0}
@@ -159,10 +159,10 @@ code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Libera
 .stat-card.danger::before{background:linear-gradient(90deg, #ff9f43, #ffc048)}
 .stat-card.hope::before{background:linear-gradient(90deg, var(--accent), var(--accent-2))}
 
-.stat-number{font-size:3.5rem; font-weight:900; margin-bottom:0.5rem; background:linear-gradient(135deg, var(--text), var(--muted)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text}
-.stat-card.critical .stat-number{background:linear-gradient(135deg, #ff6b6b, #ff8e8e); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text}
-.stat-card.danger .stat-number{background:linear-gradient(135deg, #ff9f43, #ffc048); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text}
-.stat-card.hope .stat-number{background:linear-gradient(135deg, var(--accent), var(--accent-2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text}
+.stat-number{font-size:3.5rem; font-weight:900; margin-bottom:0.5rem; color: var(--text); background:linear-gradient(135deg, var(--text), var(--muted)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; -moz-background-clip:text; -moz-text-fill-color:transparent}
+.stat-card.critical .stat-number{color: #ff6b6b; background:linear-gradient(135deg, #ff6b6b, #ff8e8e); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; -moz-background-clip:text; -moz-text-fill-color:transparent}
+.stat-card.danger .stat-number{color: #ff9f43; background:linear-gradient(135deg, #ff9f43, #ffc048); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; -moz-background-clip:text; -moz-text-fill-color:transparent}
+.stat-card.hope .stat-number{color: var(--accent); background:linear-gradient(135deg, var(--accent), var(--accent-2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; -moz-background-clip:text; -moz-text-fill-color:transparent}
 
 .stat-label{font-size:1rem; font-weight:600; margin-bottom:0.5rem; line-height:1.4}
 .stat-context{font-size:0.9rem; color:var(--muted); line-height:1.4}
