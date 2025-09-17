@@ -45,3 +45,48 @@ document.addEventListener('DOMContentLoaded', async () => {
     root.innerHTML = '<article class="card"><p class="muted">Could not load studies.json. Ensure the file exists at <code>/studies/studies.json</code>.</p></article>';
   }
 });
+
+// Animated counter for statistics
+function animateCounter(element, target, duration = 2000) {
+  let start = 0;
+  const increment = target / (duration / 16);
+
+  function updateCounter() {
+    start += increment;
+    if (start < target) {
+      element.textContent = Math.ceil(start);
+      requestAnimationFrame(updateCounter);
+    } else {
+      element.textContent = target;
+    }
+  }
+
+  updateCounter();
+}
+
+// Intersection Observer for triggering animations when stats come into view
+const observerOptions = {
+  threshold: 0.5,
+  rootMargin: '0px 0px -100px 0px'
+};
+
+const statsObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const statNumbers = entry.target.querySelectorAll('.stat-number');
+      statNumbers.forEach(stat => {
+        const target = parseInt(stat.getAttribute('data-target'));
+        animateCounter(stat, target);
+      });
+      statsObserver.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+// Initialize stats animation when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  const statsGrid = document.querySelector('.stats-grid');
+  if (statsGrid) {
+    statsObserver.observe(statsGrid);
+  }
+});
