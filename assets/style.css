@@ -910,6 +910,11 @@ a:hover {
   background: white;
 }
 
+.team-preview {
+  text-align: center;
+  padding: 2rem 0;
+}
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
