@@ -57,6 +57,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
 .container {
@@ -113,11 +114,12 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
   transition: var(--transition);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .nav-container {
@@ -174,6 +176,8 @@ a:hover {
   list-style: none;
   gap: 2rem;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
@@ -256,6 +260,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  margin-top: 0;
 }
 
 .hero-background {
@@ -590,6 +595,10 @@ a:hover {
   border-radius: 2px;
 }
 
+.section-header .section-title {
+  padding-bottom: 1rem;
+}
+
 .section-subtitle {
   font-size: 1.25rem;
   color: var(--text-muted);
@@ -704,9 +713,15 @@ a:hover {
 
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 3rem;
   margin-bottom: 4rem;
+}
+
+@media (max-width: 968px) {
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .tech-card {
@@ -875,10 +890,6 @@ a:hover {
 }
 
 @media (max-width: 968px) {
-  .tech-grid {
-    grid-template-columns: 1fr;
-  }
-
   .tech-process,
   .workflow {
     flex-direction: column;
@@ -1080,10 +1091,12 @@ a:hover {
 }
 
 .conservation-facts li::before {
-  content: '🐻';
+  content: '•';
   position: absolute;
   left: 0;
-  font-size: 1.2rem;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 /* ===================================
@@ -1317,20 +1330,37 @@ a:hover {
    SVG Icon Styles
    =================================== */
 
+.stat-icon,
+.tech-icon,
+.workflow-icon,
+.value-icon,
+.arch-icon,
+.result-icon {
+  display: inline-block;
+  color: var(--primary);
+}
+
 .stat-icon svg,
 .tech-icon svg,
 .workflow-icon svg,
 .value-icon svg,
 .arch-icon svg,
 .result-icon svg {
-  stroke: var(--primary);
+  stroke: currentColor;
   transition: var(--transition);
+  display: block;
+  margin: 0 auto;
+}
+
+.stat-card:hover .stat-icon,
+.tech-card:hover .tech-icon,
+.value-card:hover .value-icon {
+  color: var(--accent);
 }
 
 .stat-card:hover .stat-icon svg,
 .tech-card:hover .tech-icon svg,
 .value-card:hover .value-icon svg {
-  stroke: var(--accent);
   transform: scale(1.1);
 }
 
@@ -1339,11 +1369,18 @@ a:hover {
    =================================== */
 
 .page-header {
-  padding: 10rem 0 6rem;
+  padding: 8rem 0 4rem;
   background: linear-gradient(135deg, var(--primary), var(--accent));
   text-align: center;
   color: white;
   margin-top: 70px;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 6rem 0 3rem;
+    margin-top: 60px;
+  }
 }
 
 .page-title {
@@ -1647,8 +1684,14 @@ a:hover {
 
 .goals-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
+}
+
+@media (max-width: 500px) {
+  .goals-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .goal-card {
@@ -2234,6 +2277,41 @@ a:hover {
 }
 
 /* ===================================
+   Utility Classes
+   =================================== */
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure proper box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Fix any overflow issues */
+section {
+  position: relative;
+}
+
+/* Better mobile spacing */
+@media (max-width: 768px) {
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  h1, h2, h3 {
+    word-wrap: break-word;
+  }
+}
+
+/* ===================================
    Responsive
    =================================== */
 
@@ -2257,10 +2335,6 @@ a:hover {
 
   .challenge-stats {
     position: static;
-  }
-
-  .goals-grid {
-    grid-template-columns: 1fr;
   }
 
   .partners-list {
@@ -2288,7 +2362,8 @@ a:hover {
   .stats-grid,
   .team-grid,
   .conservation-grid,
-  .impact-stats {
+  .impact-stats,
+  .core-team-grid {
     grid-template-columns: 1fr;
   }
 
@@ -2302,11 +2377,16 @@ a:hover {
     width: 100%;
   }
 
-  .page-header {
-    padding: 8rem 0 4rem;
-  }
-
   .docs-nav {
     justify-content: flex-start;
+  }
+
+  .nav-menu {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .mission-content,
+  .tech-grid {
+    gap: 2rem;
   }
 }
