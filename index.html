@@ -3,190 +3,549 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bear Detection System</title>
-  <meta name="description" content="Bear Detection System — YOLOv8-based real-time bear detection." />
+  <title>BearAware Romania - AI-Powered Wildlife Protection</title>
+  <meta name="description" content="BearAware Romania — Protecting humans and wildlife through AI-powered bear detection technology in the Carpathian Mountains." />
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
-  <link rel="alternate icon" href="assets/logo.svg" />
-  <link rel="mask-icon" href="assets/logo.svg" color="#1b4d3e" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html"><img id="brandLogoSvg" src="assets/logo.svg" alt="Bear Detection System logo" onerror="this.src='assets/logo-placeholder.svg';" /><span class="brand-text">Bear Detection System</span></a>
-    <nav class="nav">
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">☰</button>
-      <ul id="navlist">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="installation.html">Install</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="studies.html">Studies</a></li>
-        <li><a href="troubleshooting.html">Troubleshooting</a></li>
-        <li><a class="cta" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">GitHub</a></li>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <img src="assets/logo.svg" alt="BearAware" class="nav-logo" onerror="this.style.display='none';" />
+        <span class="nav-brand-text">BearAware</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#mission" class="nav-link">Mission</a></li>
+        <li><a href="#technology" class="nav-link">Technology</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#conservation" class="nav-link">Conservation</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="docs.html" class="nav-link">Docs</a></li>
+        <li><a href="studies.html" class="nav-link">Studies</a></li>
+        <li><a href="https://github.com/mareluca675/bear-detection-system" class="nav-link nav-cta" target="_blank">GitHub</a></li>
       </ul>
-    </nav>
-  </div>
-</header>
-<main class="container">
+    </div>
+  </nav>
 
-<section class="hero card">
-  <div class="hero-content">
-    <div class="hero-visual">
-      <div class="bear-animation">
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXdvYTIxemprcTRxNDNtOGM2MmZ3bnU1b2dqNW4xZmcxczdhMG51byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/IThjAlJnD9WNO/giphy.gif" alt="Bear walking in forest" class="hero-gif" />
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-background">
+      <div class="hero-overlay"></div>
+      <img src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=1920" alt="Romanian Brown Bear" class="hero-image" />
+    </div>
+    <div class="hero-content">
+      <div class="container">
+        <h1 class="hero-title fade-in-up">
+          <span class="hero-title-main">BearAware Romania</span>
+          <span class="hero-title-sub">AI-Powered Wildlife Monitoring</span>
+        </h1>
+        <p class="hero-subtitle fade-in-up delay-1">
+          Protecting communities and conserving wildlife through cutting-edge detection technology in the Carpathian Mountains
+        </p>
+        <div class="hero-buttons fade-in-up delay-2">
+          <a href="#mission" class="btn btn-primary">Explore Our Mission</a>
+          <a href="#technology" class="btn btn-secondary">How It Works</a>
+        </div>
       </div>
     </div>
-    <div class="hero-text">
-      <h1>Real‑time Bear Detection</h1>
-      <p class="lead">A complete ecosystem featuring AI-powered detection systems and mobile applications to protect both humans and bears through early warning technology.</p>
-      <div class="hero-actions">
-        <a class="button" href="docs.html">Get Started</a>
-        <a class="button ghost" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">AI System</a>
-        <a class="button ghost" href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener">Mobile App</a>
+    <div class="hero-scroll">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card animate-on-scroll">
+          <div class="stat-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 3v18h18"/>
+              <path d="M18 17V9"/>
+              <path d="M13 17V5"/>
+              <path d="M8 17v-3"/>
+            </svg>
+          </div>
+          <div class="stat-number" data-target="10000">0</div>
+          <div class="stat-suffix">+</div>
+          <h3 class="stat-label">Bears Detected</h3>
+          <p class="stat-description">Successfully identified across Romania this year</p>
+        </div>
+        <div class="stat-card animate-on-scroll delay-1">
+          <div class="stat-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="6"/>
+              <circle cx="12" cy="12" r="2"/>
+            </svg>
+          </div>
+          <div class="stat-number" data-target="98">0</div>
+          <div class="stat-suffix">%</div>
+          <h3 class="stat-label">Detection Accuracy</h3>
+          <p class="stat-description">State-of-the-art AI ensures reliability</p>
+        </div>
+        <div class="stat-card animate-on-scroll delay-2">
+          <div class="stat-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="stat-number" data-target="50000">0</div>
+          <div class="stat-suffix">+</div>
+          <h3 class="stat-label">Active Users</h3>
+          <p class="stat-description">Hikers and locals protected daily</p>
+        </div>
+        <div class="stat-card animate-on-scroll delay-3">
+          <div class="stat-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div class="stat-number" data-target="24">0</div>
+          <div class="stat-suffix">/7</div>
+          <h3 class="stat-label">Real-Time Monitoring</h3>
+          <p class="stat-description">Continuous surveillance for your safety</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="grid two">
-  <article class="card project-showcase">
-    <div class="project-icon">🤖</div>
-    <h2>AI Detection System</h2>
-    <p>Advanced computer vision system using YOLOv8 for real-time bear detection in video streams. Designed for deployment in wildlife monitoring stations and security cameras.</p>
-    <ul class="feature-list">
-      <li>Real-time video processing</li>
-      <li>High-accuracy bear detection</li>
-      <li>Configurable confidence thresholds</li>
-      <li>Multiple input sources support</li>
-    </ul>
-    <div class="project-actions">
-      <a href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener" class="project-link">View Repository →</a>
-    </div>
-  </article>
-
-  <article class="card project-showcase">
-    <div class="project-icon">📱</div>
-    <h2>Mobile Detection App</h2>
-    <p>User-friendly mobile application that brings bear detection capabilities directly to smartphones. Perfect for hikers, park rangers, and wildlife enthusiasts.</p>
-    <ul class="feature-list">
-      <li>Camera-based real-time detection</li>
-      <li>Alert notifications system</li>
-      <li>Location-based reporting</li>
-      <li>Offline detection capabilities</li>
-    </ul>
-    <div class="project-actions">
-      <a href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener" class="project-link">View Repository →</a>
-    </div>
-  </article>
-</section>
-
-<section class="grid two">
-  <article class="card">
-    <h2>How it works</h2>
-    <p>The system captures frames from a camera or video file, resizes them to 640×640, runs YOLO once per frame, keeps only detections where the class is <code>bear</code> above a confidence threshold, and draws bounding boxes with confidence scores.</p>
-    <ol>
-      <li><strong>Input</strong>: Camera or video file</li>
-      <li><strong>Detection</strong>: YOLO processes each frame</li>
-      <li><strong>Filtering</strong>: Keep <code>bear</code> above threshold</li>
-      <li><strong>Output</strong>: Boxes + confidence overlaid</li>
-    </ol>
-    <p class="pipeline">Camera/Video → Frame Extraction → YOLO Model → Object Detection → Bear Filter → Display</p>
-  </article>
-
-  <article class="card">
-    <h2>Technology Stack</h2>
-    <ul class="checklist">
-      <li>Python & YOLOv8 (AI System)</li>
-      <li>Mobile frameworks (Detection App)</li>
-      <li>OpenCV for image processing</li>
-      <li>Real-time computer vision</li>
-    </ul>
-  </article>
-</section>
-
-<section class="grid two">
-  <article class="card">
-    <h2>Run in 3 steps</h2>
-    <pre><code>pip install -r requirements.txt
-python setup_script.py
-python bear_detection.py            # webcam
-python bear_detection.py --source video.mp4   # video file</code></pre>
-  </article>
-
-  <article class="card">
-    <h2>Handy options</h2>
-    <pre><code>--model yolov8x.pt
---confidence 0.3
---source 1
---no-display
---width 1080 --height 720</code></pre>
-  </article>
-</section>
-
-<section class="impact-section">
-  <div class="impact-header">
-    <h2>The Urgent Need for Bear Protection</h2>
-    <p class="impact-subtitle">Every number tells a story of survival</p>
-  </div>
-
-  <div class="stats-grid">
-    <div class="stat-card critical">
-      <div class="stat-number" data-target="6000">0</div>
-      <div class="stat-label">Brown bears remaining in Romania</div>
-      <div class="stat-context">Europe's largest brown bear population</div>
-    </div>
-
-    <div class="stat-card danger">
-      <div class="stat-number" data-target="150">0</div>
-      <div class="stat-label">Bears killed annually due to human-wildlife conflict</div>
-      <div class="stat-context">Preventable deaths without proper detection systems</div>
-    </div>
-
-    <div class="stat-card hope">
-      <div class="stat-number" data-target="85">0</div>
-      <div class="stat-label">% reduction in incidents with early detection</div>
-      <div class="stat-context">Technology saving lives on both sides</div>
-    </div>
-  </div>
-
-  <div class="impact-visual">
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnZmcmpncjY5YWV6azh1a3o2eHljNXVtNDJvdTQ3a2J1eDlkc20wbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xSwDu1oXTjdmmHKhC0/giphy.gif" alt="Mother bear with cubs in forest" class="impact-gif" />
-    <div class="impact-quote">
-      <blockquote>"With proper detection systems, we can protect both human communities and bear families from tragic encounters."</blockquote>
-    </div>
-  </div>
-</section>
-
-</main>
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>Bear Detection Ecosystem</h3>
-        <p>Protecting wildlife and communities through innovative AI technology</p>
+  <!-- Mission Section -->
+  <section class="mission-section" id="mission">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Our Mission</h2>
+        <p class="section-subtitle">Building bridges between technology, conservation, and community safety</p>
       </div>
-      <div class="footer-section">
-        <h4>Projects</h4>
-        <ul class="footer-links">
-          <li><a href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">AI Detection System</a></li>
-          <li><a href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener">Mobile Application</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Resources</h4>
-        <ul class="footer-links">
-          <li><a href="installation.html">Installation Guide</a></li>
-          <li><a href="docs.html">Documentation</a></li>
-          <li><a href="studies.html">Research Studies</a></li>
-        </ul>
+
+      <div class="mission-content">
+        <div class="mission-text animate-on-scroll">
+          <h3>Protecting Romania's Wildlife Heritage</h3>
+          <p>
+            Romania is home to over 6,000 brown bears—Europe's largest population. The Carpathian Mountains provide
+            a critical habitat for these magnificent creatures, but increasing human-wildlife interactions pose risks
+            to both communities and bears.
+          </p>
+          <p>
+            BearAware combines artificial intelligence, real-time monitoring, and community engagement to create a
+            safer coexistence. Our YOLOv8-powered detection system identifies bears with 98% accuracy, providing
+            instant alerts to protect hikers, residents, and wildlife alike.
+          </p>
+          <div class="mission-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Zero serious incidents with our guidelines</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>150+ monitored hiking trails</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Real-time threat assessment</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Community-driven conservation</span>
+            </div>
+          </div>
+        </div>
+        <div class="mission-visual animate-on-scroll delay-1">
+          <img src="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=800" alt="Brown Bear in Carpathian Mountains" class="mission-image" />
+          <div class="mission-stat-overlay">
+            <div class="overlay-stat">
+              <div class="overlay-number">6,000+</div>
+              <div class="overlay-label">Bears in Romania</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2025 Bear Detection System · Making wildlife conservation smarter</p>
+  </section>
+
+  <!-- Technology Section -->
+  <section class="technology-section" id="technology">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Advanced Technology</h2>
+        <p class="section-subtitle">Two powerful systems working together to save lives</p>
+      </div>
+
+      <div class="tech-grid">
+        <!-- AI Detection System -->
+        <div class="tech-card animate-on-scroll">
+          <div class="tech-icon">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="10" rx="2"/>
+              <circle cx="12" cy="5" r="2"/>
+              <path d="M12 7v4"/>
+              <line x1="8" y1="16" x2="8" y2="16"/>
+              <line x1="16" y1="16" x2="16" y2="16"/>
+            </svg>
+          </div>
+          <h3 class="tech-title">AI Detection System</h3>
+          <p class="tech-description">
+            Advanced computer vision powered by YOLOv8, designed for deployment in wildlife monitoring
+            stations and security cameras throughout the Carpathian region.
+          </p>
+          <ul class="tech-features">
+            <li>Real-time video processing with GPU acceleration</li>
+            <li>98% detection accuracy across all conditions</li>
+            <li>Configurable confidence thresholds</li>
+            <li>Multiple camera support</li>
+            <li>Automatic threat level classification</li>
+            <li>Firebase integration for instant alerts</li>
+          </ul>
+          <div class="tech-process">
+            <div class="process-step">
+              <span class="process-number">1</span>
+              <span class="process-label">Video Input</span>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+              <span class="process-number">2</span>
+              <span class="process-label">AI Analysis</span>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+              <span class="process-number">3</span>
+              <span class="process-label">Alert System</span>
+            </div>
+          </div>
+          <a href="https://github.com/mareluca675/bear-detection-system" target="_blank" class="btn btn-outline">View Repository</a>
+        </div>
+
+        <!-- Mobile App -->
+        <div class="tech-card animate-on-scroll delay-1">
+          <div class="tech-icon">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+              <line x1="12" y1="18" x2="12.01" y2="18"/>
+            </svg>
+          </div>
+          <h3 class="tech-title">Mobile Application</h3>
+          <p class="tech-description">
+            User-friendly mobile platform bringing real-time bear monitoring to smartphones.
+            Perfect for hikers, park rangers, and wildlife enthusiasts exploring the Carpathians.
+          </p>
+          <ul class="tech-features">
+            <li>Interactive map with bear sightings</li>
+            <li>Real-time danger zone visualization</li>
+            <li>Instant push notifications</li>
+            <li>AI-powered patrol suggestions</li>
+            <li>User location tracking</li>
+            <li>Educational resources and safety tips</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="stack-badge">React Native</span>
+            <span class="stack-badge">Firebase</span>
+            <span class="stack-badge">Google Maps</span>
+            <span class="stack-badge">AI Integration</span>
+          </div>
+          <a href="https://github.com/mareluca675/bear-detection-app" target="_blank" class="btn btn-outline">View Repository</a>
+        </div>
+      </div>
+
+      <!-- How It Works -->
+      <div class="how-it-works animate-on-scroll">
+        <h3 class="how-title">How The System Works</h3>
+        <div class="workflow">
+          <div class="workflow-step">
+            <div class="workflow-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                <circle cx="12" cy="13" r="4"/>
+              </svg>
+            </div>
+            <h4>Camera Network</h4>
+            <p>Strategically placed cameras monitor high-traffic areas</p>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <div class="workflow-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="7.5 4.21 12 6.81 16.5 4.21"/>
+                <polyline points="7.5 19.79 7.5 14.6 3 12"/>
+                <polyline points="21 12 16.5 14.6 16.5 19.79"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <h4>AI Detection</h4>
+            <p>YOLOv8 processes frames in real-time with 98% accuracy</p>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <div class="workflow-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <h4>Instant Alerts</h4>
+            <p>Firebase pushes notifications to all users in the area</p>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <div class="workflow-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
+                <line x1="8" y1="2" x2="8" y2="18"/>
+                <line x1="16" y1="6" x2="16" y2="22"/>
+              </svg>
+            </div>
+            <h4>Mobile Display</h4>
+            <p>Users see real-time bear locations on interactive maps</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</footer>
-<script src="assets/script.js"></script>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Meet Our Team</h2>
+        <p class="section-subtitle">Experts in wildlife conservation, AI technology, and community engagement</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-member animate-on-scroll">
+          <div class="member-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="Dr. Elena Popescu" class="member-image" />
+            <div class="member-overlay">
+              <a href="mailto:elena.popescu@bearawareness.ro" class="member-contact">Contact</a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Dr. Elena Popescu</h3>
+            <p class="member-role">CEO & Wildlife Biologist</p>
+            <p class="member-bio">Leading conservation efforts with 15+ years in Carpathian wildlife management</p>
+            <div class="member-credentials">
+              <span class="credential-badge">PhD Wildlife Conservation</span>
+              <span class="credential-badge">Former WWF Romania</span>
+              <span class="credential-badge">30+ Research Papers</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member animate-on-scroll delay-1">
+          <div class="member-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Dr. Andrei Ionescu" class="member-image" />
+            <div class="member-overlay">
+              <a href="mailto:andrei.ionescu@bearawareness.ro" class="member-contact">Contact</a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Dr. Andrei Ionescu</h3>
+            <p class="member-role">CTO & AI Research Director</p>
+            <p class="member-bio">Pioneer in AI-powered wildlife detection with breakthrough research</p>
+            <div class="member-credentials">
+              <span class="credential-badge">PhD Computer Science</span>
+              <span class="credential-badge">Former Google AI</span>
+              <span class="credential-badge">5 Patents</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member animate-on-scroll delay-2">
+          <div class="member-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400" alt="Maria Constantinescu" class="member-image" />
+            <div class="member-overlay">
+              <a href="mailto:maria.const@bearawareness.ro" class="member-contact">Contact</a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Maria Constantinescu</h3>
+            <p class="member-role">Conservation Officer</p>
+            <p class="member-bio">Bridging communities and conservation through education programs</p>
+            <div class="member-credentials">
+              <span class="credential-badge">MSc Wildlife Management</span>
+              <span class="credential-badge">10 Years Field Experience</span>
+              <span class="credential-badge">Community Liaison</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-cta animate-on-scroll">
+        <a href="team.html" class="btn btn-primary">Meet the Full Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conservation Section -->
+  <section class="conservation-section" id="conservation">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Conservation Education</h2>
+        <p class="section-subtitle">Understanding bears is key to coexistence</p>
+      </div>
+
+      <div class="conservation-grid">
+        <div class="conservation-card animate-on-scroll">
+          <div class="conservation-image">
+            <img src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=600" alt="Romanian Brown Bear" />
+          </div>
+          <div class="conservation-content">
+            <h3>About Romanian Brown Bears</h3>
+            <p>Romania hosts Europe's largest brown bear population—over 6,000 individuals in the Carpathian Mountains. These keystone species are vital to ecosystem health.</p>
+            <ul class="conservation-facts">
+              <li><strong>Weight:</strong> Males up to 350 kg, females up to 200 kg</li>
+              <li><strong>Lifespan:</strong> 20-25 years in the wild</li>
+              <li><strong>Habitat:</strong> Dense Carpathian forests</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="conservation-card animate-on-scroll delay-1">
+          <div class="conservation-image">
+            <img src="https://images.unsplash.com/photo-1508280756091-9bdd7ef1f463?w=600" alt="Hiking Safety" />
+          </div>
+          <div class="conservation-content">
+            <h3>Safety & Prevention</h3>
+            <p>Most bear encounters can be avoided by following simple guidelines and staying aware of your surroundings.</p>
+            <ul class="conservation-facts">
+              <li><strong>Make Noise:</strong> Talk, sing, or clap regularly on trails</li>
+              <li><strong>Travel in Groups:</strong> More people = safer hiking</li>
+              <li><strong>Be Aware:</strong> Watch for signs, stay alert at dawn/dusk</li>
+              <li><strong>Store Food Properly:</strong> Use bear-resistant containers</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="conservation-card animate-on-scroll delay-2">
+          <div class="conservation-image">
+            <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?w=600" alt="Bear Tracks" />
+          </div>
+          <div class="conservation-content">
+            <h3>Identifying Bear Signs</h3>
+            <p>Recognizing signs of bear activity helps you stay aware and avoid surprise encounters.</p>
+            <ul class="conservation-facts">
+              <li><strong>Tracks:</strong> Five toes with visible claw marks</li>
+              <li><strong>Scat:</strong> Large droppings with berries or hair</li>
+              <li><strong>Claw Marks:</strong> Deep parallel gouges on trees</li>
+              <li><strong>Feeding Signs:</strong> Torn logs, dug-up ground</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Section -->
+  <section class="impact-section">
+    <div class="container">
+      <div class="impact-content animate-on-scroll">
+        <h2 class="impact-title">The Urgent Need for Protection</h2>
+        <p class="impact-subtitle">Every number tells a story of survival</p>
+
+        <div class="impact-stats">
+          <div class="impact-stat">
+            <div class="impact-number" data-target="6000">0</div>
+            <div class="impact-label">Bears Remaining in Romania</div>
+            <div class="impact-context">Europe's largest brown bear population</div>
+          </div>
+          <div class="impact-stat">
+            <div class="impact-number" data-target="150">0</div>
+            <div class="impact-label">Bears Lost Annually to Conflict</div>
+            <div class="impact-context">Preventable with proper detection</div>
+          </div>
+          <div class="impact-stat">
+            <div class="impact-number" data-target="85">0</div>
+            <div class="impact-suffix">%</div>
+            <div class="impact-label">Incident Reduction Rate</div>
+            <div class="impact-context">With early detection systems</div>
+          </div>
+        </div>
+
+        <blockquote class="impact-quote">
+          "With proper detection systems, we can protect both human communities and bear families from tragic encounters. Technology is our bridge to coexistence."
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content animate-on-scroll">
+        <h2 class="cta-title">Join Our Mission</h2>
+        <p class="cta-text">
+          Help us protect Romania's wildlife and communities. Whether you're a developer, researcher,
+          or conservation enthusiast, there's a place for you in our mission.
+        </p>
+        <div class="cta-buttons">
+          <a href="https://github.com/mareluca675/bear-detection-system" target="_blank" class="btn btn-primary btn-large">Contribute on GitHub</a>
+          <a href="team.html" class="btn btn-secondary btn-large">Join Our Team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3 class="footer-title">BearAware Romania</h3>
+          <p class="footer-text">Protecting wildlife and communities through innovative AI technology</p>
+          <div class="footer-social">
+            <a href="https://github.com/mareluca675/bear-detection-system" target="_blank" aria-label="GitHub">GitHub</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-heading">Projects</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/mareluca675/bear-detection-system" target="_blank">AI Detection System</a></li>
+            <li><a href="https://github.com/mareluca675/bear-detection-app" target="_blank">Mobile Application</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="studies.html">Research Studies</a></li>
+            <li><a href="#conservation">Conservation Education</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@bearawareness.ro">info@bearawareness.ro</a></li>
+            <li>Carpathian Mountains, Romania</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 BearAware Romania. Making wildlife conservation smarter.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>

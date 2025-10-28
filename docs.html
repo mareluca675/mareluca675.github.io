@@ -1,9 +1,573 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8" />
-<meta http-equiv="refresh" content="0;url=installation.html" />
-<title>Redirecting…</title>
-<link rel="canonical" href="installation.html" />
-</head><body>
-<p>If you are not redirected automatically, <a href="installation.html">click here for the Installation Guide</a>.</p>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Documentation - BearAware Romania</title>
+  <meta name="description" content="Technical documentation for BearAware Romania's AI detection system and mobile application." />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/logo.svg" alt="BearAware" class="nav-logo" onerror="this.style.display='none';" />
+        <span class="nav-brand-text">BearAware</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#mission" class="nav-link">Mission</a></li>
+        <li><a href="index.html#technology" class="nav-link">Technology</a></li>
+        <li><a href="team.html" class="nav-link">Team</a></li>
+        <li><a href="index.html#conservation" class="nav-link">Conservation</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="docs.html" class="nav-link active">Docs</a></li>
+        <li><a href="studies.html" class="nav-link">Studies</a></li>
+        <li><a href="https://github.com/mareluca675/bear-detection-system" class="nav-link nav-cta" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title fade-in-up">Documentation</h1>
+      <p class="page-subtitle fade-in-up delay-1">Complete technical documentation for developers and users</p>
+    </div>
+  </section>
+
+  <!-- Documentation Navigation -->
+  <section class="docs-nav-section">
+    <div class="container">
+      <div class="docs-nav animate-on-scroll">
+        <a href="#overview" class="docs-nav-item">Overview</a>
+        <a href="#ai-system" class="docs-nav-item">AI Detection System</a>
+        <a href="#mobile-app" class="docs-nav-item">Mobile App</a>
+        <a href="#api" class="docs-nav-item">API Reference</a>
+        <a href="#deployment" class="docs-nav-item">Deployment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview Section -->
+  <section id="overview" class="docs-section">
+    <div class="container">
+      <div class="docs-content animate-on-scroll">
+        <h2>System Overview</h2>
+        <p class="lead-text">
+          BearAware Romania consists of two main components working together: an AI-powered detection
+          system for real-time bear identification and a mobile application for user alerts and education.
+        </p>
+
+        <div class="architecture-diagram">
+          <h3>System Architecture</h3>
+          <div class="architecture-flow">
+            <div class="arch-node">
+              <div class="arch-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                  <circle cx="12" cy="13" r="4"/>
+                </svg>
+              </div>
+              <h4>Camera/Video Input</h4>
+            </div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node">
+              <div class="arch-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="10" rx="2"/>
+                  <circle cx="12" cy="5" r="2"/>
+                  <path d="M12 7v4"/>
+                </svg>
+              </div>
+              <h4>YOLOv8 Detection</h4>
+            </div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node">
+              <div class="arch-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                  <line x1="12" y1="9" x2="12" y2="13"/>
+                  <line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
+              </div>
+              <h4>Firebase Alerts</h4>
+            </div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node">
+              <div class="arch-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                  <line x1="12" y1="18" x2="12.01" y2="18"/>
+                </svg>
+              </div>
+              <h4>Mobile App</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-stack-section">
+          <h3>Technology Stack</h3>
+          <div class="tech-categories">
+            <div class="tech-category">
+              <h4>AI Detection System</h4>
+              <ul>
+                <li>Python 3.8+</li>
+                <li>YOLOv8 (Ultralytics)</li>
+                <li>OpenCV</li>
+                <li>PyTorch</li>
+                <li>NumPy</li>
+              </ul>
+            </div>
+            <div class="tech-category">
+              <h4>Mobile Application</h4>
+              <ul>
+                <li>React / Next.js</li>
+                <li>TypeScript</li>
+                <li>Firebase</li>
+                <li>Google Maps API</li>
+                <li>Tailwind CSS</li>
+              </ul>
+            </div>
+            <div class="tech-category">
+              <h4>Infrastructure</h4>
+              <ul>
+                <li>Firebase Realtime Database</li>
+                <li>Firebase Cloud Messaging</li>
+                <li>Firebase Authentication</li>
+                <li>Firebase Hosting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI System Documentation -->
+  <section id="ai-system" class="docs-section alt-bg">
+    <div class="container">
+      <div class="docs-content animate-on-scroll">
+        <h2>AI Detection System</h2>
+        <p>
+          The core detection system uses YOLOv8 for real-time bear identification in video streams.
+          Designed for edge deployment in remote locations with minimal infrastructure.
+        </p>
+
+        <div class="docs-subsection">
+          <h3>Installation</h3>
+          <div class="code-block">
+            <pre><code># Clone the repository
+git clone https://github.com/mareluca675/bear-detection-system.git
+cd bear-detection-system
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Download YOLOv8 model
+python setup_script.py</code></pre>
+          </div>
+        </div>
+
+        <div class="docs-subsection">
+          <h3>Basic Usage</h3>
+          <div class="code-block">
+            <pre><code># Run with webcam
+python bear_detection.py
+
+# Run with video file
+python bear_detection.py --source path/to/video.mp4
+
+# Run with custom camera
+python bear_detection.py --source 1
+
+# Run headless (no display)
+python bear_detection.py --no-display</code></pre>
+          </div>
+        </div>
+
+        <div class="docs-subsection">
+          <h3>Command Line Options</h3>
+          <table class="docs-table">
+            <thead>
+              <tr>
+                <th>Option</th>
+                <th>Description</th>
+                <th>Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>--source</code></td>
+                <td>Video source (0, 1, 2 for cameras or file path)</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td><code>--model</code></td>
+                <td>YOLO model file</td>
+                <td>yolov8x.pt</td>
+              </tr>
+              <tr>
+                <td><code>--confidence</code></td>
+                <td>Detection confidence threshold (0-1)</td>
+                <td>0.5</td>
+              </tr>
+              <tr>
+                <td><code>--no-display</code></td>
+                <td>Run without video display</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td><code>--no-alerts</code></td>
+                <td>Disable Firebase alerts</td>
+                <td>False</td>
+              </tr>
+              <tr>
+                <td><code>--firebase-url</code></td>
+                <td>Firebase app URL</td>
+                <td>From config</td>
+              </tr>
+              <tr>
+                <td><code>--camera-lat</code></td>
+                <td>Camera latitude</td>
+                <td>45.5231</td>
+              </tr>
+              <tr>
+                <td><code>--camera-lng</code></td>
+                <td>Camera longitude</td>
+                <td>-122.6765</td>
+              </tr>
+              <tr>
+                <td><code>--camera-id</code></td>
+                <td>Camera identifier</td>
+                <td>camera_01</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="docs-subsection">
+          <h3>Threat Level Classification</h3>
+          <p>Detections are automatically classified into three threat levels:</p>
+          <ul class="threat-levels">
+            <li class="threat-high"><strong>HIGH</strong> - Confidence ≥ 90% (Red alert)</li>
+            <li class="threat-medium"><strong>MEDIUM</strong> - Confidence ≥ 70% (Orange alert)</li>
+            <li class="threat-low"><strong>LOW</strong> - Confidence ≥ 50% (Green alert)</li>
+          </ul>
+        </div>
+
+        <div class="docs-subsection">
+          <h3>Alert Payload Structure</h3>
+          <div class="code-block">
+            <pre><code>{
+  "latitude": 45.5231,
+  "longitude": -122.6765,
+  "confidence": 0.85,
+  "timestamp": 1701439200000,
+  "source": "camera_01",
+  "threatLevel": "MEDIUM",
+  "bbox": [120, 80, 380, 420],
+  "detectionTime": "2024-01-15T10:30:00",
+  "alertType": "LIVE_DETECTION"
+}</code></pre>
+          </div>
+        </div>
+
+        <div class="docs-subsection">
+          <h3>Performance Optimization</h3>
+          <table class="docs-table">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>FPS (GPU)</th>
+                <th>FPS (CPU)</th>
+                <th>Accuracy</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>yolov8n</td>
+                <td>140</td>
+                <td>35</td>
+                <td>Good</td>
+              </tr>
+              <tr>
+                <td>yolov8s</td>
+                <td>100</td>
+                <td>20</td>
+                <td>Better</td>
+              </tr>
+              <tr>
+                <td>yolov8m</td>
+                <td>60</td>
+                <td>12</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>yolov8x</td>
+                <td>35</td>
+                <td>6</td>
+                <td>Highest</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile App Documentation -->
+  <section id="mobile-app" class="docs-section">
+    <div class="container">
+      <div class="docs-content animate-on-scroll">
+        <h2>Mobile Application</h2>
+        <p>
+          The BearAware mobile app provides real-time bear alerts, interactive maps, and educational
+          resources for hikers and outdoor enthusiasts.
+        </p>
+
+        <div class="docs-subsection">
+          <h3>Key Features</h3>
+          <div class="feature-grid">
+            <div class="feature-item">
+              <h4>Real-Time Alerts</h4>
+              <p>Instant push notifications when bears are detected in your area</p>
+            </div>
+            <div class="feature-item">
+              <h4>Interactive Maps</h4>
+              <p>Live bear locations and danger zones overlaid on detailed topographic maps</p>
+            </div>
+            <div class="feature-item">
+              <h4>User Reporting</h4>
+              <p>Submit bear sightings and contribute to community awareness</p>
+            </div>
+            <div class="feature-item">
+              <h4>Safety Guidelines</h4>
+              <p>Educational content on bear behavior and encounter prevention</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-subsection">
+          <h3>Setup & Development</h3>
+          <div class="code-block">
+            <pre><code># Clone the repository
+git clone https://github.com/mareluca675/bear-detection-app.git
+cd bear-detection-app
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env.local
+# Add your Firebase configuration
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build</code></pre>
+          </div>
+        </div>
+
+        <div class="docs-subsection">
+          <h3>Firebase Configuration</h3>
+          <p>Create a <code>.env.local</code> file with your Firebase credentials:</p>
+          <div class="code-block">
+            <pre><code>NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- API Reference -->
+  <section id="api" class="docs-section alt-bg">
+    <div class="container">
+      <div class="docs-content animate-on-scroll">
+        <h2>API Reference</h2>
+        <p>Firebase REST API endpoints for alert submission and data retrieval.</p>
+
+        <div class="docs-subsection">
+          <h3>POST /api/alerts/bear</h3>
+          <p>Submit a new bear detection alert</p>
+          <div class="code-block">
+            <pre><code>POST https://your-app.firebaseapp.com/api/alerts/bear
+Content-Type: application/json
+
+{
+  "latitude": 45.5231,
+  "longitude": -122.6765,
+  "confidence": 0.85,
+  "timestamp": 1701439200000,
+  "source": "camera_01",
+  "threatLevel": "MEDIUM"
+}</code></pre>
+          </div>
+          <h4>Response</h4>
+          <div class="code-block">
+            <pre><code>{
+  "success": true,
+  "alertId": "abc123def456",
+  "message": "Alert submitted successfully"
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deployment -->
+  <section id="deployment" class="docs-section">
+    <div class="container">
+      <div class="docs-content animate-on-scroll">
+        <h2>Deployment Guide</h2>
+
+        <div class="docs-subsection">
+          <h3>Edge Device Deployment</h3>
+          <p>Deploy the AI detection system on edge devices in remote locations:</p>
+          <ol class="deployment-steps">
+            <li>
+              <strong>Hardware Requirements</strong>
+              <ul>
+                <li>NVIDIA Jetson Nano/Xavier (recommended) or Raspberry Pi 4</li>
+                <li>USB camera or IP camera</li>
+                <li>4G/LTE modem for connectivity</li>
+                <li>Weather-proof enclosure</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Software Setup</strong>
+              <ul>
+                <li>Install Ubuntu 20.04 or JetPack (for Jetson devices)</li>
+                <li>Install CUDA drivers (if using GPU)</li>
+                <li>Clone and install bear detection system</li>
+                <li>Configure Firebase credentials</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Configuration</strong>
+              <ul>
+                <li>Set camera location coordinates</li>
+                <li>Adjust confidence thresholds</li>
+                <li>Configure alert cooldown period</li>
+                <li>Test connectivity to Firebase</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+
+        <div class="docs-subsection">
+          <h3>Mobile App Deployment</h3>
+          <div class="code-block">
+            <pre><code># Build the application
+npm run build
+
+# Deploy to Firebase Hosting
+firebase deploy --only hosting</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support Section -->
+  <section class="docs-support">
+    <div class="container">
+      <div class="support-content animate-on-scroll">
+        <h2>Need Help?</h2>
+        <p>Find additional resources and support options</p>
+        <div class="support-grid">
+          <a href="https://github.com/mareluca675/bear-detection-system" target="_blank" class="support-card">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 16v-4"/>
+              <path d="M12 8h.01"/>
+            </svg>
+            <h3>GitHub Issues</h3>
+            <p>Report bugs or request features</p>
+          </a>
+          <a href="studies.html" class="support-card">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+            <h3>Research Papers</h3>
+            <p>Read our published studies</p>
+          </a>
+          <a href="mailto:info@bearawareness.ro" class="support-card">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <h3>Contact Us</h3>
+            <p>Get in touch with our team</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3 class="footer-title">BearAware Romania</h3>
+          <p class="footer-text">Protecting wildlife and communities through innovative AI technology</p>
+          <div class="footer-social">
+            <a href="https://github.com/mareluca675/bear-detection-system" target="_blank" aria-label="GitHub">GitHub</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-heading">Projects</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/mareluca675/bear-detection-system" target="_blank">AI Detection System</a></li>
+            <li><a href="https://github.com/mareluca675/bear-detection-app" target="_blank">Mobile Application</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="docs.html">Documentation</a></li>
+            <li><a href="studies.html">Research Studies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@bearawareness.ro">info@bearawareness.ro</a></li>
+            <li>Carpathian Mountains, Romania</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 BearAware Romania. Making wildlife conservation smarter.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
