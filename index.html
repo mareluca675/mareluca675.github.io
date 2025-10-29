@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BearAware Romania - AI-Powered Wildlife Protection</title>
-  <meta name="description" content="BearAware Romania — Protecting humans and wildlife through AI-powered bear detection technology in the Carpathian Mountains." />
+  <title>BearAware Romania - Sistem AI de Protecție pentru Faună Sălbatică</title>
+  <meta name="description" content="BearAware Romania — Protejarea oamenilor și faunei sălbatice prin tehnologie AI de detectare a urșilor în Munții Carpați." />
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-brand">
-        <img src="assets/logo.svg" alt="BearAware" class="nav-logo" onerror="this.style.display='none';" />
+        <img src="assets/logo.svg" alt="BearAware" class="nav-logo" />
         <span class="nav-brand-text">BearAware</span>
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -25,12 +25,19 @@
         <span></span>
       </button>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html" class="nav-link active">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="team.html" class="nav-link">Team</a></li>
-        <li><a href="docs.html" class="nav-link">Docs</a></li>
-        <li><a href="studies.html" class="nav-link">Studies</a></li>
+        <li><a href="index.html" class="nav-link active" data-i18n="nav.home">Acasă</a></li>
+        <li><a href="about.html" class="nav-link" data-i18n="nav.about">Despre</a></li>
+        <li><a href="team.html" class="nav-link" data-i18n="nav.team">Echipa</a></li>
+        <li><a href="app.html" class="nav-link" data-i18n="nav.app">Aplicația</a></li>
+        <li><a href="docs.html" class="nav-link" data-i18n="nav.docs">Documentație</a></li>
+        <li><a href="studies.html" class="nav-link" data-i18n="nav.studies">Studii</a></li>
+        <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
         <li><a href="https://github.com/mareluca675/bear-detection-system" class="nav-link nav-cta" target="_blank">GitHub</a></li>
+        <li class="lang-switcher">
+          <button id="langToggle" class="lang-btn" aria-label="Switch language">
+            <span id="currentLang">RO</span>
+          </button>
+        </li>
       </ul>
     </div>
   </nav>
@@ -45,19 +52,22 @@
       <div class="container">
         <h1 class="hero-title fade-in-up">
           <span class="hero-title-main">BearAware Romania</span>
-          <span class="hero-title-sub">AI-Powered Wildlife Monitoring</span>
+          <span class="hero-title-sub" data-i18n="hero.subtitle">Monitorizare Faunei Sălbatice prin Inteligență Artificială</span>
         </h1>
-        <p class="hero-subtitle fade-in-up delay-1">
-          Protecting communities and conserving wildlife through cutting-edge detection technology in the Carpathian Mountains
+        <p class="hero-subtitle fade-in-up delay-1" data-i18n="hero.description">
+          Protejarea comunităților și conservarea faunei sălbatice prin tehnologie avansată de detectare în Munții Carpați
         </p>
-        <div class="hero-buttons fade-in-up delay-2">
-          <a href="about.html" class="btn btn-primary">Explore Our Mission</a>
-          <a href="docs.html" class="btn btn-secondary">How It Works</a>
+        <div class="hero-badge fade-in-up delay-2">
+          <span class="badge-prototype" data-i18n="hero.badge">FAZA DE PROTOTIPARE</span>
+        </div>
+        <div class="hero-buttons fade-in-up delay-3">
+          <a href="about.html" class="btn btn-primary" data-i18n="hero.btn1">Explorează Misiunea Noastră</a>
+          <a href="docs.html" class="btn btn-secondary" data-i18n="hero.btn2">Cum Funcționează</a>
         </div>
       </div>
     </div>
     <div class="hero-scroll">
-      <span>Scroll to explore</span>
+      <span data-i18n="hero.scroll">Derulează pentru a explora</span>
       <div class="scroll-arrow"></div>
     </div>
   </section>
@@ -77,8 +87,8 @@
           </div>
           <div class="stat-number" data-target="10000">0</div>
           <div class="stat-suffix">+</div>
-          <h3 class="stat-label">Detection Events</h3>
-          <p class="stat-description">Bear sightings monitored across Romania this year</p>
+          <h3 class="stat-label" data-i18n="stats.detections">Evenimente de Detectare</h3>
+          <p class="stat-description" data-i18n="stats.detections.desc">Observări de urși monitorizate în România anul acesta</p>
         </div>
         <div class="stat-card animate-on-scroll delay-1">
           <div class="stat-icon">
@@ -90,24 +100,10 @@
           </div>
           <div class="stat-number" data-target="98">0</div>
           <div class="stat-suffix">%</div>
-          <h3 class="stat-label">Detection Accuracy</h3>
-          <p class="stat-description">State-of-the-art AI ensures reliability</p>
+          <h3 class="stat-label" data-i18n="stats.accuracy">Acuratețe de Detectare</h3>
+          <p class="stat-description" data-i18n="stats.accuracy.desc">Inteligență artificială de ultimă generație asigură fiabilitatea</p>
         </div>
         <div class="stat-card animate-on-scroll delay-2">
-          <div class="stat-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
-          </div>
-          <div class="stat-number" data-target="50000">0</div>
-          <div class="stat-suffix">+</div>
-          <h3 class="stat-label">Active Users</h3>
-          <p class="stat-description">Hikers and locals protected daily</p>
-        </div>
-        <div class="stat-card animate-on-scroll delay-3">
           <div class="stat-icon">
             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="12" cy="12" r="10"/>
@@ -116,8 +112,8 @@
           </div>
           <div class="stat-number" data-target="24">0</div>
           <div class="stat-suffix">/7</div>
-          <h3 class="stat-label">Real-Time Monitoring</h3>
-          <p class="stat-description">Continuous surveillance for your safety</p>
+          <h3 class="stat-label" data-i18n="stats.monitoring">Monitorizare în Timp Real</h3>
+          <p class="stat-description" data-i18n="stats.monitoring.desc">Supraveghere continuă pentru siguranța ta</p>
         </div>
       </div>
     </div>
@@ -127,23 +123,43 @@
   <section class="mission-section" id="mission">
     <div class="container">
       <div class="section-header animate-on-scroll">
-        <h2 class="section-title">Our Mission</h2>
-        <p class="section-subtitle">Protecting Romania's wildlife through innovative AI technology</p>
+        <h2 class="section-title" data-i18n="mission.title">Misiunea Noastră</h2>
+        <p class="section-subtitle" data-i18n="mission.subtitle">Protejarea faunei sălbatice din România prin tehnologie AI inovatoare</p>
       </div>
 
       <div class="mission-content">
         <div class="mission-text animate-on-scroll">
-          <h3>Smart Conservation for the Carpathians</h3>
-          <p>
-            Romania is home to Europe's largest brown bear population—over 6,000 individuals living in the Carpathian Mountains.
-            As human activities expand into these wilderness areas, the need for intelligent, real-time monitoring has never been greater.
+          <h3 data-i18n="mission.heading">Conservare Inteligentă pentru Carpați</h3>
+          <p data-i18n="mission.p1">
+            România găzduiește cea mai mare populație de urși bruni din Europa—peste 6.000 de exemplare care trăiesc în Munții Carpați.
+            Pe măsură ce activitățile umane se extind în aceste zone sălbatice, nevoia de monitorizare inteligentă în timp real nu a fost niciodată mai mare.
           </p>
-          <p>
-            BearAware uses advanced AI to detect bears instantly, alerting communities and protecting both people and wildlife.
-            Our system runs 24/7, providing critical data for conservation efforts while keeping hikers and residents safe.
+          <p data-i18n="mission.p2">
+            BearAware folosește AI avansat pentru a detecta urșii instantaneu, alertând comunitățile și protejând atât oamenii, cât și fauna sălbatică.
+            Sistemul nostru funcționează 24/7, furnizând date critice pentru eforturile de conservare, menținând în siguranță drumeții și rezidenții.
           </p>
+          <div class="mission-features">
+            <div class="feature-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span data-i18n="mission.feature1">Sistem fix cu ultrasunete și infrasunete</span>
+            </div>
+            <div class="feature-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span data-i18n="mission.feature2">Dronă cu cameră termică și soluție naturală</span>
+            </div>
+            <div class="feature-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span data-i18n="mission.feature3">Aplicație mobilă cu hartă în timp real</span>
+            </div>
+          </div>
           <div class="mission-cta" style="margin-top: 2rem;">
-            <a href="about.html" class="btn btn-primary">Learn More About Our Work</a>
+            <a href="about.html" class="btn btn-primary" data-i18n="mission.btn">Află Mai Multe Despre Munca Noastră</a>
           </div>
         </div>
         <div class="mission-visual animate-on-scroll delay-1">
@@ -151,7 +167,7 @@
           <div class="mission-stat-overlay">
             <div class="overlay-stat">
               <div class="overlay-number">6,000+</div>
-              <div class="overlay-label">Bears in Romania</div>
+              <div class="overlay-label" data-i18n="mission.bears">Urși în România</div>
             </div>
           </div>
         </div>
@@ -163,12 +179,12 @@
   <section class="technology-section" id="technology">
     <div class="container">
       <div class="section-header animate-on-scroll">
-        <h2 class="section-title">Our Technology</h2>
-        <p class="section-subtitle">AI-powered detection meets user-friendly mobile access</p>
+        <h2 class="section-title" data-i18n="tech.title">Tehnologia Noastră</h2>
+        <p class="section-subtitle" data-i18n="tech.subtitle">Detectare bazată pe AI combinată cu acces mobil ușor de utilizat</p>
       </div>
 
       <div class="tech-grid">
-        <!-- AI Detection System -->
+        <!-- Fixed System -->
         <div class="tech-card animate-on-scroll">
           <div class="tech-icon">
             <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -179,34 +195,50 @@
               <line x1="16" y1="16" x2="16" y2="16"/>
             </svg>
           </div>
-          <h3 class="tech-title">AI Detection System</h3>
-          <p class="tech-description">
-            YOLOv8-powered computer vision deployed on edge devices throughout the Carpathians.
-            Processes video in real-time with 98% accuracy, sending instant alerts via Firebase.
+          <h3 class="tech-title" data-i18n="tech.fixed.title">Sistem Fix de Detectare</h3>
+          <p class="tech-description" data-i18n="tech.fixed.desc">
+            Unități instalate pe stâlpi cu ultrasunete, infrasunete și recunoaștere AI bazată pe YOLOv8.
+            Procesează video în timp real cu acuratețe de 98%, trimițând alerte instant prin Firebase.
           </p>
-          <a href="docs.html" class="btn btn-outline" style="margin-top: 1.5rem;">View Documentation</a>
+          <a href="docs.html" class="btn btn-outline" style="margin-top: 1.5rem;" data-i18n="tech.btn">Vezi Documentația</a>
+        </div>
+
+        <!-- Mobile System -->
+        <div class="tech-card animate-on-scroll delay-1">
+          <div class="tech-icon">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M12 1v6m0 6v6m-8.66-5l5.2 3m8.92 0l5.2-3m-5.2-3l5.2-3m-15.12 0l5.2 3"/>
+            </svg>
+          </div>
+          <h3 class="tech-title" data-i18n="tech.drone.title">Sistem Mobil (Dronă)</h3>
+          <p class="tech-description" data-i18n="tech.drone.desc">
+            Dronă cu cameră termică și RGB, soluție repelentă naturală pe bază de mentol.
+            Detectare aeriană autonomă și intervenție rapidă în zone extinse.
+          </p>
+          <a href="docs.html" class="btn btn-outline" style="margin-top: 1.5rem;" data-i18n="tech.btn">Vezi Documentația</a>
         </div>
 
         <!-- Mobile App -->
-        <div class="tech-card animate-on-scroll delay-1">
+        <div class="tech-card animate-on-scroll delay-2">
           <div class="tech-icon">
             <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
               <line x1="12" y1="18" x2="12.01" y2="18"/>
             </svg>
           </div>
-          <h3 class="tech-title">Mobile Application</h3>
-          <p class="tech-description">
-            React-based mobile platform providing interactive maps, real-time alerts, and safety resources.
-            Available for hikers, rangers, and anyone exploring bear country.
+          <h3 class="tech-title" data-i18n="tech.app.title">Aplicație Mobilă</h3>
+          <p class="tech-description" data-i18n="tech.app.desc">
+            Platformă mobilă React cu hărți interactive, alerte în timp real și chatbot educațional AI.
+            Disponibilă pentru drumeți, rangeri și comunități locale.
           </p>
-          <a href="docs.html" class="btn btn-outline" style="margin-top: 1.5rem;">View Documentation</a>
+          <a href="app.html" class="btn btn-outline" style="margin-top: 1.5rem;" data-i18n="tech.app.btn">Vezi Aplicația</a>
         </div>
       </div>
 
       <!-- How It Works -->
       <div class="how-it-works animate-on-scroll">
-        <h3 class="how-title">How It Works</h3>
+        <h3 class="how-title" data-i18n="tech.how.title">Cum Funcționează</h3>
         <div class="workflow">
           <div class="workflow-step">
             <div class="workflow-icon">
@@ -215,8 +247,8 @@
                 <circle cx="12" cy="13" r="4"/>
               </svg>
             </div>
-            <h4>Camera Network</h4>
-            <p>Monitors high-traffic areas</p>
+            <h4 data-i18n="tech.how.step1">Rețea de Camere</h4>
+            <p data-i18n="tech.how.step1.desc">Monitorizează zone cu trafic intens</p>
           </div>
           <div class="workflow-arrow">→</div>
           <div class="workflow-step">
@@ -227,8 +259,8 @@
                 <line x1="12" y1="22.08" x2="12" y2="12"/>
               </svg>
             </div>
-            <h4>AI Detection</h4>
-            <p>YOLOv8 analyzes frames instantly</p>
+            <h4 data-i18n="tech.how.step2">Detectare AI</h4>
+            <p data-i18n="tech.how.step2.desc">YOLOv8 analizează cadre instant</p>
           </div>
           <div class="workflow-arrow">→</div>
           <div class="workflow-step">
@@ -239,8 +271,8 @@
                 <line x1="12" y1="17" x2="12.01" y2="17"/>
               </svg>
             </div>
-            <h4>Instant Alerts</h4>
-            <p>Firebase sends notifications</p>
+            <h4 data-i18n="tech.how.step3">Alerte Instant</h4>
+            <p data-i18n="tech.how.step3.desc">Firebase trimite notificări</p>
           </div>
           <div class="workflow-arrow">→</div>
           <div class="workflow-step">
@@ -250,46 +282,26 @@
                 <line x1="12" y1="18" x2="12.01" y2="18"/>
               </svg>
             </div>
-            <h4>Mobile Display</h4>
-            <p>Real-time locations on maps</p>
+            <h4 data-i18n="tech.how.step4">Afișare Mobilă</h4>
+            <p data-i18n="tech.how.step4.desc">Locații în timp real pe hărți</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Team Preview Section -->
-  <section class="team-section" id="team">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2 class="section-title">Our Expert Team</h2>
-        <p class="section-subtitle">Multidisciplinary experts working together for conservation</p>
-      </div>
-
-      <div class="team-preview animate-on-scroll">
-        <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem; font-size: 1.1rem; color: var(--text-muted);">
-          Our team brings together wildlife biologists, AI researchers, software engineers, and conservation specialists.
-          With decades of combined experience, we're pioneering new approaches to human-wildlife coexistence in Romania's Carpathian Mountains.
-        </p>
-        <a href="team.html" class="btn btn-primary btn-large">Meet Our Team</a>
-      </div>
-    </div>
-  </section>
-
-
-
   <!-- CTA Section -->
   <section class="cta-section">
     <div class="container">
       <div class="cta-content animate-on-scroll">
-        <h2 class="cta-title">Join Our Mission</h2>
-        <p class="cta-text">
-          Help us protect Romania's wildlife and communities. Whether you're a developer, researcher,
-          or conservation enthusiast, there's a place for you in our mission.
+        <h2 class="cta-title" data-i18n="cta.title">Alătură-te Misiunii Noastre</h2>
+        <p class="cta-text" data-i18n="cta.text">
+          Ajută-ne să protejăm fauna sălbatică și comunitățile din România. Fie că ești programator, cercetător,
+          sau pasionat de conservare, există un loc pentru tine în misiunea noastră.
         </p>
         <div class="cta-buttons">
-          <a href="https://github.com/mareluca675/bear-detection-system" target="_blank" class="btn btn-primary btn-large">Contribute on GitHub</a>
-          <a href="team.html" class="btn btn-secondary btn-large">Join Our Team</a>
+          <a href="https://github.com/mareluca675/bear-detection-system" target="_blank" class="btn btn-primary btn-large" data-i18n="cta.btn1">Contribuie pe GitHub</a>
+          <a href="contact.html" class="btn btn-secondary btn-large" data-i18n="cta.btn2">Contactează-ne</a>
         </div>
       </div>
     </div>
@@ -301,41 +313,51 @@
       <div class="footer-grid">
         <div class="footer-section">
           <h3 class="footer-title">BearAware Romania</h3>
-          <p class="footer-text">Protecting wildlife and communities through innovative AI technology</p>
+          <p class="footer-text" data-i18n="footer.tagline">Protejarea faunei sălbatice și a comunităților prin tehnologie AI inovatoare</p>
           <div class="footer-social">
             <a href="https://github.com/mareluca675/bear-detection-system" target="_blank" aria-label="GitHub">GitHub</a>
           </div>
         </div>
 
         <div class="footer-section">
-          <h4 class="footer-heading">Projects</h4>
+          <h4 class="footer-heading" data-i18n="footer.projects">Proiecte</h4>
           <ul class="footer-links">
-            <li><a href="https://github.com/mareluca675/bear-detection-system" target="_blank">AI Detection System</a></li>
-            <li><a href="https://github.com/mareluca675/bear-detection-app" target="_blank">Mobile Application</a></li>
+            <li><a href="https://github.com/mareluca675/bear-detection-system" target="_blank" data-i18n="footer.system">Sistem de Detectare AI</a></li>
+            <li><a href="https://github.com/mareluca675/bear-detection-app" target="_blank" data-i18n="footer.app">Aplicație Mobilă</a></li>
           </ul>
         </div>
 
         <div class="footer-section">
-          <h4 class="footer-heading">Resources</h4>
+          <h4 class="footer-heading" data-i18n="footer.resources">Resurse</h4>
           <ul class="footer-links">
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="docs.html">Documentation</a></li>
-            <li><a href="studies.html">Research Studies</a></li>
+            <li><a href="team.html" data-i18n="nav.team">Echipa</a></li>
+            <li><a href="about.html" data-i18n="nav.about">Despre</a></li>
+            <li><a href="app.html" data-i18n="nav.app">Aplicația</a></li>
+            <li><a href="docs.html" data-i18n="nav.docs">Documentație</a></li>
+            <li><a href="studies.html" data-i18n="nav.studies">Studii</a></li>
           </ul>
         </div>
 
         <div class="footer-section">
-          <h4 class="footer-heading">Contact</h4>
+          <h4 class="footer-heading" data-i18n="footer.contact">Contact</h4>
           <ul class="footer-links">
-            <li><a href="mailto:info@bearawareness.ro">info@bearawareness.ro</a></li>
-            <li>Carpathian Mountains, Romania</li>
+            <li><a href="mailto:contact@bearaware.com">contact@bearaware.com</a></li>
+            <li><a href="contact.html" data-i18n="footer.contact.link">Formular de Contact</a></li>
+            <li data-i18n="footer.location">Munții Carpați, România</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-heading" data-i18n="footer.legal">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html" data-i18n="footer.privacy">Politica de Confidențialitate</a></li>
+            <li><a href="terms.html" data-i18n="footer.terms">Termeni și Condiții</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 BearAware Romania. Making wildlife conservation smarter.</p>
+        <p>&copy; 2025 BearAware Romania. <span data-i18n="footer.copyright">Facem conservarea faunei sălbatice mai inteligentă.</span></p>
       </div>
     </div>
   </footer>

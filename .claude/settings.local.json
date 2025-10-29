@@ -4,7 +4,8 @@
       "Bash(python:*)",
       "Bash(node:*)",
       "WebSearch",
-      "WebFetch(domain:giphy.com)"
+      "WebFetch(domain:giphy.com)",
+      "Bash(python3:*)"
     ],
     "deny": [],
     "ask": []

@@ -204,3 +204,201 @@ window.addEventListener('scroll', () => {
 window.addEventListener('load', () => {
   document.body.classList.add('loaded');
 });
+
+// ===================================
+// Language Switching System
+// ===================================
+
+const translations = {
+  ro: {
+    'nav.home': 'Acasă',
+    'nav.about': 'Despre',
+    'nav.team': 'Echipa',
+    'nav.app': 'Aplicația',
+    'nav.docs': 'Documentație',
+    'nav.studies': 'Studii',
+    'nav.contact': 'Contact',
+
+    'hero.subtitle': 'Monitorizare Faunei Sălbatice prin Inteligență Artificială',
+    'hero.description': 'Protejarea comunităților și conservarea faunei sălbatice prin tehnologie avansată de detectare în Munții Carpați',
+    'hero.badge': 'FAZA DE PROTOTIPARE',
+    'hero.btn1': 'Explorează Misiunea Noastră',
+    'hero.btn2': 'Cum Funcționează',
+    'hero.scroll': 'Derulează pentru a explora',
+
+    'stats.detections': 'Evenimente de Detectare',
+    'stats.detections.desc': 'Observări de urși monitorizate în România anul acesta',
+    'stats.accuracy': 'Acuratețe de Detectare',
+    'stats.accuracy.desc': 'Inteligență artificială de ultimă generație asigură fiabilitatea',
+    'stats.monitoring': 'Monitorizare în Timp Real',
+    'stats.monitoring.desc': 'Supraveghere continuă pentru siguranța ta',
+
+    'mission.title': 'Misiunea Noastră',
+    'mission.subtitle': 'Protejarea faunei sălbatice din România prin tehnologie AI inovatoare',
+    'mission.heading': 'Conservare Inteligentă pentru Carpați',
+    'mission.p1': 'România găzduiește cea mai mare populație de urși bruni din Europa—peste 6.000 de exemplare care trăiesc în Munții Carpați. Pe măsură ce activitățile umane se extind în aceste zone sălbatice, nevoia de monitorizare inteligentă în timp real nu a fost niciodată mai mare.',
+    'mission.p2': 'BearAware folosește AI avansat pentru a detecta urșii instantaneu, alertând comunitățile și protejând atât oamenii, cât și fauna sălbatică. Sistemul nostru funcționează 24/7, furnizând date critice pentru eforturile de conservare, menținând în siguranță drumeții și rezidenții.',
+    'mission.feature1': 'Sistem fix cu ultrasunete și infrasunete',
+    'mission.feature2': 'Dronă cu cameră termică și soluție naturală',
+    'mission.feature3': 'Aplicație mobilă cu hartă în timp real',
+    'mission.btn': 'Află Mai Multe Despre Munca Noastră',
+    'mission.bears': 'Urși în România',
+
+    'tech.title': 'Tehnologia Noastră',
+    'tech.subtitle': 'Detectare bazată pe AI combinată cu acces mobil ușor de utilizat',
+    'tech.fixed.title': 'Sistem Fix de Detectare',
+    'tech.fixed.desc': 'Unități instalate pe stâlpi cu ultrasunete, infrasunete și recunoaștere AI bazată pe YOLOv8. Procesează video în timp real cu acuratețe de 98%, trimițând alerte instant prin Firebase.',
+    'tech.drone.title': 'Sistem Mobil (Dronă)',
+    'tech.drone.desc': 'Dronă cu cameră termică și RGB, soluție repelentă naturală pe bază de mentol. Detectare aeriană autonomă și intervenție rapidă în zone extinse.',
+    'tech.app.title': 'Aplicație Mobilă',
+    'tech.app.desc': 'Platformă mobilă React cu hărți interactive, alerte în timp real și chatbot educațional AI. Disponibilă pentru drumeți, rangeri și comunități locale.',
+    'tech.btn': 'Vezi Documentația',
+    'tech.app.btn': 'Vezi Aplicația',
+    'tech.how.title': 'Cum Funcționează',
+    'tech.how.step1': 'Rețea de Camere',
+    'tech.how.step1.desc': 'Monitorizează zone cu trafic intens',
+    'tech.how.step2': 'Detectare AI',
+    'tech.how.step2.desc': 'YOLOv8 analizează cadre instant',
+    'tech.how.step3': 'Alerte Instant',
+    'tech.how.step3.desc': 'Firebase trimite notificări',
+    'tech.how.step4': 'Afișare Mobilă',
+    'tech.how.step4.desc': 'Locații în timp real pe hărți',
+
+    'cta.title': 'Alătură-te Misiunii Noastre',
+    'cta.text': 'Ajută-ne să protejăm fauna sălbatică și comunitățile din România. Fie că ești programator, cercetător, sau pasionat de conservare, există un loc pentru tine în misiunea noastră.',
+    'cta.btn1': 'Contribuie pe GitHub',
+    'cta.btn2': 'Contactează-ne',
+
+    'footer.tagline': 'Protejarea faunei sălbatice și a comunităților prin tehnologie AI inovatoare',
+    'footer.projects': 'Proiecte',
+    'footer.system': 'Sistem de Detectare AI',
+    'footer.app': 'Aplicație Mobilă',
+    'footer.resources': 'Resurse',
+    'footer.contact': 'Contact',
+    'footer.contact.link': 'Formular de Contact',
+    'footer.location': 'Munții Carpați, România',
+    'footer.legal': 'Legal',
+    'footer.privacy': 'Politica de Confidențialitate',
+    'footer.terms': 'Termeni și Condiții',
+    'footer.copyright': 'Facem conservarea faunei sălbatice mai inteligentă.'
+  },
+  en: {
+    'nav.home': 'Home',
+    'nav.about': 'About',
+    'nav.team': 'Team',
+    'nav.app': 'App',
+    'nav.docs': 'Docs',
+    'nav.studies': 'Studies',
+    'nav.contact': 'Contact',
+
+    'hero.subtitle': 'AI-Powered Wildlife Monitoring',
+    'hero.description': 'Protecting communities and conserving wildlife through cutting-edge detection technology in the Carpathian Mountains',
+    'hero.badge': 'PROTOTYPING PHASE',
+    'hero.btn1': 'Explore Our Mission',
+    'hero.btn2': 'How It Works',
+    'hero.scroll': 'Scroll to explore',
+
+    'stats.detections': 'Detection Events',
+    'stats.detections.desc': 'Bear sightings monitored across Romania this year',
+    'stats.accuracy': 'Detection Accuracy',
+    'stats.accuracy.desc': 'State-of-the-art AI ensures reliability',
+    'stats.monitoring': 'Real-Time Monitoring',
+    'stats.monitoring.desc': 'Continuous surveillance for your safety',
+
+    'mission.title': 'Our Mission',
+    'mission.subtitle': 'Protecting Romania\'s wildlife through innovative AI technology',
+    'mission.heading': 'Smart Conservation for the Carpathians',
+    'mission.p1': 'Romania is home to Europe\'s largest brown bear population—over 6,000 individuals living in the Carpathian Mountains. As human activities expand into these wilderness areas, the need for intelligent, real-time monitoring has never been greater.',
+    'mission.p2': 'BearAware uses advanced AI to detect bears instantly, alerting communities and protecting both people and wildlife. Our system runs 24/7, providing critical data for conservation efforts while keeping hikers and residents safe.',
+    'mission.feature1': 'Fixed system with ultrasound and infrasound',
+    'mission.feature2': 'Drone with thermal camera and natural solution',
+    'mission.feature3': 'Mobile app with real-time map',
+    'mission.btn': 'Learn More About Our Work',
+    'mission.bears': 'Bears in Romania',
+
+    'tech.title': 'Our Technology',
+    'tech.subtitle': 'AI-powered detection meets user-friendly mobile access',
+    'tech.fixed.title': 'Fixed Detection System',
+    'tech.fixed.desc': 'Pole-mounted units with ultrasound, infrasound and YOLOv8-based AI recognition. Processes video in real-time with 98% accuracy, sending instant alerts via Firebase.',
+    'tech.drone.title': 'Mobile System (Drone)',
+    'tech.drone.desc': 'Drone with thermal and RGB camera, natural menthol-based repellent solution. Autonomous aerial detection and rapid intervention in extended areas.',
+    'tech.app.title': 'Mobile Application',
+    'tech.app.desc': 'React mobile platform with interactive maps, real-time alerts and educational AI chatbot. Available for hikers, rangers and local communities.',
+    'tech.btn': 'View Documentation',
+    'tech.app.btn': 'View App',
+    'tech.how.title': 'How It Works',
+    'tech.how.step1': 'Camera Network',
+    'tech.how.step1.desc': 'Monitors high-traffic areas',
+    'tech.how.step2': 'AI Detection',
+    'tech.how.step2.desc': 'YOLOv8 analyzes frames instantly',
+    'tech.how.step3': 'Instant Alerts',
+    'tech.how.step3.desc': 'Firebase sends notifications',
+    'tech.how.step4': 'Mobile Display',
+    'tech.how.step4.desc': 'Real-time locations on maps',
+
+    'cta.title': 'Join Our Mission',
+    'cta.text': 'Help us protect Romania\'s wildlife and communities. Whether you\'re a developer, researcher, or conservation enthusiast, there\'s a place for you in our mission.',
+    'cta.btn1': 'Contribute on GitHub',
+    'cta.btn2': 'Contact Us',
+
+    'footer.tagline': 'Protecting wildlife and communities through innovative AI technology',
+    'footer.projects': 'Projects',
+    'footer.system': 'AI Detection System',
+    'footer.app': 'Mobile Application',
+    'footer.resources': 'Resources',
+    'footer.contact': 'Contact',
+    'footer.contact.link': 'Contact Form',
+    'footer.location': 'Carpathian Mountains, Romania',
+    'footer.legal': 'Legal',
+    'footer.privacy': 'Privacy Policy',
+    'footer.terms': 'Terms and Conditions',
+    'footer.copyright': 'Making wildlife conservation smarter.'
+  }
+};
+
+// Get current language from localStorage or default to Romanian
+let currentLang = localStorage.getItem('language') || 'ro';
+
+// Function to change language
+function changeLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem('language', lang);
+
+  // Update HTML lang attribute
+  document.documentElement.lang = lang;
+
+  // Update all elements with data-i18n attribute
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    const key = element.getAttribute('data-i18n');
+    if (translations[lang] && translations[lang][key]) {
+      element.textContent = translations[lang][key];
+    }
+  });
+
+  // Update language button text
+  const langBtn = document.getElementById('currentLang');
+  if (langBtn) {
+    langBtn.textContent = lang.toUpperCase();
+  }
+
+  // Update page title
+  if (lang === 'ro') {
+    document.title = 'BearAware Romania - Sistem AI de Protecție pentru Faună Sălbatică';
+  } else {
+    document.title = 'BearAware Romania - AI-Powered Wildlife Protection System';
+  }
+}
+
+// Initialize language on page load
+document.addEventListener('DOMContentLoaded', () => {
+  changeLanguage(currentLang);
+
+  // Add event listener to language toggle button
+  const langToggle = document.getElementById('langToggle');
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      const newLang = currentLang === 'ro' ? 'en' : 'ro';
+      changeLanguage(newLang);
+    });
+  }
+});
