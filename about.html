@@ -1,36 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Our Project - BearAware Romania</title>
-  <meta name="description" content="Learn about BearAware Romania's mission, goals, and impact on wildlife conservation in the Carpathian Mountains." />
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Despre Proiect - BearAware Romania</title>
+  <meta name="description" content="Află despre misiunea, obiectivele și impactul BearAware Romania în conservarea faunei sălbatice din Munții Carpați.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+
   <!-- Navigation -->
-  <nav class="navbar" id="navbar">
+  <nav class="nav" id="nav">
     <div class="nav-container">
       <a href="index.html" class="nav-brand">
-        <img src="assets/logo.svg" alt="BearAware" class="nav-logo" onerror="this.style.display='none';" />
-        <span class="nav-brand-text">BearAware</span>
+        <img src="assets/logo.svg" alt="BearAware" class="nav-logo">
+        <span>BearAware</span>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
+
       <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link active">About</a></li>
-        <li><a href="team.html" class="nav-link">Team</a></li>
-        <li><a href="docs.html" class="nav-link">Docs</a></li>
-        <li><a href="studies.html" class="nav-link">Studies</a></li>
+        <li><a href="index.html" class="nav-link" data-i18n="nav.home">Acasă</a></li>
+        <li><a href="about.html" class="nav-link active" data-i18n="nav.about">Despre</a></li>
+        <li><a href="team.html" class="nav-link" data-i18n="nav.team">Echipa</a></li>
+        <li><a href="app.html" class="nav-link" data-i18n="nav.app">Aplicația</a></li>
+        <li><a href="docs.html" class="nav-link" data-i18n="nav.docs">Documentație</a></li>
+        <li><a href="studies.html" class="nav-link" data-i18n="nav.studies">Studii</a></li>
+        <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
         <li><a href="https://github.com/mareluca675/bear-detection-system" class="nav-link nav-cta" target="_blank">GitHub</a></li>
+        <li><button class="lang-toggle" id="langToggle"><span id="langText">RO</span></button></li>
       </ul>
     </div>
   </nav>
@@ -391,17 +397,17 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-content animate-on-scroll">
-        <h2 class="cta-title">Support Our Mission</h2>
-        <p class="cta-text">
+  <section class="section" style="background: linear-gradient(135deg, var(--forest-700), var(--forest-500)); color: white;">
+    <div class="container" style="text-align: center;">
+      <div class="animate-on-scroll">
+        <h2 style="color: white; margin-bottom: var(--space-6);">Support Our Mission</h2>
+        <p style="font-size: var(--text-xl); max-width: 42rem; margin: 0 auto var(--space-8); color: rgba(255,255,255,0.95);">
           Whether you're a developer, researcher, conservationist, or simply passionate about wildlife,
           there are many ways to support BearAware Romania's mission.
         </p>
-        <div class="cta-buttons">
-          <a href="https://github.com/mareluca675/bear-detection-system" target="_blank" class="btn btn-primary btn-large">Contribute on GitHub</a>
-          <a href="team.html" class="btn btn-secondary btn-large">Join Our Team</a>
+        <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+          <a href="https://github.com/mareluca675/bear-detection-system" target="_blank" class="btn btn-primary btn-lg">Contribute on GitHub</a>
+          <a href="team.html" class="btn btn-secondary btn-lg">Join Our Team</a>
         </div>
       </div>
     </div>
@@ -411,43 +417,50 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-section">
-          <h3 class="footer-title">BearAware Romania</h3>
-          <p class="footer-text">Protecting wildlife and communities through innovative AI technology</p>
-          <div class="footer-social">
-            <a href="https://github.com/mareluca675/bear-detection-system" target="_blank" aria-label="GitHub">GitHub</a>
-          </div>
+        <div>
+          <h3>BearAware Romania</h3>
+          <p style="color: var(--gray-400); margin-bottom: var(--space-4);" data-i18n="footer.tagline">
+            Protejăm fauna sălbatică și comunitățile prin tehnologie AI inovatoare
+          </p>
         </div>
 
-        <div class="footer-section">
-          <h4 class="footer-heading">Projects</h4>
+        <div>
+          <h4 data-i18n="footer.project">Proiect</h4>
           <ul class="footer-links">
-            <li><a href="https://github.com/mareluca675/bear-detection-system" target="_blank">AI Detection System</a></li>
-            <li><a href="https://github.com/mareluca675/bear-detection-app" target="_blank">Mobile Application</a></li>
+            <li><a href="about.html" data-i18n="nav.about">Despre</a></li>
+            <li><a href="team.html" data-i18n="nav.team">Echipa</a></li>
+            <li><a href="app.html" data-i18n="nav.app">Aplicația</a></li>
           </ul>
         </div>
 
-        <div class="footer-section">
-          <h4 class="footer-heading">Resources</h4>
+        <div>
+          <h4 data-i18n="footer.resources">Resurse</h4>
           <ul class="footer-links">
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="docs.html">Documentation</a></li>
-            <li><a href="studies.html">Research Studies</a></li>
+            <li><a href="docs.html" data-i18n="nav.docs">Documentație</a></li>
+            <li><a href="studies.html" data-i18n="nav.studies">Studii</a></li>
+            <li><a href="https://github.com/mareluca675/bear-detection-system" target="_blank">GitHub</a></li>
           </ul>
         </div>
 
-        <div class="footer-section">
-          <h4 class="footer-heading">Contact</h4>
+        <div>
+          <h4 data-i18n="footer.contact">Contact</h4>
           <ul class="footer-links">
-            <li><a href="mailto:info@bearawareness.ro">info@bearawareness.ro</a></li>
-            <li>Carpathian Mountains, Romania</li>
+            <li><a href="mailto:contact@bearaware.com">contact@bearaware.com</a></li>
+            <li><a href="contact.html" data-i18n="footer.contact.form">Formular Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer.legal">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html" data-i18n="footer.privacy">Confidențialitate</a></li>
+            <li><a href="terms.html" data-i18n="footer.terms">Termeni</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 BearAware Romania. Making wildlife conservation smarter.</p>
+        <p>&copy; 2025 BearAware Romania. <span data-i18n="footer.copyright">Conservare inteligentă pentru Carpați.</span></p>
       </div>
     </div>
   </footer>
