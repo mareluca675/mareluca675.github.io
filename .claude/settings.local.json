@@ -5,7 +5,14 @@
       "Bash(node:*)",
       "WebSearch",
       "WebFetch(domain:giphy.com)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Read(//var/home/mareluca675/.ssh/**)",
+      "Bash(cat:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(ssh:*)"
     ],
     "deny": [],
     "ask": []

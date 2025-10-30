@@ -1,407 +1,108 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Echipa Noastră - BearAware Romania</title>
-  <meta name="description" content="Cunoaște echipa dedicată din spatele sistemului BearAware Romania de protecție a faunei sălbatice.">
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Team · Bear Detection System</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="alternate icon" href="assets/logo.svg" />
+  <link rel="mask-icon" href="assets/logo.svg" color="#1b4d3e" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
-    <div class="nav-container">
-      <a href="index.html" class="nav-brand">
-        <img src="assets/logo.svg" alt="BearAware" class="nav-logo">
-        <span>BearAware</span>
-      </a>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html" class="nav-link" data-i18n="nav.home">Acasă</a></li>
-        <li><a href="about.html" class="nav-link" data-i18n="nav.about">Despre</a></li>
-        <li><a href="team.html" class="nav-link active" data-i18n="nav.team">Echipa</a></li>
-        <li><a href="app.html" class="nav-link" data-i18n="nav.app">Aplicația</a></li>
-        <li><a href="docs.html" class="nav-link" data-i18n="nav.docs">Documentație</a></li>
-        <li><a href="studies.html" class="nav-link" data-i18n="nav.studies">Studii</a></li>
-        <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
-        <li><a href="https://github.com/mareluca675/bear-detection-system" class="nav-link nav-cta" target="_blank">GitHub</a></li>
-        <li><button class="lang-toggle" id="langToggle"><span id="langText">RO</span></button></li>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img id="brandLogoSvg" src="assets/logo.svg" alt="Bear Detection System logo" onerror="this.src='assets/logo-placeholder.svg';" />
+      <span class="brand-text">Bear Detection System</span>
+    </a>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">☰</button>
+      <ul id="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="installation.html">Install</a></li>
+        <li><a href="team.html" class="active">Team</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="studies.html">Studies</a></li>
+        <li><a href="troubleshooting.html">Troubleshooting</a></li>
+        <li><a class="cta" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
+</header>
+<main class="container">
 
-  <!-- Page Header -->
-  <section class="page-header">
-    <div class="container">
-      <h1 class="page-title fade-in-up" data-i18n="team.title">Echipa Noastră</h1>
-      <p class="page-subtitle fade-in-up delay-1" data-i18n="team.subtitle">Experți în conservarea faunei sălbatice, tehnologie AI și implicare comunitară, lucrând împreună pentru protejarea faunei sălbatice din România</p>
-    </div>
-  </section>
+<section class="card">
+  <h1>Our Team</h1>
+  <p class="lead">This page mirrors the old project’s Team tab. Replace the placeholders below with the exact names/roles/photos from your existing team page.</p>
+</section>
 
-  <!-- Mission Statement -->
-  <section class="team-intro">
-    <div class="container">
-      <div class="intro-content animate-on-scroll">
-        <h2 data-i18n="team.who.title">Cine Suntem</h2>
-        <p data-i18n="team.who.text">
-          Suntem o echipă multidisciplinară de biologi ai faunei sălbatice, cercetători AI, ingineri software și experți în conservare
-          dedicați creării de soluții inovatoare pentru coexistența om-faună sălbatică în
-          Munții Carpați ai României. Expertiza noastră diversă ne permite să abordăm provocările de conservare din multiple
-          unghiuri, combinând tehnologia de ultimă oră cu cunoștințe ecologice profunde și implicare comunitară.
-        </p>
-      </div>
-    </div>
-  </section>
+<section class="grid one">
+  <article class="card person">
+    <div class="avatar"></div>
+    <h3>Domut Bianca</h3>
+    <p class="muted">Team Coordinator</p>
+    <ul class="bullets">
+      <li>Coordination</li>
+      <li>Documentation & FAQ</li>
+      <li>Chemistry</li>
+    </ul>
+  </article>
+</section>
 
-  <!-- Leadership Team -->
-  <section class="leadership-section">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2 class="section-title" data-i18n="team.leadership.title">Echipa de Conducere</h2>
-        <p class="section-subtitle" data-i18n="team.leadership.subtitle">Ghidând misiunea BearAware cu expertiză și viziune</p>
-      </div>
+<section class="grid two">
+  <article class="card person">
+    <div class="avatar"></div>
+    <h3>Mare Luca</h3>
+    <p class="muted">Software & Engineering</p>
+    <ul class="bullets">
+      <li>Worked on mobile system</li>
+      <li>Implemented detection filtering</li>
+      <li>Helped with testing</li>
+    </ul>
+  </article>
 
-      <div class="leadership-grid">
-        <div class="leader-card animate-on-scroll">
-          <div class="leader-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600" alt="Dr. Elena Popescu" class="leader-image" />
-          </div>
-          <div class="leader-content">
-            <h3 class="leader-name">Dr. Elena Popescu</h3>
-            <p class="leader-role">CEO & Wildlife Biologist</p>
-            <p class="leader-bio">
-              Leading conservation efforts with over 15 years of experience in Carpathian wildlife management.
-              Dr. Popescu has dedicated her career to understanding and protecting Romania's brown bear population,
-              publishing extensively on bear ecology and human-wildlife conflict resolution.
-            </p>
-            <div class="leader-credentials">
-              <h4>Credentials</h4>
-              <ul>
-                <li>PhD in Wildlife Conservation, University of Bucharest</li>
-                <li>Former Lead Biologist, WWF Romania</li>
-                <li>Published 30+ peer-reviewed research papers on brown bears</li>
-                <li>Romanian Wildlife Expert of the Year 2023</li>
-                <li>Member, IUCN Bear Specialist Group</li>
-              </ul>
-            </div>
-            <div class="leader-specialties">
-              <span class="specialty-tag">Bear Ecology</span>
-              <span class="specialty-tag">Conservation Policy</span>
-              <span class="specialty-tag">Field Research</span>
-              <span class="specialty-tag">Wildlife Management</span>
-            </div>
-            <a href="mailto:elena.popescu@bearawareness.ro" class="btn btn-outline">Contact</a>
-          </div>
-        </div>
+  <article class="card person">
+    <div class="avatar"></div>
+    <h3>Mocan Alexandru</h3>
+    <p class="muted">Software & Engineering</p>
+    <ul class="bullets">
+      <li>Worked on static system</li>
+      <li>Implemented detection filtering</li>
+      <li>Helped with testing</li>
+    </ul>
+  </article>
+</section>
 
-        <div class="leader-card animate-on-scroll delay-1">
-          <div class="leader-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600" alt="Dr. Andrei Ionescu" class="leader-image" />
-          </div>
-          <div class="leader-content">
-            <h3 class="leader-name">Dr. Andrei Ionescu</h3>
-            <p class="leader-role">CTO & AI Research Director</p>
-            <p class="leader-bio">
-              Pioneer in AI-powered wildlife detection systems with breakthrough computer vision research.
-              Dr. Ionescu brings world-class machine learning expertise from his time at Google AI, where he
-              developed algorithms now used in conservation projects worldwide.
-            </p>
-            <div class="leader-credentials">
-              <h4>Credentials</h4>
-              <ul>
-                <li>PhD in Computer Science, Technical University Munich</li>
-                <li>Former Senior Researcher, Google AI</li>
-                <li>TEDx Speaker on AI for Conservation</li>
-                <li>5 patents in wildlife detection technology</li>
-                <li>Published in Nature Machine Intelligence</li>
-              </ul>
-            </div>
-            <div class="leader-specialties">
-              <span class="specialty-tag">Machine Learning</span>
-              <span class="specialty-tag">Computer Vision</span>
-              <span class="specialty-tag">Wildlife AI</span>
-              <span class="specialty-tag">Deep Learning</span>
-            </div>
-            <a href="mailto:andrei.ionescu@bearawareness.ro" class="btn btn-outline btn-small">Contact</a>
-          </div>
-        </div>
+<section class="grid two">
+  <article class="card person">
+    <div class="avatar"></div>
+    <h3>Barbu Brigitta</h3>
+    <p class="muted">Design & Research</p>
+    <ul class="bullets">
+      <li>Designed visuals</li>
+      <li>Documentation & FAQ</li>
+    </ul>
+  </article>
 
-        <div class="leader-card animate-on-scroll delay-2">
-          <div class="leader-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600" alt="Maria Constantinescu" class="leader-image" />
-          </div>
-          <div class="leader-content">
-            <h3 class="leader-name">Maria Constantinescu</h3>
-            <p class="leader-role">Conservation Officer & Community Liaison</p>
-            <p class="leader-bio">
-              Bridging communities and conservation through education and sustainable coexistence programs.
-              Maria's deep connection with local communities and fluency in multiple languages makes her
-              instrumental in building trust and cooperation across the Carpathian region.
-            </p>
-            <div class="leader-credentials">
-              <h4>Credentials</h4>
-              <ul>
-                <li>MSc in Wildlife Management, University of Cluj-Napoca</li>
-                <li>10 years field experience in Carpathian Mountains</li>
-                <li>Community education program developer</li>
-                <li>Fluent in Romanian, English, Hungarian, and German</li>
-                <li>Certified Wildlife Conflict Mediator</li>
-              </ul>
-            </div>
-            <div class="leader-specialties">
-              <span class="specialty-tag">Community Outreach</span>
-              <span class="specialty-tag">Education</span>
-              <span class="specialty-tag">Conflict Resolution</span>
-              <span class="specialty-tag">Stakeholder Engagement</span>
-            </div>
-            <a href="mailto:maria.const@bearawareness.ro" class="btn btn-outline btn-small">Contact</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <article class="card person">
+    <div class="avatar"></div>
+    <h3>Domut Alexandra</h3>
+    <p class="muted">Design & Research</p>
+    <ul class="bullets">
+      <li>Designed visuals</li>
+      <li>Documentation & FAQ</li>
+    </ul>
+  </article>
+</section>
 
-  <!-- Core Team -->
-  <section class="core-team-section">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2 class="section-title" data-i18n="team.core.title">Echipa Principală</h2>
-        <p class="section-subtitle" data-i18n="team.core.subtitle">Profesioniștii talentați care susțin operațiunile noastre zilnice</p>
-      </div>
-
-      <div class="core-team-grid">
-        <div class="team-member-card animate-on-scroll">
-          <div class="member-image">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400" alt="Alexandru Radu" />
-          </div>
-          <div class="member-info">
-            <h3>Alexandru Radu</h3>
-            <p class="member-role">Lead Full-Stack Developer</p>
-            <div class="member-tags">
-              <span>React</span>
-              <span>Firebase</span>
-              <span>Node.js</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="team-member-card animate-on-scroll delay-1">
-          <div class="member-image">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400" alt="Ioana Matei" />
-          </div>
-          <div class="member-info">
-            <h3>Ioana Matei</h3>
-            <p class="member-role">UX/UI Designer</p>
-            <div class="member-tags">
-              <span>Product Design</span>
-              <span>User Research</span>
-              <span>Figma</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="team-member-card animate-on-scroll delay-2">
-          <div class="member-image">
-            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400" alt="Mihai Dumitrescu" />
-          </div>
-          <div class="member-info">
-            <h3>Mihai Dumitrescu</h3>
-            <p class="member-role">Data Scientist</p>
-            <div class="member-tags">
-              <span>ML Models</span>
-              <span>Data Analysis</span>
-              <span>Python</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="team-member-card animate-on-scroll delay-3">
-          <div class="member-image">
-            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400" alt="Ana-Maria Stoica" />
-          </div>
-          <div class="member-info">
-            <h3>Ana-Maria Stoica</h3>
-            <p class="member-role">Field Coordinator</p>
-            <div class="member-tags">
-              <span>Wildlife Monitoring</span>
-              <span>Camera Traps</span>
-              <span>Logistics</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="team-member-card animate-on-scroll">
-          <div class="member-image">
-            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400" alt="Cristian Vasilescu" />
-          </div>
-          <div class="member-info">
-            <h3>Cristian Vasilescu</h3>
-            <p class="member-role">GIS Specialist</p>
-            <div class="member-tags">
-              <span>Mapping</span>
-              <span>Spatial Analysis</span>
-              <span>Cartography</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="team-member-card animate-on-scroll delay-1">
-          <div class="member-image">
-            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400" alt="Raluca Popa" />
-          </div>
-          <div class="member-info">
-            <h3>Raluca Popa</h3>
-            <p class="member-role">Content Manager</p>
-            <div class="member-tags">
-              <span>Writing</span>
-              <span>Social Media</span>
-              <span>Communications</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Our Values -->
-  <section class="values-section">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2 class="section-title" data-i18n="team.values.title">Valorile Noastre Fundamentale</h2>
-        <p class="section-subtitle" data-i18n="team.values.subtitle">Principiile care ghidează tot ce facem</p>
-      </div>
-
-      <div class="values-grid">
-        <div class="value-card animate-on-scroll">
-          <div class="value-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"/>
-              <circle cx="12" cy="12" r="6"/>
-              <circle cx="12" cy="12" r="2"/>
-            </svg>
-          </div>
-          <h3 data-i18n="team.value1.title">Ghidați de Misiune</h3>
-          <p data-i18n="team.value1.text">Fiecare decizie pe care o luăm prioritizează conservarea faunei sălbatice și siguranța umană în mod egal. Măsurăm succesul nu în profituri, ci în vieți protejate și ecosisteme conservate.</p>
-        </div>
-
-        <div class="value-card animate-on-scroll delay-1">
-          <div class="value-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-            </svg>
-          </div>
-          <h3 data-i18n="team.value2.title">Compasiune</h3>
-          <p data-i18n="team.value2.text">Credem în coexistență—respectând atât nevoile umane cât și bunăstarea animalelor. Soluțiile noastre caută armonie, nu dominare asupra naturii.</p>
-        </div>
-
-        <div class="value-card animate-on-scroll delay-2">
-          <div class="value-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="8" r="7"/>
-              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
-            </svg>
-          </div>
-          <h3 data-i18n="team.value3.title">Excelență</h3>
-          <p data-i18n="team.value3.text">Rigoare științifică și tehnologie de ultimă oră conduc tot ce facem. Ne ridicăm la cele mai înalte standarde de cercetare și implementare.</p>
-        </div>
-
-        <div class="value-card animate-on-scroll delay-3">
-          <div class="value-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
-          </div>
-          <h3 data-i18n="team.value4.title">Comunitate</h3>
-          <p data-i18n="team.value4.text">Comunitățile locale sunt partenerii noștri în conservare, nu obstacole. Construim soluții cu oamenii, nu pentru ei.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Join Us CTA -->
-  <section class="section" style="background: linear-gradient(135deg, var(--forest-700), var(--forest-500)); color: white;">
-    <div class="container" style="text-align: center;">
-      <div class="animate-on-scroll">
-        <h2 style="color: white; margin-bottom: var(--space-6);" data-i18n="team.cta.title">Alătură-te Misiunii Noastre</h2>
-        <p style="font-size: var(--text-xl); max-width: 42rem; margin: 0 auto var(--space-8); color: rgba(255,255,255,0.95);" data-i18n="team.cta.text">
-          Căutăm mereu indivizi pasionați care doresc să facă diferența în conservarea faunei sălbatice
-          și siguranța comunității. Fie că ești cercetător, dezvoltator, designer sau profesionist în conservare,
-          există un loc pentru tine în echipa noastră.
-        </p>
-        <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
-          <a href="mailto:careers@bearawareness.ro" class="btn btn-primary btn-lg" data-i18n="team.cta.btn1">Vezi Pozițiile Deschise</a>
-          <a href="about.html" class="btn btn-secondary btn-lg" data-i18n="team.cta.btn2">Află Mai Multe Despre Noi</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h3>BearAware Romania</h3>
-          <p style="color: var(--gray-400); margin-bottom: var(--space-4);" data-i18n="footer.tagline">
-            Protejăm fauna sălbatică și comunitățile prin tehnologie AI inovatoare
-          </p>
-        </div>
-
-        <div>
-          <h4 data-i18n="footer.project">Proiect</h4>
-          <ul class="footer-links">
-            <li><a href="about.html" data-i18n="nav.about">Despre</a></li>
-            <li><a href="team.html" data-i18n="nav.team">Echipa</a></li>
-            <li><a href="app.html" data-i18n="nav.app">Aplicația</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 data-i18n="footer.resources">Resurse</h4>
-          <ul class="footer-links">
-            <li><a href="docs.html" data-i18n="nav.docs">Documentație</a></li>
-            <li><a href="studies.html" data-i18n="nav.studies">Studii</a></li>
-            <li><a href="https://github.com/mareluca675/bear-detection-system" target="_blank">GitHub</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 data-i18n="footer.contact">Contact</h4>
-          <ul class="footer-links">
-            <li><a href="mailto:contact@bearaware.com">contact@bearaware.com</a></li>
-            <li><a href="contact.html" data-i18n="footer.contact.form">Formular Contact</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 data-i18n="footer.legal">Legal</h4>
-          <ul class="footer-links">
-            <li><a href="privacy.html" data-i18n="footer.privacy">Confidențialitate</a></li>
-            <li><a href="terms.html" data-i18n="footer.terms">Termeni</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2025 BearAware Romania. <span data-i18n="footer.copyright">Conservare inteligentă pentru Carpați.</span></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="assets/script.js"></script>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 Bear Detection System</p>
+    <p><a href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">Project Repository</a></p>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
 </body>
 </html>

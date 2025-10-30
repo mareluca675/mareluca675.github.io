@@ -1,39 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" aria-hidden="true">
   <defs>
-    <linearGradient id="bearGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1ea55a;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#82c91e;stop-opacity:1" />
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#1b4d3e"></stop>
+      <stop offset="1" stop-color="#2e7d6b"></stop>
     </linearGradient>
   </defs>
-
-  <!-- Background circle -->
-  <circle cx="64" cy="64" r="60" fill="url(#bearGradient)"/>
-
-  <!-- Bear head silhouette -->
-  <!-- Left ear -->
-  <circle cx="42" cy="38" r="12" fill="white" opacity="0.95"/>
-  <!-- Right ear -->
-  <circle cx="86" cy="38" r="12" fill="white" opacity="0.95"/>
-
-  <!-- Head -->
-  <circle cx="64" cy="58" r="26" fill="white" opacity="0.95"/>
-
-  <!-- Eyes -->
-  <circle cx="56" cy="54" r="3.5" fill="#1a1a1a"/>
-  <circle cx="72" cy="54" r="3.5" fill="#1a1a1a"/>
-
-  <!-- Snout -->
-  <ellipse cx="64" cy="66" rx="8" ry="6" fill="#2a2a2a" opacity="0.3"/>
-  <circle cx="64" cy="65" r="3" fill="#1a1a1a"/>
-
-  <!-- Tech element - detection radar waves -->
-  <circle cx="64" cy="64" r="50" stroke="white" stroke-width="2" fill="none" opacity="0.3" stroke-dasharray="4 4">
-    <animate attributeName="r" values="50;54;50" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.3;0;0.3" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- AI indicator dot -->
-  <circle cx="90" cy="36" r="6" fill="#ffd43b">
-    <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite"/>
-  </circle>
+  <rect width="128" height="128" rx="20" fill="url(#g)"></rect>
+  <!-- simplified bear silhouette -->
+  <path fill="white" d="M32 74c0-12 10-22 22-22h28c7 0 12 5 12 12 6 0 10 4 10 10s-4 10-10 10H54c-8 0-14 6-14 14H32c0-7 0-17 0-24z"></path>
+  <circle cx="84" cy="46" r="6" fill="white"></circle>
 </svg>

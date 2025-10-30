@@ -1,172 +1,68 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studii de Cercetare - BearAware Romania</title>
-  <meta name="description" content="Published research and studies from the BearAware Romania project." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Studies · Bear Detection System</title>
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
-  <style>
-    .study-card {
-      background: white;
-      border: 1px solid var(--border);
-      padding: 2rem;
-      border-radius: 16px;
-      box-shadow: var(--shadow);
-      margin-bottom: 2rem;
-      transition: var(--transition);
-    }
-    .study-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-lg);
-    }
-    .study-meta {
-      color: var(--text-muted);
-      margin: 0.5rem 0 1rem;
-      font-size: 0.95rem;
-    }
-    .tag {
-      display: inline-block;
-      font-size: 0.8rem;
-      padding: 0.25rem 0.75rem;
-      border: 1px solid var(--border);
-      border-radius: 50px;
-      margin-right: 0.5rem;
-      color: var(--text-muted);
-      background: var(--background-alt);
-    }
-    .study-actions {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-top: 1.5rem;
-    }
-    .study-actions a {
-      text-decoration: none;
-      color: var(--text);
-      border: 1px solid var(--border);
-      padding: 0.5rem 1rem;
-      border-radius: 10px;
-      transition: var(--transition);
-      font-size: 0.9rem;
-    }
-    .study-actions a:hover {
-      background: var(--primary);
-      color: white;
-      border-color: var(--primary);
-    }
-    .grid.two {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: 2rem;
-    }
-    @media (max-width: 768px) {
-      .grid.two {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="alternate icon" href="assets/logo.svg" />
+  <link rel="mask-icon" href="assets/logo.svg" color="#1b4d3e" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="nav" id="nav">
-    <div class="nav-container">
-      <a href="index.html" class="nav-brand">
-        <img src="assets/logo.svg" alt="BearAware" class="nav-logo">
-        <span>BearAware</span>
-      </a>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html" class="nav-link" data-i18n="nav.home">Acasă</a></li>
-        <li><a href="about.html" class="nav-link" data-i18n="nav.about">Despre</a></li>
-        <li><a href="team.html" class="nav-link" data-i18n="nav.team">Echipa</a></li>
-        <li><a href="app.html" class="nav-link" data-i18n="nav.app">Aplicația</a></li>
-        <li><a href="docs.html" class="nav-link" data-i18n="nav.docs">Documentație</a></li>
-        <li><a href="studies.html" class="nav-link active" data-i18n="nav.studies">Studii</a></li>
-        <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
-        <li><a href="https://github.com/mareluca675/bear-detection-system" class="nav-link nav-cta" target="_blank">GitHub</a></li>
-        <li><button class="lang-toggle" id="langToggle"><span id="langText">RO</span></button></li>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img id="brandLogoSvg" src="assets/logo.svg" alt="Bear Detection System logo" onerror="this.src='assets/logo-placeholder.svg';" />
+      <span class="brand-text">Bear Detection System</span>
+    </a>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">☰</button>
+      <ul id="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="installation.html">Install</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="studies.html" class="active">Studies</a></li>
+        <li><a href="troubleshooting.html">Troubleshooting</a></li>
+        <li><a class="cta" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
+</header>
+<main class="container">
 
-  <!-- Page Header -->
-  <section class="page-header">
-    <div class="container">
-      <h1 class="page-title fade-in-up" data-i18n="studies.title">Studii de Cercetare</h1>
-      <p class="page-subtitle fade-in-up delay-1" data-i18n="studies.subtitle">Cercetări publicate și contribuții academice din proiectul BearAware Romania</p>
-    </div>
-  </section>
+<section class="card">
+  <h1>Studies</h1>
+  <p class="lead">Attach PDFs, DOCX files, and other references. To add items, commit your files into the <code>/studies</code> folder of this site and list them in <code>/studies/studies.json</code>.</p>
+  <ol>
+    <li>Drop your documents into <code>/studies/</code> (e.g., <code>studies/bear-paper.pdf</code>).</li>
+    <li>Edit <code>studies/studies.json</code> and add a new entry with the filename and metadata.</li>
+    <li>Commit and push — this page will auto-render the list.</li>
+  </ol>
+</section>
 
-  <!-- Studies Content -->
-  <section style="padding: 6rem 0; background: white;">
-    <div class="container">
-      <div id="studies-root"></div>
-    </div>
-  </section>
+<section id="studies-root" class="grid two"></section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h3>BearAware Romania</h3>
-          <p style="color: var(--gray-400); margin-bottom: var(--space-4);" data-i18n="footer.tagline">
-            Protejăm fauna sălbatică și comunitățile prin tehnologie AI inovatoare
-          </p>
-        </div>
+<section class="card">
+  <h2>Example JSON entry</h2>
+  <pre><code>{
+  "title": "Bear Activity and Habitat 2025",
+  "filename": "bear-activity-2025.pdf",
+  "authors": "A. Researcher, B. Scientist",
+  "year": 2025,
+  "tags": ["behavior","habitat"]
+}</code></pre>
+  <p class="muted">Note: PDFs can be previewed inline below each card. DOCX and other formats will show a download link (browser preview support varies).</p>
+</section>
 
-        <div>
-          <h4 data-i18n="footer.project">Proiect</h4>
-          <ul class="footer-links">
-            <li><a href="about.html" data-i18n="nav.about">Despre</a></li>
-            <li><a href="team.html" data-i18n="nav.team">Echipa</a></li>
-            <li><a href="app.html" data-i18n="nav.app">Aplicația</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 data-i18n="footer.resources">Resurse</h4>
-          <ul class="footer-links">
-            <li><a href="docs.html" data-i18n="nav.docs">Documentație</a></li>
-            <li><a href="studies.html" data-i18n="nav.studies">Studii</a></li>
-            <li><a href="https://github.com/mareluca675/bear-detection-system" target="_blank">GitHub</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 data-i18n="footer.contact">Contact</h4>
-          <ul class="footer-links">
-            <li><a href="mailto:contact@bearaware.com">contact@bearaware.com</a></li>
-            <li><a href="contact.html" data-i18n="footer.contact.form">Formular Contact</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 data-i18n="footer.legal">Legal</h4>
-          <ul class="footer-links">
-            <li><a href="privacy.html" data-i18n="footer.privacy">Confidențialitate</a></li>
-            <li><a href="terms.html" data-i18n="footer.terms">Termeni</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2025 BearAware Romania. <span data-i18n="footer.copyright">Conservare inteligentă pentru Carpați.</span></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="assets/script.js"></script>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 Bear Detection System</p>
+    <p><a href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">Project Repository</a></p>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
 </body>
 </html>
