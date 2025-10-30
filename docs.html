@@ -44,8 +44,8 @@
   <!-- Page Header -->
   <section class="page-header">
     <div class="container">
-      <h1 class="page-title fade-in-up">Documentation</h1>
-      <p class="page-subtitle fade-in-up delay-1">Complete technical documentation for developers and users</p>
+      <h1 class="page-title fade-in-up" data-i18n="docs.title">Documentație</h1>
+      <p class="page-subtitle fade-in-up delay-1" data-i18n="docs.subtitle">Documentație tehnică completă pentru dezvoltatori și utilizatori</p>
     </div>
   </section>
 
@@ -53,11 +53,11 @@
   <section class="docs-nav-section">
     <div class="container">
       <div class="docs-nav animate-on-scroll">
-        <a href="#overview" class="docs-nav-item">Overview</a>
-        <a href="#ai-system" class="docs-nav-item">AI Detection System</a>
-        <a href="#mobile-app" class="docs-nav-item">Mobile App</a>
-        <a href="#api" class="docs-nav-item">API Reference</a>
-        <a href="#deployment" class="docs-nav-item">Deployment</a>
+        <a href="#overview" class="docs-nav-item" data-i18n="docs.nav.overview">Prezentare Generală</a>
+        <a href="#ai-system" class="docs-nav-item" data-i18n="docs.nav.ai">Sistem Detectare AI</a>
+        <a href="#mobile-app" class="docs-nav-item" data-i18n="docs.nav.app">Aplicație Mobilă</a>
+        <a href="#api" class="docs-nav-item" data-i18n="docs.nav.api">Referință API</a>
+        <a href="#deployment" class="docs-nav-item" data-i18n="docs.nav.deployment">Implementare</a>
       </div>
     </div>
   </section>
@@ -66,14 +66,14 @@
   <section id="overview" class="docs-section">
     <div class="container">
       <div class="docs-content animate-on-scroll">
-        <h2>System Overview</h2>
-        <p class="lead-text">
-          BearAware Romania consists of two main components working together: an AI-powered detection
-          system for real-time bear identification and a mobile application for user alerts and education.
+        <h2 data-i18n="docs.overview.title">Prezentare Generală Sistem</h2>
+        <p class="lead-text" data-i18n="docs.overview.text">
+          BearAware Romania constă din două componente principale care lucrează împreună: un sistem de detectare
+          alimentat de AI pentru identificarea urșilor în timp real și o aplicație mobilă pentru alerte și educație utilizatori.
         </p>
 
         <div class="architecture-diagram">
-          <h3>System Architecture</h3>
+          <h3 data-i18n="docs.overview.arch">Arhitectura Sistemului</h3>
           <div class="architecture-flow">
             <div class="arch-node">
               <div class="arch-icon">
@@ -82,7 +82,7 @@
                   <circle cx="12" cy="13" r="4"/>
                 </svg>
               </div>
-              <h4>Camera/Video Input</h4>
+              <h4 data-i18n="docs.arch.node1">Cameră/Video Input</h4>
             </div>
             <div class="arch-arrow">→</div>
             <div class="arch-node">
@@ -93,7 +93,7 @@
                   <path d="M12 7v4"/>
                 </svg>
               </div>
-              <h4>YOLOv8 Detection</h4>
+              <h4 data-i18n="docs.arch.node2">Detectare YOLOv8</h4>
             </div>
             <div class="arch-arrow">→</div>
             <div class="arch-node">
@@ -104,7 +104,7 @@
                   <line x1="12" y1="17" x2="12.01" y2="17"/>
                 </svg>
               </div>
-              <h4>Firebase Alerts</h4>
+              <h4 data-i18n="docs.arch.node3">Alerte Firebase</h4>
             </div>
             <div class="arch-arrow">→</div>
             <div class="arch-node">
@@ -114,16 +114,16 @@
                   <line x1="12" y1="18" x2="12.01" y2="18"/>
                 </svg>
               </div>
-              <h4>Mobile App</h4>
+              <h4 data-i18n="docs.arch.node4">Aplicație Mobilă</h4>
             </div>
           </div>
         </div>
 
         <div class="tech-stack-section">
-          <h3>Technology Stack</h3>
+          <h3 data-i18n="docs.techstack.title">Stack Tehnologic</h3>
           <div class="tech-categories">
             <div class="tech-category">
-              <h4>AI Detection System</h4>
+              <h4 data-i18n="docs.techstack.ai">Sistem Detectare AI</h4>
               <ul>
                 <li>Python 3.8+</li>
                 <li>YOLOv8 (Ultralytics)</li>
@@ -133,7 +133,7 @@
               </ul>
             </div>
             <div class="tech-category">
-              <h4>Mobile Application</h4>
+              <h4 data-i18n="docs.techstack.mobile">Aplicație Mobilă</h4>
               <ul>
                 <li>React</li>
                 <li>JavaScript</li>
@@ -143,7 +143,7 @@
               </ul>
             </div>
             <div class="tech-category">
-              <h4>Infrastructure</h4>
+              <h4 data-i18n="docs.techstack.infra">Infrastructură</h4>
               <ul>
                 <li>Firebase Realtime Database</li>
                 <li>Firebase Cloud Messaging</li>
@@ -161,14 +161,14 @@
   <section id="ai-system" class="docs-section alt-bg">
     <div class="container">
       <div class="docs-content animate-on-scroll">
-        <h2>AI Detection System</h2>
-        <p>
-          The core detection system uses YOLOv8 for real-time bear identification in video streams.
-          Designed for edge deployment in remote locations with minimal infrastructure.
+        <h2 data-i18n="docs.ai.title">Sistem Detectare AI</h2>
+        <p data-i18n="docs.ai.intro">
+          Sistemul de detectare de bază folosește YOLOv8 pentru identificarea urșilor în timp real în fluxuri video.
+          Proiectat pentru implementare edge în locații îndepărtate cu infrastructură minimă.
         </p>
 
         <div class="docs-subsection">
-          <h3>Installation</h3>
+          <h3 data-i18n="docs.ai.install">Instalare</h3>
           <div class="code-block">
             <pre><code># Clone the repository
 git clone https://github.com/mareluca675/bear-detection-system.git
@@ -183,7 +183,7 @@ python setup_script.py</code></pre>
         </div>
 
         <div class="docs-subsection">
-          <h3>Basic Usage</h3>
+          <h3 data-i18n="docs.ai.usage">Utilizare de Bază</h3>
           <div class="code-block">
             <pre><code># Run with webcam
 python bear_detection.py
@@ -200,13 +200,13 @@ python bear_detection.py --no-display</code></pre>
         </div>
 
         <div class="docs-subsection">
-          <h3>Command Line Options</h3>
+          <h3 data-i18n="docs.ai.options">Opțiuni Linie de Comandă</h3>
           <table class="docs-table">
             <thead>
               <tr>
-                <th>Option</th>
-                <th>Description</th>
-                <th>Default</th>
+                <th data-i18n="docs.ai.table.option">Opțiune</th>
+                <th data-i18n="docs.ai.table.desc">Descriere</th>
+                <th data-i18n="docs.ai.table.default">Implicit</th>
               </tr>
             </thead>
             <tbody>
@@ -260,17 +260,17 @@ python bear_detection.py --no-display</code></pre>
         </div>
 
         <div class="docs-subsection">
-          <h3>Threat Level Classification</h3>
-          <p>Detections are automatically classified into three threat levels:</p>
+          <h3 data-i18n="docs.ai.threat">Clasificare Nivel de Amenințare</h3>
+          <p data-i18n="docs.ai.threat.text">Detectările sunt clasificate automat în trei nivele de amenințare:</p>
           <ul class="threat-levels">
-            <li class="threat-high"><strong>HIGH</strong> - Confidence ≥ 90% (Red alert)</li>
-            <li class="threat-medium"><strong>MEDIUM</strong> - Confidence ≥ 70% (Orange alert)</li>
-            <li class="threat-low"><strong>LOW</strong> - Confidence ≥ 50% (Green alert)</li>
+            <li class="threat-high" data-i18n="docs.ai.threat.high"><strong>RIDICAT</strong> - Încredere ≥ 90% (Alertă roșie)</li>
+            <li class="threat-medium" data-i18n="docs.ai.threat.medium"><strong>MEDIU</strong> - Încredere ≥ 70% (Alertă portocalie)</li>
+            <li class="threat-low" data-i18n="docs.ai.threat.low"><strong>SCĂZUT</strong> - Încredere ≥ 50% (Alertă verde)</li>
           </ul>
         </div>
 
         <div class="docs-subsection">
-          <h3>Alert Payload Structure</h3>
+          <h3 data-i18n="docs.ai.payload">Structura Alertei</h3>
           <div class="code-block">
             <pre><code>{
   "latitude": 45.5231,
@@ -287,14 +287,14 @@ python bear_detection.py --no-display</code></pre>
         </div>
 
         <div class="docs-subsection">
-          <h3>Performance Optimization</h3>
+          <h3 data-i18n="docs.ai.perf">Optimizare Performanță</h3>
           <table class="docs-table">
             <thead>
               <tr>
-                <th>Model</th>
-                <th>FPS (GPU)</th>
-                <th>FPS (CPU)</th>
-                <th>Accuracy</th>
+                <th data-i18n="docs.ai.perf.model">Model</th>
+                <th data-i18n="docs.ai.perf.gpu">FPS (GPU)</th>
+                <th data-i18n="docs.ai.perf.cpu">FPS (CPU)</th>
+                <th data-i18n="docs.ai.perf.accuracy">Acuratețe</th>
               </tr>
             </thead>
             <tbody>
