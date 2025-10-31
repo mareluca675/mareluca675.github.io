@@ -23,7 +23,7 @@
         <li><a href="privacy.html" class="active" data-i18n="nav.privacy">Privacy</a></li>
         <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
         <li>
-          <select id="langSelect" aria-label="Language selector">
+          <select id="langSelect" class="lang-select" aria-label="Language selector">
             <option value="en">EN</option>
             <option value="ro">RO</option>
           </select>
@@ -35,22 +35,23 @@
 <main class="container">
   <section class="card">
     <h1 data-i18n="privacy.title">Privacy Policy</h1>
-    <p>We respect your privacy. This website is a static site hosted on GitHub Pages and does not collect personal data by default. Any analytics or third-party embeds will be disclosed here if added in the future.</p>
-    <h2>Data We Do Not Collect</h2>
+    <p data-i18n="privacy.intro">We respect your privacy. This website is a static site hosted on GitHub Pages and does not collect personal data by default. Any analytics or third-party embeds will be disclosed here if added in the future.</p>
+    <h2 data-i18n="privacy.noCollectTitle">Data We Do Not Collect</h2>
     <ul>
-      <li>No account creation on this site</li>
-      <li>No cookies used for tracking</li>
-      <li>No form submissions stored on our servers</li>
+      <li data-i18n="privacy.no1">No account creation</li>
+      <li data-i18n="privacy.no2">No tracking cookies</li>
+      <li data-i18n="privacy.no3">No form submissions stored on our servers</li>
     </ul>
-    <h2>Third-party Services</h2>
-    <p>Links to GitHub may be present. GitHub may process data per their own policies.</p>
-    <h2>Contact</h2>
-    <p>For privacy questions, open an issue on our GitHub repository.</p>
+    <h2 data-i18n="privacy.thirdTitle">Third-party Services</h2>
+    <p data-i18n="privacy.thirdLead">Links to GitHub may be present. GitHub may process data per their own policies.</p>
+    <h2 data-i18n="privacy.contactTitle">Contact</h2>
+    <p data-i18n="privacy.contactLead">For privacy questions, open an issue on our GitHub repository.</p>
   </section>
 </main>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-bottom">
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
       <p data-i18n="footer.copyright">© 2025 BearAware · Making wildlife conservation smarter</p>
     </div>
   </div>

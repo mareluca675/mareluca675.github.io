@@ -28,7 +28,7 @@
         <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
         <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
         <li>
-          <select id="langSelect" aria-label="Language selector">
+          <select id="langSelect" class="lang-select" aria-label="Language selector">
             <option value="en">EN</option>
             <option value="ro">RO</option>
           </select>
@@ -41,8 +41,8 @@
 <main class="container">
 
 <section class="card">
-  <h1>Studies</h1>
-  <p class="lead">Attach PDFs, DOCX files, and other references. To add items, commit your files into the <code>/studies</code> folder of this site and list them in <code>/studies/studies.json</code>.</p>
+  <h1 data-i18n="studies.title">Studies</h1>
+  <p class="lead" data-i18n="studies.lead">Attach PDFs, DOCX files, and other references. To add items, commit your files into the <code>/studies</code> folder of this site and list them in <code>/studies/studies.json</code>.</p>
   <ol>
     <li>Drop your documents into <code>/studies/</code> (e.g., <code>studies/bear-paper.pdf</code>).</li>
     <li>Edit <code>studies/studies.json</code> and add a new entry with the filename and metadata.</li>
@@ -53,7 +53,7 @@
 <section id="studies-root" class="grid two"></section>
 
 <section class="card">
-  <h2>Example JSON entry</h2>
+  <h2 data-i18n="studies.example">Example JSON entry</h2>
   <pre><code>{
   "title": "Bear Activity and Habitat 2025",
   "filename": "bear-activity-2025.pdf",
@@ -68,6 +68,7 @@
 <footer class="site-footer">
   <div class="container">
     <div class="footer-bottom">
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
       <p data-i18n="footer.copyright">© 2025 BearAware · Making wildlife conservation smarter</p>
     </div>
   </div>

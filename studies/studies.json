@@ -1,0 +1,20 @@
+{
+  "studies": [
+    {
+      "title": "BearAware Project Brief",
+      "filename": "BearAware.docx",
+      "authors": "BearAware Team",
+      "year": 2025,
+      "tags": ["project", "overview", "requirements"]
+    },
+    {
+      "title": "BearAware Text Overview",
+      "filename": "BearAware.txt",
+      "authors": "BearAware Team",
+      "year": 2025,
+      "tags": ["overview", "research", "design"]
+    }
+  ]
+}
+
+

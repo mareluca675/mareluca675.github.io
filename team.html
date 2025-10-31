@@ -28,7 +28,7 @@
         <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
         <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
         <li>
-          <select id="langSelect" aria-label="Language selector">
+          <select id="langSelect" class="lang-select" aria-label="Language selector">
             <option value="en">EN</option>
             <option value="ro">RO</option>
           </select>
@@ -41,19 +41,18 @@
 <main class="container">
 
 <section class="card">
-  <h1>Our Team</h1>
-  <p class="lead">This page mirrors the old project’s Team tab. Replace the placeholders below with the exact names/roles/photos from your existing team page.</p>
+  <h1 data-i18n="team.title">Our Team</h1>
+  <p class="lead"></p>
 </section>
 
 <section class="grid one">
   <article class="card person">
     <div class="avatar"></div>
     <h3>Domut Bianca</h3>
-    <p class="muted">Team Coordinator</p>
+    <p class="muted" data-i18n="team.biancaRole">Coordonator proiect · Chimie</p>
     <ul class="bullets">
-      <li>Coordination</li>
-      <li>Documentation & FAQ</li>
-      <li>Chemistry</li>
+        <li>Coordonare transdisciplinară</li>
+        <li>Ghidare științifică</li>
     </ul>
   </article>
 </section>
@@ -62,22 +61,20 @@
   <article class="card person">
     <div class="avatar"></div>
     <h3>Mare Luca</h3>
-    <p class="muted">Software & Engineering</p>
+    <p class="muted" data-i18n="team.lucaRole">Dezvoltator tehnic · AI & Hardware · App</p>
     <ul class="bullets">
-      <li>Worked on mobile system</li>
-      <li>Implemented detection filtering</li>
-      <li>Helped with testing</li>
+        <li>Model AI YOLOv8 și integrare stații</li>
+        <li>Hartă în timp real și integrare aplicație</li>
     </ul>
   </article>
 
   <article class="card person">
     <div class="avatar"></div>
     <h3>Mocan Alexandru</h3>
-    <p class="muted">Software & Engineering</p>
+    <p class="muted" data-i18n="team.alexRole">Dezvoltator tehnic · AI & Hardware</p>
     <ul class="bullets">
-      <li>Worked on static system</li>
-      <li>Implemented detection filtering</li>
-      <li>Helped with testing</li>
+        <li>Prototip stație fixă și detecție</li>
+        <li>Optimizare parametri și testare</li>
     </ul>
   </article>
 </section>
@@ -108,6 +105,7 @@
 <footer class="site-footer">
   <div class="container">
     <div class="footer-bottom">
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
       <p data-i18n="footer.copyright">© 2025 BearAware · Making wildlife conservation smarter</p>
     </div>
   </div>

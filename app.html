@@ -28,7 +28,7 @@
         <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
         <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
         <li>
-          <select id="langSelect" aria-label="Language selector">
+          <select id="langSelect" class="lang-select" aria-label="Language selector">
             <option value="en">EN</option>
             <option value="ro">RO</option>
           </select>
@@ -42,7 +42,7 @@
 <main class="container">
   <section class="card hero">
     <h1 data-i18n="app.title">Mobile App · Coming Soon</h1>
-    <p class="lead" data-i18n="app.lead">Our smartphone app brings real-time detection and alerts to your pocket.</p>
+    <p class="lead" data-i18n="app.lead">Centrul rețelei: hartă live cu detecții, notificări și chatbot educațional pentru drumeți, localnici și autorități.</p>
     <div class="hero-actions">
       <a class="button" href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener" data-i18n="home.mobileApp">Mobile App</a>
       <a class="button ghost" href="#notify" data-i18n="app.notify">Notify me at launch</a>
@@ -50,8 +50,13 @@
   </section>
 
   <section id="notify" class="card">
-    <h2>Beta Access</h2>
-    <p class="muted">Subscribe via GitHub Discussions or watch the repository to be notified on releases.</p>
+    <h2 data-i18n="app.featuresTitle">Funcționalități</h2>
+    <ul class="checklist">
+      <li data-i18n="app.f1">Hartă interactivă cu zone roșii la detecții</li>
+      <li data-i18n="app.f2">Notificări în timp real</li>
+      <li data-i18n="app.f3">Chatbot educațional cu sfaturi de siguranță</li>
+    </ul>
+    <p class="muted" data-i18n="app.notify">Urmărește noutățile și lansarea beta:</p>
     <ul>
       <li><a href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener">Repository</a></li>
       <li><a href="https://github.com/mareluca675/bear-detection-app/releases" target="_blank" rel="noopener">Releases</a></li>
@@ -62,6 +67,7 @@
 <footer class="site-footer">
   <div class="container">
     <div class="footer-bottom">
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
       <p data-i18n="footer.copyright">© 2025 BearAware · Making wildlife conservation smarter</p>
     </div>
   </div>

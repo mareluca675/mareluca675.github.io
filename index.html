@@ -26,7 +26,7 @@
         <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
         <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
         <li>
-          <select id="langSelect" aria-label="Language selector">
+          <select id="langSelect" class="lang-select" aria-label="Language selector">
             <option value="en">EN</option>
             <option value="ro">RO</option>
           </select>
@@ -46,8 +46,8 @@
       </div>
     </div>
     <div class="hero-text">
-      <h1 data-i18n="home.heroTitle">Real‑time Bear Detection</h1>
-      <p class="lead" data-i18n="home.heroLead">A complete ecosystem featuring AI-powered detection systems and mobile applications to protect both humans and bears through early warning technology.</p>
+      <h1 data-i18n="home.heroTitle">Rețea inteligentă pentru coexistență om–urs</h1>
+      <p class="lead" data-i18n="home.heroLead">Integrează sisteme fixe (ultrasunete + infrasunete + AI), drone cu cameră termică și aplicația mobilă BearAware (hartă + chatbot) pentru a detecta, descuraja și educa — fără a răni animalele.</p>
       <div class="hero-actions">
         <a class="button" href="docs.html" data-i18n="home.getStarted">Get Started</a>
         <a class="button ghost" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener" data-i18n="home.aiSystem">AI System</a>
@@ -59,47 +59,47 @@
 
 <section class="grid two">
   <article class="card">
-    <h2>Why BearAware</h2>
+    <h2 data-i18n="home.whyTitle">De ce BearAware</h2>
     <ul class="feature-list">
-      <li>On-device AI: instant detections without cloud latency</li>
-      <li>Dual-platform: static stations and a mobile app</li>
-      <li>Actionable alerts: confidence + location + guidance</li>
-      <li>Open, extensible, community-driven</li>
+      <li data-i18n="home.why1">Detecție AI în timp real pe stații fixe și dronă</li>
+      <li data-i18n="home.why2">Descurajare non-letală: alternanță ultrasunete/infrasunete și ceață mentolată</li>
+      <li data-i18n="home.why3">Alerte publice: RoAlert + aplicație cu hartă și notificări</li>
+      <li data-i18n="home.why4">Dimensiune educativă: chatbot cu bune practici</li>
     </ul>
   </article>
   <article class="card">
-    <h2>Competition Highlights</h2>
+    <h2 data-i18n="home.noveltyTitle">Noutatea proiectului</h2>
     <div class="badges">
-      <span class="badge">Real-time AI</span>
-      <span class="badge">Conservation Impact</span>
-      <span class="badge">Deploy Anywhere</span>
-      <span class="badge">Open Source</span>
+      <span class="badge" data-i18n="home.noveltyBadge1">Rețea fix + mobil</span>
+      <span class="badge" data-i18n="home.noveltyBadge2">AI pentru reducerea alarmelor false</span>
+      <span class="badge" data-i18n="home.noveltyBadge3">Repelent natural, non-letal</span>
+      <span class="badge" data-i18n="home.noveltyBadge4">Educație și coexistență</span>
     </div>
   </article>
   </section>
 
 <section class="timeline card">
-  <h2>Roadmap</h2>
+  <h2 data-i18n="home.roadmapTitle">Etape și Roadmap</h2>
   <ol class="timeline-list">
     <li>
       <div class="tl-dot"></div>
       <div class="tl-content">
-        <h3>Prototype</h3>
-        <p>YOLOv8 bear detection tuned for field conditions.</p>
+        <h3 data-i18n="home.roadmap1Title">Prototip</h3>
+        <p data-i18n="home.roadmap1Desc">Model AI funcțional (YOLOv8); prototip sistem fix cu cameră și difuzor.</p>
       </div>
     </li>
     <li>
       <div class="tl-dot"></div>
       <div class="tl-content">
-        <h3>Beta App</h3>
-        <p>Mobile app with offline mode and alerting.</p>
+        <h3 data-i18n="home.roadmap2Title">Beta App</h3>
+        <p data-i18n="home.roadmap2Desc">Hartă în timp real și chatbot educațional; sincronizare detecții.</p>
       </div>
     </li>
     <li>
       <div class="tl-dot"></div>
       <div class="tl-content">
-        <h3>Field Trials</h3>
-        <p>Pilot in parks with rangers and volunteers.</p>
+        <h3 data-i18n="home.roadmap3Title">Testare pe teren</h3>
+        <p data-i18n="home.roadmap3Desc">Teste supravegheate cu sanctuare și Salvamont; optimizare parametri.</p>
       </div>
     </li>
   </ol>
@@ -118,12 +118,12 @@
 
 <section class="cta-banner card">
   <div class="cta-text">
-    <h2>See it in action soon</h2>
-    <p class="muted">Join the beta and get notified at launch.</p>
+    <h2 data-i18n="home.ctaTitle">See it in action soon</h2>
+    <p class="muted" data-i18n="home.ctaLead">Join the beta and get notified at launch.</p>
   </div>
   <div class="cta-actions">
-    <a class="button" href="app.html">App – Coming Soon</a>
-    <a class="button ghost" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">Star the repo</a>
+    <a class="button" href="app.html" data-i18n="home.ctaPrimary">App – Coming Soon</a>
+    <a class="button ghost" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener" data-i18n="home.ctaSecondary">Star the repo</a>
   </div>
   </section>
 
@@ -239,29 +239,9 @@ python bear_detection.py --source video.mp4   # video file</code></pre>
 </main>
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3 data-i18n="footer.ecosystem">Bear Detection Ecosystem</h3>
-        <p data-i18n="footer.tagline">Protecting wildlife and communities through innovative AI technology</p>
-      </div>
-      <div class="footer-section">
-        <h4 data-i18n="footer.projects">Projects</h4>
-        <ul class="footer-links">
-          <li><a href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">AI Detection System</a></li>
-          <li><a href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener">Mobile Application</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4 data-i18n="footer.resources">Resources</h4>
-        <ul class="footer-links">
-          <li><a href="installation.html">Installation Guide</a></li>
-          <li><a href="docs.html">Documentation</a></li>
-          <li><a href="studies.html">Research Studies</a></li>
-        </ul>
-      </div>
-    </div>
     <div class="footer-bottom">
-      <p data-i18n="footer.copyright">© 2025 Bear Detection System · Making wildlife conservation smarter</p>
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+      <p data-i18n="footer.copyright">© 2025 BearAware · Making wildlife conservation smarter</p>
     </div>
   </div>
 </footer>

@@ -11,14 +11,34 @@
     "terms": "Termeni"
   },
   "home": {
-    "heroTitle": "Detecție în timp real a urșilor",
-    "heroLead": "Detecție bazată pe AI pentru a proteja oamenii și urșii prin alerte timpurii.",
+    "heroTitle": "Rețea inteligentă pentru coexistență om–urs",
+    "heroLead": "Integrează stații fixe (ultrasunete + infrasunete + AI), dronă cu cameră termică și aplicația BearAware (hartă + chatbot) pentru a detecta, descuraja și educa — fără a răni animalele.",
     "getStarted": "Începe",
     "aiSystem": "Sistem AI",
-    "mobileApp": "Aplicație Mobilă"
+    "mobileApp": "Aplicație Mobilă",
+    "whyTitle": "De ce BearAware",
+    "why1": "Detecție AI în timp real pe stații fixe și dronă",
+    "why2": "Descurajare non-letală: alternanță ultrasunete/infrasunete și ceață mentolată",
+    "why3": "Alerte publice: RoAlert + aplicație cu hartă și notificări",
+    "why4": "Dimensiune educativă: chatbot cu bune practici",
+    "noveltyTitle": "Noutatea proiectului",
+    "noveltyBadge1": "Rețea fix + mobil",
+    "noveltyBadge2": "AI pentru reducerea alarmelor false",
+    "noveltyBadge3": "Repelent natural, non-letal",
+    "noveltyBadge4": "Educație și coexistență",
+    "roadmapTitle": "Etape și Roadmap",
+    "roadmap1Title": "Prototip",
+    "roadmap1Desc": "Model AI funcțional (YOLOv8); prototip stație fixă cu cameră și difuzor.",
+    "roadmap2Title": "Beta App",
+    "roadmap2Desc": "Hartă în timp real și chatbot educațional; sincronizare detecții.",
+    "roadmap3Title": "Testare pe teren",
+    "roadmap3Desc": "Teste supravegheate cu sanctuare și Salvamont; optimizare parametri.",
+    "ctaTitle": "Vezi în curând",
+    "ctaLead": "Înscrie-te pentru notificări la lansare.",
+    "ctaPrimary": "Aplicație – În curând",
+    "ctaSecondary": "Star la repo"
   },
   "footer": {
-    "ecosystem": "Ecosistemul BearAware",
     "tagline": "Protejăm fauna și comunitățile prin tehnologie AI inovatoare",
     "projects": "Proiecte",
     "resources": "Resurse",
@@ -26,18 +46,87 @@
   },
   "app": {
     "title": "Aplicație Mobilă · În curând",
-    "lead": "Aplicația noastră aduce detecția și alertele în timp real pe telefon.",
+    "lead": "Centrul rețelei: hartă live cu detecții, notificări și chatbot educațional pentru drumeți, localnici și autorități.",
+    "featuresTitle": "Funcționalități",
+    "f1": "Hartă interactivă cu zone roșii la detecții",
+    "f2": "Notificări în timp real",
+    "f3": "Chatbot educațional cu sfaturi de siguranță",
     "notify": "Anunță-mă la lansare"
   },
   "problems": {
     "title": "Problema",
-    "lead": "Conflictele om–urs, detecția târzie și lipsa alertelor cresc riscurile pentru toți."
+    "lead": "Urșii ajung tot mai des în așezări, atrași de deșeuri și hrăniți de oameni; conflictele cresc, iar intervențiile sunt reactive, nu preventive.",
+    "causesTitle": "Cauze",
+    "c1": "Defrișări și pierderea habitatului",
+    "c2": "Dependență de deșeuri și hrănire de către turiști",
+    "c3": "Braconaj și turism cinegetic",
+    "c4": "Lipsa sanctuarelor și relocărilor",
+    "impactTitle": "Impact",
+    "i1": "Risc crescut de întâlniri periculoase",
+    "i2": "Pagube în gospodării și agricultură",
+    "i3": "Scăderea respectului pentru viața sălbatică",
+    "researchTitle": "Întrebări de cercetare",
+    "r1": "Cum protejăm oamenii fără a răni urșii?",
+    "r2": "Cum redăm urșilor demnitatea și obiceiurile naturale?",
+    "r3": "Cum facem potecile montane din nou sigure?",
+    "seeStudies": "Vezi pagina Studii pentru documentele și referințele noastre."
   },
   "solution": {
     "title": "Soluția Noastră",
-    "lead": "Detecție bazată pe YOLO pe stații fixe și mobile, cu alerte în timp real."
+    "lead": "Trei componente: stații fixe (ultrasunete + infrasunete + AI), dronă cu cameră termică și aplicația BearAware (hartă + chatbot).",
+    "fixedTitle": "Sistem Fix",
+    "fixed1": "Detecție AI (YOLOv8) pe flux video",
+    "fixed2": "Alternanță ultrasunete/infrasunete, intermitent",
+    "fixed3": "Alerte către aplicație și RoAlert, marcaj pe hartă",
+    "droneTitle": "Sistem Mobil (Dronă)",
+    "drone1": "Camere RGB + termoviziune; detecție aeriană",
+    "drone2": "Pulverizare ceață fină cu mentol (repelent natural)",
+    "drone3": "Scanare trasee și confirmare vizuală",
+    "appTitle": "Aplicația BearAware",
+    "app1": "Hartă interactivă cu zone roșii",
+    "app2": "Chatbot educațional cu bune practici",
+    "app3": "Notificări și transparență pentru comunități",
+    "benefitsTitle": "Beneficii",
+    "b1": "Prevenție non-letală și coexistență sigură",
+    "b2": "Reducerea alarmelor false prin AI",
+    "b3": "Platformă de educație și alertare",
+    "resourcesTitle": "Resurse și studii",
+    "resourcesLead": "Vezi Studii pentru bibliografie, modelare acustică și recomandări de prototip."
   },
-  "privacy": {"title": "Politica de Confidențialitate"},
-  "terms": {"title": "Termeni și Condiții"}
+  "privacy": {
+    "title": "Politica de Confidențialitate",
+    "intro": "Respectăm confidențialitatea ta. Acest site static pe GitHub Pages nu colectează date personale în mod implicit.",
+    "noCollectTitle": "Date pe care NU le colectăm",
+    "no1": "Fără conturi create",
+    "no2": "Fără cookie-uri de tracking",
+    "no3": "Fără formulare stocate pe serverele noastre",
+    "thirdTitle": "Servicii terțe",
+    "thirdLead": "Pot exista linkuri către GitHub. GitHub procesează date conform politicilor lor.",
+    "contactTitle": "Contact",
+    "contactLead": "Pentru întrebări de confidențialitate, deschide un issue pe repository-ul nostru."
+  },
+  "terms": {
+    "title": "Termeni și Condiții",
+    "lead": "Prin utilizarea acestui site și a codului aferent, ești de acord cu acești termeni.",
+    "useTitle": "Utilizarea site-ului",
+    "useLead": "Acesta este un site informativ static. Conținutul este oferit ‘ca atare’, fără garanții.",
+    "ossTitle": "Open source",
+    "ossLead": "Software-ul la care se face trimitere poate avea licențe separate. Verifică fiecare repository.",
+    "liabilityTitle": "Răspundere",
+    "liabilityLead": "Nu răspundem pentru daune rezultate din utilizarea informațiilor sau software-ului.",
+    "changesTitle": "Modificări",
+    "changesLead": "Putem actualiza acești termeni publicând o versiune nouă aici."
+  },
+  "team": {
+    "title": "Echipa Noastră",
+    "biancaRole": "Coordonator proiect · Chimie",
+    "lucaRole": "Dezvoltator tehnic · AI & Hardware · App",
+    "alexRole": "Dezvoltator tehnic · AI & Hardware"
+  },
+  "studies": {
+    "title": "Studii",
+    "lead": "Atașează PDF-uri, DOCX și referințe. Adaugă fișiere în /studies și listează-le în studies/studies.json.",
+    "example": "Exemplu de intrare JSON"
+  }
 }
 

@@ -23,7 +23,7 @@
         <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
         <li><a href="terms.html" class="active" data-i18n="nav.terms">Terms</a></li>
         <li>
-          <select id="langSelect" aria-label="Language selector">
+          <select id="langSelect" class="lang-select" aria-label="Language selector">
             <option value="en">EN</option>
             <option value="ro">RO</option>
           </select>
@@ -35,20 +35,21 @@
 <main class="container">
   <section class="card">
     <h1 data-i18n="terms.title">Terms & Conditions</h1>
-    <p>By using this website and related code, you agree to these terms.</p>
-    <h2>Use of Site</h2>
-    <p>This is a static informational site. Content is provided "as is" without warranty.</p>
-    <h2>Open Source</h2>
-    <p>Software linked from this site may be under separate licenses. Review each repository for its license.</p>
-    <h2>Liability</h2>
-    <p>We are not liable for any damages resulting from use of the information or software.</p>
-    <h2>Changes</h2>
-    <p>We may update these terms at any time by publishing a new version here.</p>
+    <p data-i18n="terms.lead">By using this website and related code, you agree to these terms.</p>
+    <h2 data-i18n="terms.useTitle">Use of Site</h2>
+    <p data-i18n="terms.useLead">This is a static informational site. Content is provided ‘as is’ without warranty.</p>
+    <h2 data-i18n="terms.ossTitle">Open Source</h2>
+    <p data-i18n="terms.ossLead">Linked software may have separate licenses. Review each repository.</p>
+    <h2 data-i18n="terms.liabilityTitle">Liability</h2>
+    <p data-i18n="terms.liabilityLead">We are not liable for damages resulting from use of information or software.</p>
+    <h2 data-i18n="terms.changesTitle">Changes</h2>
+    <p data-i18n="terms.changesLead">We may update these terms by publishing a new version here.</p>
   </section>
 </main>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-bottom">
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
       <p data-i18n="footer.copyright">© 2025 BearAware · Making wildlife conservation smarter</p>
     </div>
   </div>

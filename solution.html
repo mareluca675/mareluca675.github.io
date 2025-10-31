@@ -23,7 +23,7 @@
         <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
         <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
         <li>
-          <select id="langSelect" aria-label="Language selector">
+          <select id="langSelect" class="lang-select" aria-label="Language selector">
             <option value="en">EN</option>
             <option value="ro">RO</option>
           </select>
@@ -34,38 +34,58 @@
 </header>
 <main class="container">
   <section class="card">
-    <h1 data-i18n="solution.title">Our Solution</h1>
-    <p class="lead" data-i18n="solution.lead">YOLO-based detection across static stations and mobile devices with real-time alerts.</p>
+    <h1 data-i18n="solution.title">Soluția noastră</h1>
+    <p class="lead" data-i18n="solution.lead">Sistem integrat în trei componente: stații fixe (ultrasunete + infrasunete + AI), dronă cu cameră termică și aplicația mobilă BearAware (hartă + chatbot).</p>
   </section>
 
   <section class="grid two">
     <article class="card">
-      <h2>Architecture</h2>
+      <h2 data-i18n="solution.fixedTitle">Sistem Fix</h2>
       <ul class="checklist">
-        <li>Static stations with cameras running YOLOv8 inference</li>
-        <li>Mobile app with on-device detection and notifications</li>
-        <li>Configurable thresholds and sources (webcam, RTSP, files)</li>
+        <li data-i18n="solution.fixed1">Detecție AI (YOLOv8) pe flux video</li>
+        <li data-i18n="solution.fixed2">Alternanță ultrasunete/infrasunete, intermitentă</li>
+        <li data-i18n="solution.fixed3">Alerte către aplicație și RoAlert, marcaj pe hartă</li>
       </ul>
     </article>
     <article class="card">
-      <h2>Benefits</h2>
+      <h2 data-i18n="solution.droneTitle">Sistem Mobil (Dronă)</h2>
       <ul class="checklist">
-        <li>Early warnings reduce risks for people and wildlife</li>
-        <li>Portable and deployable in connectivity-limited areas</li>
-        <li>Open-source for transparency and collaboration</li>
+        <li data-i18n="solution.drone1">Camere RGB + termoviziune; detecție aeriană</li>
+        <li data-i18n="solution.drone2">Pulverizare ceață fină cu mentol (repelent natural)</li>
+        <li data-i18n="solution.drone3">Scanare trasee și confirmare vizuală</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="grid two">
+    <article class="card">
+      <h2 data-i18n="solution.appTitle">Aplicația BearAware</h2>
+      <ul class="checklist">
+        <li data-i18n="solution.app1">Hartă interactivă cu zone roșii</li>
+        <li data-i18n="solution.app2">Chatbot educațional cu bune practici</li>
+        <li data-i18n="solution.app3">Notificări și transparență pentru comunități</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h2 data-i18n="solution.benefitsTitle">Beneficii</h2>
+      <ul class="checklist">
+        <li data-i18n="solution.b1">Prevenție non-letală și coexistență sigură</li>
+        <li data-i18n="solution.b2">Reducerea alarmelor false prin AI</li>
+        <li data-i18n="solution.b3">Platformă de educație și alertare</li>
       </ul>
     </article>
   </section>
 
   <section class="card">
-    <h2>Try It</h2>
-    <p>Visit <a href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">AI System</a> and <a href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener">Mobile App</a>.</p>
+    <h2 data-i18n="solution.resourcesTitle">Resurse și studii</h2>
+    <p data-i18n="solution.resourcesLead">Vezi <a href="studies.html">Studii</a> pentru bibliografie, modelare acustică și recomandări de prototip.</p>
   </section>
 </main>
 
 <footer class="site-footer">
   <div class="container">
     <div class="footer-bottom">
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
       <p data-i18n="footer.copyright">© 2025 BearAware · Making wildlife conservation smarter</p>
     </div>
   </div>

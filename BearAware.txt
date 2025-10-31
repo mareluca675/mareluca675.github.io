@@ -1,0 +1,562 @@
+﻿BearAware
+ 
+Secțiune: Științe aplicate
+Categorie: Seniori
+ 
+ 
+1.Scopul proiectului
+Proiectul nostru își propune să integreze  trei tehnologii inteligente - un sistem fix cu ultrasunete, infrasunete și Inteligență Artificială, o dronă cu cameră termică și soluție naturală repelentă  și o aplicație mobilă cu hartă în timp real și chatbot educațional.
+Împreună, ele formează o rețea coordonată care detectează, descurajează și monitorizează urșii fără a-i răni.
+ 
+2.Obiective
+●       Protejarea oamenilor prin alerte și soluții de descurajare în timp real
+●       Ajutarea urșilor să revină și să rămână în habitatele lor naturale
+●       Restabilirea echilibrului dintre oameni și viața sălbatică
+●       Educarea comunităților și a drumeților privind comportamentul responsabil în natură
+Obiective viitoare
+● Finalizarea integrării celor două sisteme cu aplicația BearAware pentru sincronizare în timp real
+● Desfășurarea de teste supravegheate pe teren, în colaborare cu sanctuare de urși și echipe Salvamont
+● Optimizarea mecanismului de pulverizare a soluției mentolate pentru dronă
+● Lansarea campaniilor publice de conștientizare și educare prin aplicație și prin site-ul de proiect
+● Căutarea de sponsori și parteneri pentru implementarea la scară largă
+● Integrarea camerei termoviziune în sistemul dronei
+● Sisteme de monitorizare a urșilor
+● Identificarea predictivă a zonelor cu risc de apariție a urșilor folosind AI.
+● Implementarea sistemelor pentru alte animale (lupi, ras, vulpi etc.)
+● Plan de Implementare:
+Ø Crearea de parteneriate cu autoritățile locale, rangerii și organizațiile de conservare
+Ø Testarea ambelor sisteme în medii controlate, sub supravegherea specialiștilor
+Ø Instalarea sistemelor fixe în zone rurale cu risc ridicat
+Ø Desfășurarea dronelor de-a lungul traseelor turistice și montane
+Ø Lansarea publică a aplicației BearAware și promovarea funcțiilor educaționale
+Ø Derularea de campanii de informare pentru a educa comunitățile privind coexistența cu animalele sălbatice
+ 
+Concluzii
+● Urșii vor evita să  revină în zonele în care acționează aceste dispozitive, reîntorcându-se  în propriul habitat.
+● Cu ajutorul voluntarilor și al  rangerilor  îi ajutăm sa își reia obiceiurile alimentare și  îi învățam să își caute hrana.
+● Așezări umane și trasee montane mai sigure.
+● Reducerea conflictelor om-urs prin detectare timpurie și automată.
+● Creșterea gradului de conștientizare publică și a respectului față de viața sălbatică prin educație și tehnologie.
+● Finalitatea spre care tindem este ca urșii să își regăsească demnitatea
+ 
+3.Problema identificată spre rezolvare
+Urşii care au părăsit pădurile şi s-au apropia tot mai mult de aşezările omeneşti au devenit realitatea de lângă noi. Mamiferele nu se mai tem de om, nici de maşini. Pentru a-şi procura hrana, atacă gospodării dar cel mai des, ies la drumul mare aşteptând să fie hrănite de trecători. Din ,,legendele Carpaților" au ajuns să fie numiți ,,urși cerșetori" sau ,,urși gunoieri", devenind atracţia turiştilor care, ignorând pericolul, se opresc să le dea de mâncare sau să-i fotografieze.
+Numărul urșilor în țara noastră a crescut  foarte mult, statisticile estimând că ar exista, în acest moment, un număr ce depăşește deja 6.000 de exemplare, ceea ce poate fi considerat deja suprapopulare.
+Cauzele care au generat  comportamentul deviat al urșilor:
+§  Defrișările  masive au determinat urșii carpatini să își părăsească habitatul;
+§  Existenţa deşeurilor menajere  a redus perioada de hibernare, existând urşi care frecventează gunoaiele toată iarna;
+§  Turismul cinegetic pentru obținerea trofeelor;
+§  Braconarea urșilor prin utilizarea lanțurilor montate în arbori sau la sol; otrăvirea carcaselor de oaie cu substanțe chimice sau vegetale toxice, împușcare etc.;
+§  Oamenii hrănesc animalele, făcându-le dependente de alimentație, aceștia nu mai caută hrană în pădure;
+§  Pădurarii nu mai asigură hrană în lăcașurile din păduri;
+§  Statul nu alocă  fonduri suplimentare  să creeze sanctuare pentru  urși;
+§  UE nu acceptă relocarea urșilor carpatini în pădurile din Europa.
+Într-o Românie în care atacurile de urs devin tot mai frecvente, noi propunem o soluție care aduce echilibru între siguranța oamenilor și protejarea naturii.
+ 
+4.Întreări de cercetare
+ 
+● Cum am putea proteja oamenii de agresivitatea urșilor, fără a le face rău acestor animale?
+● Cum am putea reda urșilor demnitatea și libertatea de odinioară?
+● Cum am putea face potecile de munte din nou sigure, pentru ca oamenii să se bucure în liniște de natură?
+§  Cum i-am putea reintroduce treptat în habitatul lor natural și cum i-am putea ajuta să-și redescopere instinctul de a-și căuta singuri hrana?
+5.Soluțiile propuse
+Echipa de proiect avansează o  soluție  care ar putea contribui la reloacarea urșilor în habitatul lor, pădurile devenind un ,,sanctuar  natural" și, implicit, ar minimiza agresarea oamenilor de către urși. Ținem cont atât de securitatea omului, cât și a animalelor, soluțiile sunt ecologice, respectând, astfel, legislația în vigoare. Ideea proiectului a fost generat de un proiect-concept al Echipei Multitouchcnme, integrat în categoria Inteligență Artificială Prietenoasă. Proiectul nostru se diferențiază  de acel proiect prin  faptul că  propunem un concept tehnologic integrat:
+§  Sistem Fix -  dotat cu ultrasunete, infrasunete și Inteligență Artificială
+§  Sistem Mobil  - cu cameră termică și soluție naturală repelentă
+§  Aplicația Mobilă BearAware  cu hartă în timp real și chatbot educațional
+ 
+Împreună,  formează o rețea coordonată care detectează, descurajează și monitorizează urși ifără a-i răni. Când un urs se apropie, sistemul fix îl recunoaște și îl alungă, prin emiterea unei alternanțe de sunete (ultrasunete- infrasunete); dacă persistă, drona intervine din aer, eliberează o ceață naturală cu mentol și trimite poziția exactă către aplicație. Oamenii primesc imediat o alertă și pot vedea pe hartă locația animalului.
+Dimensiunea educativă a proiectului derivă din prezența  Chatbot-ului din Aplicație, care  oferă sfaturi, informații și curiozități despre urși, ajutând comunitățile umane  să trăiască în armonie cu natura.
+Este prima soluție complet integrată de acest fel: un sistem inteligent, ecologic și empatic, care apără oamenii, redă demnitatea urșilor și transformă teama în cunoaștere.
+ 
+Descriere tehnică
+5.1. Sistem Fix
+Instalat pe pe stâlpii de înaltă tensiune, care delimitează localitatea frecventată de urși, acționează ca un gard de protecție. Acestea se sincronizează cu semnalele RoAlert și declanșează undele sonore, ultrasunete / infrasunete,  intermitent și alternativ, îndepărtând animalele.  Infrasunetele vor provoca frică, panică.
+Sistemul  utilizează Inteligența Artificială și semnalele sonore (infrasunete si ultrasunete):
+● Fiecare sistem include o cameră video, un difuzor special și un computer de mici dimensiuni.
+
+
+● Un algoritm AI analizează în timp real fluxul video pentru a detecta prezența urșilor.
+
+
+● La identificarea ursului, difuzorul emite un sunet la o frecvență specifică menită să îndepărteze ursul.
+
+
+● Simultan, sistemul trimite un semnal către aplicația BearAware, care marchează zona de detecție cu un cerc roșu pe hartă, pentru a alerta utilizatorii și către aplicația Ro.Alert.
+
+
+Acest sistem este destinat în principal zonelor rurale și suburbane, ajutând la prevenirea pătrunderii urșilor în spațiile locuite.
+ 
+Difuzorul  special pentru emisia sunetelor de înaltă frecvență emite unde ultrasonice extrem de puternice, cu propagare sinusoidală, agresivă, la o presiune acustica de 60-100 dB, agresând sistemul nervos și auditiv al urșilor, alungandu-i din zonă.
+ 
+§  Pentru a nu provoca leziuni grave, ultrasunetele vor fi emise intermitent - 20sec.
+§  Alternativ, dispozitivul va emite infrasunete - 10 sec.
+ 
+Respectăm codul etic și siguranța sanitară a omului și a ursului, de aceea propunerea noastră prevede emiterea intermitentă și alternativă.
+●  Sistemul  de alarmă acustic  emite intermitent și alternativ ultrasunete și infrasunete, cu o presiune acustică puternică de 100 dB , timp de 30 secunde. Aceste sunete  nu rănesc  animalul,  ci doar  îl îndepărtează. Când  ursul se apropie semnalul  ultrasonic  devine mai puternic;  când se îndepărtează, este mai slab și, instinctual, acesta părăsește zona  pentru a se proteja.
+● Este prevăzut cu un LED luminos, care, împreună cu sunetele vor transmite animalului un semnal de primejdie, determinându-l să plece din zonă.
+● Frecvența ultrasonică: aprox. 21 kHz (± 10%)
+● Presiunea acustică: 60- 100 dB
+● Unghi de radiație: > 120 °
+● Suprafața acoperită acustic: pe o raza de 60 m
+
+
+
+
+
+             	            
+
+ Argumentare Teoretică
+Sunetul este determinat de vibrații emise de o sursă sonoră, precum un difuzor special integrat în sistemul fix al proiectului BearAware. Sunetul se caracterizează prin înălțime (frecvență - măsurată în Hertz, Hz) și tărie (intensitate - măsurată în Decibeli, dB).
+Undele acustice pot fi detectate de urechea umană sub forma sunetelor. Intervalul de frecvențe la care este sensibilă urechea umană este situat între aproximativ 16 - 20.000 Hz (20 kHz), iar undele acustice situate în acest domeniu se numesc unde sonore.
+Ultrasunetele sunt vibrații elastice care au frecvența mai mare decât frecvența maximă a oscilațiilor care produc senzația auditivă. Domeniul de frecvență în care avem ultrasunete este între 20 kHz și 10^6 kHz.
+Undele acustice care au frecvența de oscilație dedesubtul limitei de audibilitate (sub 16 Hz) se numesc infrasunete.
+Cele mai simple unde acustice sunt undele sinusoidale.
+Limita inferioară a celor mai scăzute presiuni acustice percepute de urechea umană este 0 dB, orice sunet peste 130 dB va cauza dureri.
+Zgomotul este descris ca sunete pe care le percepem ca fiind neplăcute sau deranjante. Atunci când estimăm riscul de deteriorare a auzului trebuie luați în calcul trei factori importanți: timpul de expunere, frecvența (Hz) și presiunea acustică (dB). Valoarea maximă a intensității sonore care mai poate fi suportată de urechea noastră se numește prag de senzație dureroasă. Uniunea Europeană a stabilit o limită legală de 80 dB (A) pe parcursul a 8 ore, în Noua Directivă pentru zgomot (2013).
+Aplicații:
+Ultrasunetele și infrasunetele au o paletă largă de aplicativitate: în medicină, industrie, tehnica militară, și în managementul faunei sălbatice, cum este cazul sistemului fix din BearAware, instalat pe stâlpi, felinare sau clădiri în zone frecvent vizitate de urși.
+Modelare Matematică
+1. Intensitatea sunetului variază cu distanța de la sursă cu pătratul distanței, astfel încât dacă două puncte sunt situate la distanțele r1 și r2 față de o sursă, relația dintre cele două intensități este:
+Astfel, vom deduce un ordin de mărime al distanței minime pentru care sistemul fix BearAware poate fi folosit astfel încât să nu provocăm daune urechii umane. Vom alege pragul de 110 dB, cca. intensitatea sonoră specifică unui concert. Dacă sursa (difuzorul sistemului fix, montat pe stâlp la aproximativ 2-3 m înălțime) este la o distanță minimă de 1 m de o persoană (de exemplu, un localnic în apropiere), și intensitatea minimă pentru care un urs este afectat este 60 dB (bazat pe studii care arată eficiență la 60-100 dB pentru descurajare non-letală), distanța maximă (sau raza de acțiune, cu alte cuvinte) pentru care dispozitivul este eficient este:
+
+Aceasta reprezintă o rază conservatoare; în practică, pentru zone rurale, raza poate fi extinsă la 10-20 m prin ajustarea puterii, asigurând că intensitatea scade sub 80 dB la distanțe umane sigure, conform directivei UE.
+2. Dacă am lua în considerare un model idealizat cu o sursă punctuală care emite un sunet cu putere constantă și o intensitate invers proporțională cu pătratul distanței de la sursă, dorim să calculăm cu câți dB scade nivelul de intensitate a sunetului atunci când ne îndepărtăm de sursă (ex: într-un punct aflat la o distanță dublă)?
+Etichetăm cele două puncte 1 și 2 și folosim ecuația de două ori.
+Diferența de nivel a intensității sunetului, este dată de:
+
+O scădere a intensității cu un factor de patru corespunde unei scăderi a nivelului de intensitate a sunetului cu 6 dB. În BearAware, această modelare ajută la optimizarea plasării sistemelor fixe pentru a acoperi zone cu risc ridicat (ex: lângă drumuri sau locuințe), asigurând că la dublarea distanței de la sursă, intensitatea scade suficient pentru a minimiza impactul asupra oamenilor și speciilor non-țintă, în timp ce rămâne eficientă pentru urși până la 10-20 m 
+Concluzie:
+Sistemul fix BearAware este dotat cu un difuzor special pentru emisia sunetelor de înaltă frecvență, care emite unde ultrasonice extrem de puternice, cu propagare sinusoidală, agresive, la o presiune acustică de 60-100 dB, deranjand sistemul nervos și auditiv al urșilor, alungându-i din zonă fără a le provoca răni.
+Pentru a nu provoca leziuni grave și pentru a preveni obișnuința urșilor cu un singur stimul (conform recomandărilor din studii precum cele de pe petapixel.com), ultrasunetele vor fi emise intermitent - 20 sec., alternând cu infrasunete - 10 sec. Această alternanță este activată doar după detectarea unui urs prin AI (bazat pe model YOLOv8), asigurând o abordare țintită și ecologică.
+Respectăm codul etic și siguranța sanitară a omului și a ursului, de aceea propunerea noastră prevede emiterea intermitentă și alternativă, în concordanță cu cercetările care arată că sunetele bioacustice și frecvențele inaudibile pot alunga urșii fără impact permanent (conform studiilor sintetizate în document, inclusiv cele de pe bearvault.com și frontiersin.org).
+Se știe că infrasunetele au început să fie studiate de NASA în anii '60, pentru a stabili influența acestora asupra astronauților, în momentul decolării unei rachete. Infrasunetele nu pot fi percepute de urechea umană, dar pot fi resimțite fizic și emoțional, sub forma unor vibrații ce provoacă simptome extrem de neplăcute: amețeli, dureri de cap, stare de vomă, anxietate, atacuri de panică etc. De atunci și până azi cercetările au continuat, chiar dacă unele rezultatele au fost plasate la "top secret", cu dezvoltare puternică în zona militară, în dezvoltarea armelor cu infrasunete. În contextul BearAware, această alternanță cu ultrasunete asigură o descurajare eficientă, integrată cu drona pentru intervenție suplimentară dacă ursul persistă.
+
+
+
+
+5.2. Sistem Mobil
+Al doilea sistem constă într-o dronă echipată cu:
+● O cameră RGB și o cameră termoviziune (infraroșu) care furnizează date pentru algoritmul AI
+
+
+● Un mecanism de pulverizare care eliberează o substanță neinvazivă pe bază de apă și mentol, pentru a îndepărta urșii.
+
+
+Când AI-ul dronei identifică un urs:
+● Trimite o alertă către aplicația BearAware, marcând zona pe hartă
+
+
+● Eliberează substanța propusă, care indeparteaza ursul fără a-l răni
+
+
+● Drona poate fi, de asemenea, trimisă în fața grupurilor de drumeți, pentru a scana traseul și a se asigura că acesta este sigur înainte ca aceștia să continue.
+Drona este construită din componente atent selectate, combinate pentru a oferi performanță ridicată și fiabilitate în utilizare. Structura are o distanță între motoare de 78 mm, oferind un echilibru excelent între stabilitate și agilitate.
+Sistemul de control utilizează o placă SpeedyBee F745 35A AIO, care integrează controlerul de zbor și ESC-ul, iar giroscopul MPU6000 contribuie la o reacție precisă și un zbor stabil.
+ Propulsia este asigurată de motoare SpeedyBee 1404 de 4500KV și elice Gemfan D63-3 de 2,5 inchi, oferind o putere constantă și o manevrabilitate excelentă.
+Pentru partea video, drona include o cameră RunCam Phoenix 2 Nano și un transmițător TX800 VTX, completate de o antena SpeedyBee 5.8 GHz V2, care asigură o transmisie clară și stabilă.
+ Greutatea totală, fără baterie, este de aproximativ 140 de grame, iar sursa de alimentare recomandată este o baterie LiPo 4S de 650-900 mAh.
+Rezultatul este o dronă ușoară, precisă și fiabilă, configurată pentru performanță și control excelent în orice condiții de zbor.
+
+5.2.1 Metodă non-agresivă de îndepărtare a urșilor folosind pulverizare cu ceață fină prin dronă
+a) Principiul metodei
+Această metodă utilizează o dronă echipată cu un sistem de pulverizare cu ceață fină, care combină apă și uleiuri esențiale (pin, mentă sau eucalipt). Pulverizarea produce un efect vizual și auditiv care poate descuraja prezența urșilor, fără a fi agresivă sau dăunătoare.
+● Zgomotul și mișcarea dronei sporesc efectul de speriere.
+
+● Cantitatea pulverizată trebuie să fie moderată, iar drona să fie manevrată astfel încât să deranjeze vizual și auditiv ursul.
+b) Ingrediente pentru amestecul apă-ulei esențial
+IngredientCantitateObservații                Apă curată950 mlBază a amesteculuiUlei esențial de pin/eucalipt/mentă20 ml (≈2%)Miros intens și neplăcut pentru urșiSuc de lămâie proaspăt10 mlIntensifică mirosul și ajută la conservare naturalăSăpun lichid biodegradabil5 mlAsigură dispersia uleiului în apă       c) Prepararea amestecului
+1.Se amestecă apa cu săpunul lichid până se obține o soluție omogenă.
+2. Se adaugă uleiul esențial și sucul de lămâie.
+3.Se amestecă energic pentru a dispersa complet uleiul în apă.
+d) Obținerea uleiului esențial de mentă
+       §d.1 Distilarea cu vapori de apă
+● Procesul separă componentele volatile din plantă folosind aburi, care vaporizează componentele active la temperaturi mai mici decât punctul de fierbere.
+● Frunzele și tulpinile de mentă se spală și se mărunțesc.
+● Materialul vegetal se introduce într-un vas special, iar aburul fierbinte vaporizează componentele volatile.
+● Vaporii se răcesc și se condensează în apă și ulei esențial. Uleiul, fiind mai ușor decât apa, plutește la suprafață și se colectează.
+● Uleiul este supus unui proces de purificare înainte de îmbuteliere.
+       §d.2 Macerarea
+● Frunzele de mentă se spală și se rup haotic.
+● Se pun într-un borcan și se acoperă cu ulei de floarea-soarelui.
+● Borcanul se închide ermetic și se lasă la macerat 10 zile, agitând de 3-4 ori pe zi.
+● Soluția se decantează, reziduul se presează, iar tinctura se păstrează la rece cel puțin 6 zile.
+● Soluția se filtrează, obținându-se ulei esențial cu miros intens și natural.
+e) Specii de mentă utilizabile
+● Mentha piperita (menta piperată)
+● Mentha spicata (menta verde)
+
+Caracteristici generale:
+● Plante erbacee perene din familia Lamiaceae.
+● Frunze ovale, marginile zimțate, miros caracteristic intens datorat uleiurilor esențiale.
+● Florile sunt mici, roz sau violet, grupate în spicuri.
+f) Observații și recomandări
+● Metoda nu garantează îndepărtarea imediată a urșilor, dar reduce riscul confruntărilor agresive.
+● Este recomandată pentru zonele frecventate de urși, acționând ca un descurajant non-toxic.
+Compoziția chimică și proprietățile uleiului esențial de mentă
+         g) Compoziția chimică
+Uleiul esențial de mentă este principala sursă a proprietăților sale aromatice și biologice. Compoziția variază în funcție de specie, climă și metoda de extracție, dar conține în general:
+● Mentol (30-55%) - compus principal, responsabil pentru senzația de răcorire și aroma specifică.
+● Mentonă (10-30%) - contribuie la aroma și proprietățile terapeutice.
+● 1,8-Cineol (Eucaliptol) (3-15%) - oferă o notă ușor camforată și contribuie la efectul antiseptic.
+● Mentil acetat (3-10%) - cu un miros dulceag, fructat.
+● Limonen (1-5%) - monoterpen cu aromă citrică.
+● Beta-cariofilenă (până la 2%) - terpene cu efecte antiinflamatorii.
+
+h) Structura și proprietățile compușilor principali
+h.1. Mentol
+○ Formula moleculară: C₁₀H₂₀O
+○ Denumirea IUPAC: 5-methyl-2-propan-2-ylcyclohexan-1-ol
+○ Formula de structură: ciclică, alcool terpeneoid, cu grupare hidroxil (-OH)  
+○ Proprietăți: răcoritoare, solubilitate limitată în apă
+       h.2. Mentonă
+○ Formula moleculară: C₁₀H₁₆O  
+○ Denumirea IUPAC: (2S,5R)-5-methyl-2-propan-2-ylcyclohexan-1-one
+○ Formula de structură: cetonă monoterpenică, nucleu ciclic similar mentolului, cu grupare funcțională cetonă (>C=O)
+       h.3. 1,8-Cineol (Eucaliptol)
+○ Formula moleculară: C₁₀H₁₈O
+Denumirea IUPAC: 1,3,3-trimethyl-2-oxabicyclo[2.2.2]octane
+○ Formula de structură: eter ciclic monoterpenic, cu miros camforat
+
+       h.4. Mentil acetat
+○ Formula moleculară: C₁₂H₂₀O₂
+○ Denumirea IUPAC: (5-methyl-2-propan-2-ylcyclohexyl) acetate
+○ Formula de structură: ester derivat din mentol și acid acetic, cu aromă dulceag-fructată
+			
+i) Proprietăți biologice și utilizări
+● Efect răcoritor și analgezic - datorită mentolului, care activează receptorii de frig din piele și mucoase.
+● Antiseptic și antifungic - datorită componentelor cineol și mentonă.
+● Repelent natural - eficient împotriva anumitor insecte și animale.
+Utilizări - industrie, farmacie, cosmetice și alimentație.
+
+Modelarea matematică- eficiența soluției
+În studiul ,,Intelligent Bear Prevention SystemBased on Computer Vision: An Approach to Reduce Human-Bear Conflicts in the Tibetan Plateau Area, China" (2025), autorii au dezvoltat un sistem automat de detecție și descurajare a urșilor tibetani, bazat pe recunoaștere vizuală și activarea controlată a unui spray repelent. Amestecul utilizat a conținut capsaicină în concentrație redusă și mentol, substanțe cunoscute pentru efectele lor olfactive și iritante. Pentru antrenarea modelului de recunoaștere, cercetătorii au colectat aproximativ 700 imagini cu urși, alături de imagini cu alte animale  și oameni, pentru a preveni declanșările false ale sistemului. Setul de date a fost împărțit în imagini de antrenare și validare, incluzând și imagini în infraroșu pentru detecția nocturnă.
+În cadrul studiului nostru, am urmat o abordare similară, dar am înlocuit capsaicina cu o combinație naturală de mentol, mentonă, eucaliptol și metil-acetat, pentru a obține un amestec mai puțin iritant și mai volatil. Sistemul de recunoaștere a fost antrenat pe un set propriu de imagini (distribuite pe aceleași clase principale: urs, om, animale domestice și faună locală), menținând structura metodologică din studiul original, dar adaptând compoziția chimică și condițiile de aplicare la scopurile noastre experimentale.
+
+
+
+
+
+Rezultatele studiului original X indică o eficiență medie de aproximativ 75% pentru amestecul pe bază de capsaicină și mentol, testat în condiții controlate pe urși tibetani (15 reușite din 20 întâlniri documentate). Pornind de la aceste date și de la literatura privind proprietățile olfactive ale compușilor volatili naturali, am estimat eficiența potențială a unui amestec alternativ fără capsaicină, format din mentol, mentonă, eucaliptol și metil-acetat.
+Modelul probabilistic utilizat, bazat pe reducerea probabilității de eșec prin acțiune sinergică, indică o eficiență teoretică între 64% și 70%, cu o valoare realistă de aproximativ 66%. Estimarea sugerează că mentolul oferă efectul de bază (≈60%), iar mentona și eucaliptolul contribuie cu un câștig suplimentar de 10-15%, metil-acetatul având rol de agent volatilizant și de dispersie.
+Comparativ cu rezultatele obținute pentru amestecul capsaicină-mentol, noua formulă prezintă o eficiență ușor redusă, dar avantaje clare în ceea ce privește tolerabilitatea, siguranța și aplicabilitatea în zone cu prezență umană. Se anticipează o persistență limitată a efectului repelent, motiv pentru care se recomandă reaplicarea frecventă a substanței pentru menținerea eficienței.
+În perspectivă, avem în vedere colaborarea cu autoritățile locale și structurile de salvare montană pentru partea logistică și pentru validarea experimentală în teren a rezultatelor obținute.
+
+
+
+
+
+5.3. Aplicația Mobilă BearAware
+Aplicația BearAware reprezintă centrul de legătură între cele două sisteme. Ea oferă date în timp real și instrumente educaționale pentru utilizatori:
+●       Afișează prezenșa  urșilor pe o hartă interactivă, folosind Google Maps API, cu zone roșii care indică locurile unde au fost detectați recent urși;
+●       Include un asistent AI specializat în comportamentul urșilor, capabil să răspundă la întrebări precum:
+○   "Ce trebuie să fac dacă întâlnesc un urs?"
+○  "Este sigur să hranesti un urs?"
+○  "Cum mă pot proteja de ursi?"
+●       Servește drept enciclopedie digitală despre urși, combinând sfaturi de siguranță, informații biologice și materiale educative.
+Aplicația este destinată drumeților, rangerilor, localnicilor și autorităților, promovând  transparența și siguranța în zonele frecventate de urși
+Aplicația BearAware
+
+
+
+ 
+6.Noutatea proiectului
+§  Integrare multiplatformă - Unități fixe + coordonare cu drona
+§  Detecție și recunoaștere a țintei bazate pe inteligență artificială
+§  Mecanism nou, neletal de respingere
+§  Alertă publică în timp real și componentă educațională prin aplicație
+  
+Sistem integrat fix-mobil pentru detecția și descurajarea urșilor
+Arhitectură:
+ Proiectul integrează două subsisteme complementare:
+1. Rețea fixă - unități montate pe stâlpi pentru protecția perimetrală a gospodăriilor;
+
+2. Sistem mobil (dronă) - pentru supraveghere și intervenție rapidă în zone extinse sau slab accesibile.
+
+Sistemele operează în tandem: rețeaua fixă asigură detecția timpurie, iar drona intervine ca unitate mobilă de răspuns. Această arhitectură stratificată depășește soluțiile existente (repelenți staționari sau drone operate manual), oferind redundanță funcțională și acoperire spațială extinsă.
+§Detecție și recunoaștere automată bazată pe inteligență artificială
+Ambele subsisteme utilizează viziune computerizată cu rețele neuronale convoluționale (CNN) pentru identificarea urșilor în timp real.
+● Unitățile fixe: cameră termică + RGB; model AI YOLOv8 antrenat pentru clasificarea precisă a urșilor.
+
+● Drona: camere multispectrale + AI onboard pentru detecție aeriană și urmărire.
+
+Avantaje:
+● reducerea alarmelor false (filtrare prin recunoaștere vizuală);
+
+● activare condiționată a repelenților doar la confirmarea speciei;
+
+● logarea automată a aparițiilor (GPS, oră) pentru analiză etologică.
+
+Tehnologia extinde concepte demonstrate (ex. YOLOv5 - engineering.q42.nl) către o implementare autonomă și operațională.
+§Mecanism neletal de respingere
+Repelent activ: aerosoli pe bază de mentol natural dispersați de dronă sub formă de ceață fină.
+● Stimulează evitarea olfactivă fără efecte toxice.
+
+● Alternativă sigură la spray-urile cu capsaicină.
+
+● Combinație sinergică: zgomotul dronei + mirosul mentolat → dublu stimul senzorial.
+
+Pulverizarea uniformă elimină riscurile direcționării jetului și este inofensivă pentru oameni și mediu.
+§Aplicație de alertă și componentă educațională
+Funcționalități principale:
+● recepție automată a coordonatelor GPS ale detecțiilor;
+
+● notificări în timp real către utilizatori (locuitori, rangeri, turiști);
+
+● hartă dinamică cu locațiile recente ale urșilor;
+
+● chatbot educațional AI pentru informare și consiliere preventivă.
+
+Aplicația transformă sistemul într-o platformă integrată de alertare, analiză și educație comunitară, asigurând o coexistență sigură om-urs.
+
+ 
+7. Etape
+Echipa de proiect a parcurs următoarele etape:
+cercetare fundamentală (documentare, analiză)
+cercetare aplicată (proiectare și prototipare),
+cercetare experimentală (testare și optimizare)
+cercetare colaborativă interdisciplinară (parteneriate și extindere).
+ 
+Realizări actuale
+ 
+● Model funcțional de Inteligență Artificială pentru detecția urșilor pe baza fluxului video
+● Prototip operațional al sistemului fix cu cameră și difuzor
+● Prototipul aplicației BearAware, cu funcții de bază pentru hartă și alerte
+ 
+8. Metode folosite
+Pentru a dezvolta proiectul, au fost parcurse mai multe etape strategice:
+1 Identificarea problemei
+	Urşii care au părăsit pădurile şi s-au apropia tot mai mult de aşezările omeneşti au devenit realitatea de lângă noi. Mamiferele nu se mai tem de om, nici de maşini. Pentru a-şi procura hrana, atacă gospodării dar cel mai des, ies la drumul mare aşteptând să fie hrănite de trecători. Din ,,legendele Carpaților" au ajuns să fie numiți ,,urși cerșetori" sau ,,urși gunoieri", devenind atracţia turiştilor care, ignorând pericolul, se opresc să le dea de mâncare sau să-i fotografieze.
+De asemenea, provoacă pagube însemnate, atacând stânele, distrugând culturi agricole, pomi fructiferi, stupi de albine, omoară animale domestic din gospodăriile oamenilor sau de pe pășuni. Numărul urșilor în țara noastră a crescut  foarte mult, statisticile estimând că ar exista, în acest moment, un număr ce depăşește deja 6.000 de exemplare, ceea ce poate fi considerat deja suprapopulare. Extinderea actuală a arealului urşilor spre câmpie şi ponderea mare a exemplarelor juvenile sunt dovezi clare în susţinerea ideii de creştere numerică actuală a populaţiei de urşi, peste normal, în România.
+
+2. Definirea Obiectivelor și Documentația Tehnică (Cercetare Fundamentală)
+● Revizuirea Literaturii de Specialitate (Literature Review): Căutarea și sintetizarea studiilor științifice (ex: cele privind auzul urșilor, eficacitatea ultrasunetelor/infrasunetelor, impactul mirosurilor aversive ca repelenți naturali).
+● Modelare Acustică Matematică: Aplicarea Legii Inversului Pătrat pentru intensitatea sonoră (L) în funcție de distanță (r) pentru a stabili limitele de siguranță umană (sub 80 dB) și raza de acțiune a sistemului fix.
+3. Proiectarea Conceptuală și Tehnică
+● Proiectare de Sistem Integrat (System Architecture Design): Dezvoltarea unei arhitecturi multi-strat (Sistem Fix + Sistem Mobil + Aplicație) pentru a asigura redundanță și acoperire spațială.
+● Selecția Frecvențelor Bioacustice: Alegerea frecvenței de 21 kHz pentru ultrasunete, pe baza datelor de sensibilitate auditivă maximă la Ursidae, și definirea secvenței  pentru a combate habituarea.
+● Proiectarea Algoritmului AI: Selectarea modelului de viziune computerizată YOLOv8 și stabilirea pașilor de antrenament (colectarea setului de date, etichetare, optimizare) pentru detecția precisă a urșilor (evitarea alarmelor false).
+4. Construirea Prototipului
+● Hardware Prototyping: Asamblarea fizică a unității fixe (cameră, mini-computer, difuzor Piezo/ultrasonic) și a prototipului de dronă (integrare FC, ESC, camere și mecanism de pulverizare).
+● Dezvoltare Software (Mobile App Development): Utilizarea Google Maps API pentru a implementa harta în timp real și dezvoltarea unui Chatbot bazat pe LLM (Large Language Model) pentru componenta educațională.
+● Inginerie Chimică (Repelent): Formularea soluției de ceață fină cu mentol, respectând proporțiile de ulei esențial și emulsificatori (săpun biodegradabil) pentru dispersie eficientă și siguranță ecologică.
+5. Testarea și Optimizarea
+● Validare Funcțională (Bench Testing): Testarea individuală a fiecărei componente (ex: acuratețea detecției AI pe fluxuri video; puterea de emisie a difuzorului; stabilitatea zborului dronei).
+● Optimizarea Parametrilor de Descurajare: Ajustarea puterii și a duratei secvențelor de ultrasunete/infrasunete, precum și a concentrației repelentului cu mentol, pe baza feedback-ului din studii, cu scopul de a maximiza eficacitatea descurajării și de a minimiza impactul.
+
+9. Rezumat de cercetare cuprinzător: Dispozitive acustice pentru descurajarea urșilor
+Această cercetare cuprinzătoare sintetizează concluziile privind aspectele științifice, tehnice și de mediu legate de utilizarea frecvențelor sonore ultrasonice și infrasonice pentru alungarea urșilor bruni carpatini.
+Constatarea principală este că, deși studiile privind eficiența metodelor acustice de descurajare a urșilor bruni sunt limitate - mai ales în regiunea carpatică - dovezile științifice actuale indică faptul că frecvențele ultrasonice pure nu reprezintă o metodă fiabilă de descurajare pe distanțe lungi pentru mamiferele de talie mare. În schimb, sunetele audibile țintite sau cele bioacustice (cu relevanță biologică pentru specie) par să ofere rezultate mai promițătoare.
+ 1. Introducere
+Utilizarea sunetelor ultrasonice (frecvențe peste 20 kHz) și infrasonice (frecvențe sub 20 Hz) ca mijloace non-letale de descurajare a faunei sălbatice, inclusiv a urșilor, a fost explorată în diverse contexte, pentru a reduce conflictele dintre oameni și animale, punând accent pe bunăstarea animalelor, sustenabilitatea mediului și siguranța umană.
+Aceste metode acustice urmăresc să alunge animalele fără a le provoca daune fizice, oferind o alternativă potențial ecologică față de controlul letal sau repelentele chimice.
+Cu toate acestea, cercetările privind aplicarea lor specifică asupra urșilor bruni carpatini (Ursus arctos) din regiuni precum România sunt limitate, majoritatea studiilor concentrându-se asupra urșilor polari sau asupra faunei generale.
+Dovezile existente sugerează o eficiență variabilă, adesea dependentă de frecvență, intensitate și capacitatea auditivă specifică fiecărei specii.
+Prezentul raport sintetizează rezultatele cercetărilor online referitoare la studii științifice, intervale de frecvență, diferențe între eficiența ultrasunetelor și a infrasunetelor, impacturile asupra mediului și sănătății, tehnologiile disponibile și recomandări pentru prototipuri.
+
+2. Studii științifice și experimente de teren (Metode / Constatări)
+●       Eficiența pentru urși:
+●       Urșii bruni carpatini:
+  Nu au fost identificate studii științifice sau experimente de teren care să testeze direct dispozitive bazate exclusiv pe ultrasunete sau infrasunete asupra urșilor bruni carpatini (Ursus arctos) din România.
+ 
+●       Eficiența bioacustică:
+ Un studiu important realizat pe urși polari (U. maritimus) și urși bruni în captivitate (U. arctos) a arătat că redarea de vocalize naturale și sintetizate agresive de urs a avut un efect de respingere semnificativ asupra fiecărui exemplar testat.
+ Aceasta sugerează că relevanța biologică a sunetului (bioacustica) este mai importantă decât simpla gamă de frecvențe utilizată.
+●       Reapelarea ultrasonică (Succes limitat):
+  Un studiu din anii 1970, care a folosit frecvențe ultrasonice fine transmise prin difuzoare de mare putere, a reușit să alunge urșii polari în aproximativ 69% din cazuri. Totuși, s-a observat o limitare semnificativă: 15 din 74 de urși polari au ales să investigheze sursa sunetului, ceea ce indică faptul că dispozitivul ar putea, în unele cazuri, să atragă sau să trezească curiozitatea animalelor, în loc să le îndepărteze în mod fiabil.
+ 
+●       Ineficiența generală pentru mamifere:
+  Literatura de specialitate în domeniul managementului faunei sălbatice concluzionează frecvent că dispozitivele comerciale cu ultrasunete sunt, în mare parte, ineficiente pentru descurajarea mamiferelor terestre de talie mare (precum cerbii sau cangurii) pe distanțe semnificative.
+3. Date acustice și diferențe de frecvență
+Tip de frecvențăIntervalPercepția / Eficiența la ursul brunProprietăți acustice și provocăriInfrasunet<20 HzNu există date specifice privind efectul de descurajare.Se propagă bine pe distanțe lungi și prin obstacole. Necesită o energie mare pentru a atinge intensități semnificative.Sunet audibil20 Hz - 20 kHzAuzul ursului brun este, în general, comparabil cu cel uman. Sunetele audibile de mare intensitate (ex. >120 dB - sirene, petarde) s-au dovedit eficiente. Sunetele bioacustice (răgete, mârâituri) au efect de respingere confirmat.Propagare excelentă, dar produce poluare sonoră pentru oameni și alte specii.Ultrasunet>20 kHzUnele specii de urși (ex. urșii polari) pot auzi până la 20 kHz sau puțin peste. Efectul de respingere este foarte inconsistent.Se atenuează rapid (pierde intensitate) pe distanță și este afectat sever de factori de mediu (umiditate, presiune, relief, coronament forestier). Nu este potrivit pentru descurajare pe distanțe mari în teren montan.
+4. Siguranța mediului și preocupări privind sănătatea umană
+Probleme privind sănătatea umană:
+Deși producătorii afirmă adesea că dispozitivele ultrasonice sunt inofensive pentru oameni, cercetările arată existența unor riscuri clare:
+●       Percepție dependentă de vârstă: Persoanele sub 30 de ani și cele cu sensibilitate auditivă crescută pot percepe sunetele de frecvență înaltă (chiar și cele peste 20 kHz) și le consideră deranjante.
+
+●       Simptome adverse: Expunerea pe termen scurt la sunete de frecvență foarte înaltă (în intervalul 12-25 kHz) a fost asociată cu disconfort, iritare, dureri de cap, anxietate și dificultăți de concentrare.
+
+●       Efectele infrasunetelor: Deși sunt, în general, inaudibile, expunerea prelungită la infrasunete de intensitate ridicată (precum cele generate de turbinele eoliene) a fost corelată cu stări de disconfort, tulburare și chiar dezorientare la oameni.
+
+
+5. Impact asupra mediului și speciilor non-țintă:
+●       Masca auditivă și stresul: Atât zgomotele continue de frecvență joasă, cât și cele de frecvență înaltă pot perturba mediul acustic al faunei non-țintă. Poluarea sonoră poate masca semnalele pe care animalele le folosesc pentru comunicare, reproducere, detectarea prădătorilor sau căutarea hranei, ducând la stres fiziologic și scăderea condiției fizice generale.
+
+●       Evitarea habitatului: Animalele sensibile la frecvențele emise - inclusiv mamifere non-țintă, cum ar fi canidele și liliecii (care aud ultrasunete) - pot fi forțate să evite habitate altfel favorabile, modificând biodiversitatea locală și structura ecosistemului.
+
+●       Considerații ecologice: Deși aceste metode nu sunt toxice, aplicarea cronică și pe termen lung a undelor sonore direcționate și inaudibile într-un mediu natural este foarte puțin studiată și ar putea perturba echilibrul fragil al ecosistemului carpatic.
+
+6. Produse, brevete și tehnologii existente
+●       Dispozitive comerciale existente: Cele mai fiabile și recomandate mijloace de descurajare a urșilor nu sunt ultrasonice sau infrasonice, ci dispozitive audibile de mare intensitate, precum sirenele cu aer comprimat (>120 dB) sau petardele pirotehnice (screamers/bangers).
+
+
+●       Sisteme acustice: Unele sisteme comerciale (de exemplu, Critter Blaster PRO) utilizează o combinație de sunete sonice/bioacustice și stimuli vizuali pentru a alunga urșii și alte animale mari din zone fixe.
+
+●       Brevete: Există brevete pentru dispozitive portabile, precum goarne manuale alimentate cu aer comprimat, concepute pentru a emite unde ultrasonice și infrasonice alternante, combinate cu o lumină stroboscopică. Acestea demonstrează existența conceptului ca tehnologie, dar nu și eficiența sa științific dovedită pentru Ursus arctos.
+
+ 7. Recomandări pentru proiectarea sau testarea unui prototip
+Pentru a maximiza șansele de succes și a minimiza impactul asupra mediului în complexul ecosistem carpatic, orice prototip ar trebui să adopte o abordare integrată și adaptivă:
+
+Prioritizarea bioacusticii în locul frecvențelor pure:
+●       Prototipul ar trebui să utilizeze, cu prioritate, vocalize sintetizate sau înregistrate ale urșilor bruni agresivi (bioacustică), cu amplitudine mare (nivel dB ridicat) în domeniul audibil, întrucât acestea au un efect repelent demonstrat asupra urșilor bruni.
+Interval de testare a frecvențelor:
+●       Dacă se folosesc frecvențe inaudibile, testarea ar trebui să se concentreze pe zona superioară a spectrului auditiv uman (16-20 kHz) și intervalul ultrasonic inferior (<30 kHz), unde sensibilitatea auditivă a urșilor se suprapune cel mai probabil cu pragul maxim de disconfort uman.
+Abordarea provocărilor de propagare:
+●       Pentru a contracara atenuarea rapidă a sunetului în teren accidentat și acoperit de păduri, sistemul trebuie să dispună de o putere acustică foarte ridicată (dB înalt) la sursă.
+
+
+●       Se poate considera adăugarea unei componente de frecvență joasă (infrasunet sau frecvențe de ordinul kHz scăzut), la intensitate ridicată, pentru a pătrunde mai bine prin obstacole și distanță - aceasta putând servi drept stimul preventiv sau secundar de descurajare.
+
+
+Design integrat și adaptiv:
+●       Emițătorul trebuie să fie activat prin mișcare și să utilizeze o secvență aleatorie, nerepetitivă de semnale (combinând sunete bioacustice audibile, impulsuri ultrasonice și, eventual, efecte luminoase/stroboscopice) pentru a preveni obișnuirea urșilor.
+
+
+●       Sistemul trebuie proiectat cu difuzoare direcționale, pentru a focaliza fasciculul sonor asupra zonei de conflict și a reduce impactul asupra comunităților umane vecine sau a faunei non-țintă.
+ 
+8.Metode / Constatări
+Studiile științifice privind utilizarea sunetului ca mijloc de descurajare a urșilor se bazează în principal pe experimente de teren efectuate pe urși polari (Ursus maritimus), unde sunetele agresive sau sintetizate au avut un succes moderat în alungarea animalelor în timpul întâlnirilor la mică distanță.
+  De exemplu, un test realizat în anii 1970 pe urși polari a arătat că frecvențele ultrasonice fine, difuzate prin difuzoare de mare putere, au reușit să respingă urșii în aproximativ 69% dintre cazuri, deși rezultatele au fost inconsistente - unii urși nu au reacționat deloc sau chiar au fost atrași de sursa sunetului.
+Sirenele audibile (air horns) au fost, de asemenea, testate: au respins 51 din 74 de urși polari, fără efect asupra a 8 dintre ei, iar 15 s-au arătat atrași de sunet.
+  Sunetele agresive înregistrate în timpul confruntărilor între urși (analizate din punct de vedere al conținutului de frecvență) au fost propuse ca mijloace de descurajare, însă eficiența lor pe teren a variat.
+Pentru urșii bruni, inclusiv cei din Carpați, cercetările sunt și mai puține și se concentrează, în general, pe managementul habitatului, nu pe acustică. Nu s-au identificat studii directe privind dispozitivele ultrasonice sau infrasonice aplicate urșilor carpatini din România.
+  În schimb, managementul faunei din regiune pune accent pe monitorizare și coexistență, folosind tehnologii precum telemetria GPS sau analiza urmelor.
+
+Date privind frecvențele
+Intervalele de frecvență considerate eficiente sau ipotetice pentru alungarea urșilor provin dintr-un număr limitat de studii, majoritatea efectuate pe urși polari.
+  Frecvențele ultrasonice de aproximativ 21,5 kHz și 23 kHz au fost propuse pentru urșii bruni, întrucât se află în afara gamei auditive umane, dar în interiorul sensibilității auditive a urșilor, oferind potențialul unui semnal de avertizare fără a deranja oamenii.
+Pentru urșii polari, testele ultrasonice din anii 1970 au folosit intervale fine peste 20 kHz, obținând o rată de respingere de 69%.
+  Sunetele audibile agresive eficiente pentru urșii polari s-au situat în intervalul 100-600 Hz, cu vârfuri la 100, 125, 150, 200 și 250 Hz - valori care nu aparțin domeniului ultrasonic sau infrasonic.
+Pentru fauna generală, repelentele ultrasonice vizează intervalul 20-65 kHz pentru a induce stres asupra sistemului nervos; cerbii pot auzi până la 30 kHz, câinii până la 45 kHz, iar pisicile și mai sus.
+  Infrasunetele sub 20 Hz sunt teoretic eficiente pentru mamifere mari datorită propagării pe distanțe lungi și efectelor vibraționale, însă nu există studii specifice pe urși care să confirme eficiența lor.
+Diferențe de eficiență:
+●       Ultrasunetele (>20 kHz) sunt mai potrivite pentru dăunători mici (insecte, rozătoare), dar de obicei ineficiente pentru mamifere mari (inclusiv urși), din cauza atenuării rapide și a obișnuirii.
+
+
+●       Infrasunetele (<20 Hz) pot provoca dezorientare sau reacții de fugă la animale prin rezonanță corporală, dar sunt slab studiate ca metodă de management și mai degrabă asociate cu fenomene naturale (ex. comunicarea elefanților).
+
+
+●       În unele teste, ultrasunetele au redus activitatea de hrănire la lilieci cu 69-79%, însă aplicațiile infrasunetului în gestionarea faunei sunt minime.
+
+
+9.Siguranța mediului
+În pădurile carpatine, astfel de dispozitive trebuie implementate cu grijă pentru a evita dezechilibrele ecologice, întrucât urșii joacă un rol esențial în menținerea biodiversității.
+Produsele existente includ Critter Blaster PRO (bazat pe sunete sonice pentru urși și alte animale) și sisteme ultrasonice de respingere a urșilor, care emit frecvențe înalte fără a provoca rău. Există, de asemenea, brevete pentru sisteme de respingere ce folosesc senzori și sunete (inclusiv ultrasunete) destinate carnivorelor mari.
+ 
+10. Concluzii
+Deși sunetele ultrasonice și infrasonice oferă o abordare promițătoare, non-invazivă, pentru alungarea urșilor bruni carpatini, dovezile sunt limitate și provin în mare parte din studii asupra urșilor polari sau a faunei generale.
+Intervalele ultrasonice de 21,5-23 kHz prezintă o eficiență parțială, dar cu rezultate inconsistente și riscuri de obișnuire, în timp ce infrasunetele nu dispun de date specifice pentru urși și ridică mai multe riscuri pentru sănătate.
+  Impacturile asupra mediului - precum poluarea sonoră și disconfortul uman - subliniază necesitatea unui design atent, cu intensitate redusă și utilizare țintită.
+Pentru mediul carpatic - caracterizat prin păduri dense și densitate mare de urși - se recomandă:
+1. Proiectarea unui emițător portabil, alimentat cu baterii, cu frecvențe variabile (ex. 20-25 kHz ultrasonic și <20 Hz infrasonic), activat prin senzori de mișcare pentru eficiență energetică;
+
+
+2. Testarea prin experimente de teren în România, folosind camere-trapă pentru monitorizarea reacțiilor urșilor înainte și după implementare, comparativ cu zonele de control;
+
+
+3. Folosirea materialelor ecologice și a unui volum redus pentru a minimiza efectele asupra speciilor non-țintă;
+
+
+4. Colaborarea cu agențiile locale de faună sălbatică pentru obținerea aprobărilor etice și adaptarea la specificul habitatului, inclusiv proiectarea carcaselor rezistente la condițiile montane.
+
+
+Este necesară o cercetare suplimentară pentru validarea eficienței și siguranței acestor tehnologii în contextul specific al Carpaților. 
+10. Echipa de proiect 
+Numele autorilor:
+Barbu Brigitta - clasa a XI-a, Cercetător și Documentarist; Manager de Comunicare și Parteneriate
+Domuț Alexandra - clasa a XI-a , Cercetător și Documentarist; Manager de Comunicare și Parteneriate
+Mare Luca - clasa a XI-a Dezvoltator Tehnic - Sistem AI și Hardware; Dezvoltator Software - Aplicație și Integrare; Cercetător și Documentarist
+Mocan Alex - clasa a XI-a , Dezvoltator Tehnic - Sistem AI și Hardware; Dezvoltator Software - Aplicație și Integrare
+ 
+
+Coordonare:
+Coordonator proiect:prof. Domuț Bianca, Chimie
+Coord. Perspectivă transdisciplinară: prof. dr. Georgeta Cozma
+Instituţia reprezentată:
+Echipa Multitouchcnme - Colegiul Național ,,Mihai Eminescu" Satu Mare
+Atelier Transdisciplinar - Centrul Județean de Excelență Satu Mare
+
+11. Bibliografie
+● Chimie organică - volumul II, C.D. Nenițescu, EDP, București, 1974
+● Chimie organică Hendrickson James, Cram Donald, Hammond George, Ed. științifică și enciclopedică, București 1976
+● Fizică. Manual pentru clasa a XI-a F1, Rodica Ionescu-Andrei, Cristina Onea, Ion Toma, Ed. Art, București,2006
+● Fizică. Manual pentru clasa a XI-a, Enescu G., colectiv, Edtura Didactică și Pedagogică, București, 1996
+●  Noțiuni fundamentale de acustică, pdf., sursa: https://www.academia.edu/
+●  Acustica. Curs.Capit.8, sursa: http://magnum.engineering.upm.ro/~mtero/CURSURI/Fizica/ /Module/CAPITOL8.pdf
+● Simulator: PHET-The University of Colorado Boulder (https://phet.colorado.edu/ ) la adresa: https://phet.colorado.edu/en/simulations/
+● Test auditiv pentru frecvențe înalte. Sursă: https://www.youtube.com/
+12.Webgrafie 
+● https://carpathianbear.pl/en/2023/why-bears-do-rub-communication-anti-parasitic-self-medication-or-all-at-once-new-publication/
+● thomasbro.ch - Descriere tehnică a sistemelor AI de detecție și repelență pentru urși
+● theguardian.com - Articol despre drone folosite de rangeri pentru alungarea urșilor
+● petapixel.com - Analiză despre folosirea dronelor în hazing-ul urșilor și recomandări anti-habituare
+● engineering.q42.nl - Studiu despre antrenarea modelului YOLOv5 pentru recunoașterea urșilor în imagini wildlife
+● endangeredlandscapes.org - Raport despre sistemele AI de alertare pentru urși implementate în Carpați
+● bearvault.com - Articol despre simțul mirosului la urși și mirosuri respingătoare
+● en.wikipedia.org - Pagina "Bear spray" (descriere chimică și utilizare)
+● frontiersin.org - Cercetări privind utilizarea dronelor pentru aplicarea non-letală a spray-urilor anti-urs
+● play.google.com (RO-BEAR app) - Descrierea oficială a aplicației românești de raportare a urșilor în timp real 
+● https://www.researchgate.net/publication/237212635_Natural_and_Synthesized_Aggressive_Sounds_as_Polar_Bear_Repellents
+● https://www.backpacker.com/stories/ask-a-bear-do-ultrasonic-noises-repel-you/
+● https://polarbearsinternational.org/what-we-do/research/human-bear-coexistence/
+● http://hikinginthesmokys.blogspot.com/2020/03/are-air-horns-effective-as-bear.html
+● https://blogs.cornell.edu/nysipm/2016/08/16/ultrasonic-devices-ultra-ineffective/
+● https://www.backpacker.com/stories/ask-a-bear-do-ultrasonic-noises-repel-you/
+● https://forum.arduino.cc/t/ultrasonic-noise-generator-what-hz-for-cats-dogs-deer/617980
+● https://www.edn.com/ultrasound-and-insects/
+● https://www.sonictechnologyproducts.com/rodentrepeller-faq
+● https://www.jstor.org/stable/3872848
+● http://hikinginthesmokys.blogspot.com/2011/01/air-horns-as-bear-deterrents-revisited.html
+● https://digitalcommons.unl.edu/context/icwdm_usdanwrc/article/1221/viewcontent/Gilsdorf_IPMR_2003_Use_of_frightening.pdf
+● https://icwdm.org/management/repellents/ultrasound/
+● https://news.wildlifesos.org/listening-to-the-wild-through-animals-ears/
+● https://cosmosmagazine.com/nature/animals/human-noise-drives-animals-to-flee-us-forest-service/
+● https://pmc.ncbi.nlm.nih.gov/articles/PMC7018087/
+● https://www.researchgate.net/publication/388951777_High-frequency_hearing_sensitivity_does_not_systematically_imply_aversion_to_ultrasounds_in_large_terrestrial_mammals
+● https://pmc.ncbi.nlm.nih.gov/articles/PMC8411947/
+● https://www.sciencedirect.com/science/article/pii/S2949736125000491
+● https://www.ndt.net/article/ultragarsas/Vol.64-No.3-2009_06-Guzas.pdf
+● https://pmc.ncbi.nlm.nih.gov/articles/PMC8954895/
+● https://environmentalevidencejournal.biomedcentral.com/articles/10.1186/s13750-025-00368-3
+● https://wiseenergy.org/Energy/Health/Infrasound_and_land_based_animals.pdf
+● https://nhsjs.com/2025/auditory-perception-and-health-effects-of-high-frequency-animal-repellers-across-age-groups/
+● https://www.elephantlisteningproject.org/all-about-infrasound/
+● https://hii-mag.com/article/experiencing-the-unseen-tangible-impacts-of-infrasound-and-ultrasound
+● https://www.mdpi.com/2071-1050/14/13/7554
+● https://patents.google.com/patent/US20060174533A1/en
+● https://patents.google.com/patent/US8474411B2/en
+● https://www.collectionscanada.gc.ca/obj/s4/f2/dsk1/tape8/PQDD_0016/MQ48237.pdf
+● https://bird-x.com/interactive-problem-solver/bear-control/
+● https://shyaminnovation.com/product/p18-bear-repellent/
+● https://www.alberta.ca/deterrants-bear-spray-and-noisemakers
+● https://pmc.ncbi.nlm.nih.gov/articles/PMC5606905/
+● https://natureconservation.pensoft.net/article/22955/
+● https://pubmed.ncbi.nlm.nih.gov/30404517/
+● https://www.backpacker.com/stories/ask-a-bear-do-ultrasonic-noises-repel-you/
+● https://journals.biologists.com/jeb/article/210/7/1116/17378/Polar-bear-Ursus-maritimus-hearing-measured-with
+13. Studii
+● Experimentul lui Miller (1978)
+● https://www.bearbiology.org/download/field-tests-of-potential-polar-bear-repellents/#:~:text=seminatural%20encounters%20with%20the%20observer,depending%20on%20the%20chemical
+● 
+Smith, T. S., Herrero, S., DeBruyn, T. D., Wilder, J. M. (2008). Efficacy of Bear Deterrent Spray in Alaska. Journal of Wildlife Management, 72(3).
+● Rogers, L. L. (1984). Reactions of Free-Ranging Black Bears to Capsaicin Spray Repellent. (US Forest Service / bear-study).
+● Wilder, J. M., Mangipane, L. S., Atwood, T., Kochnev, A., Smith, T. (2023). Efficacy of Bear Spray as a Deterrent Against Polar Bears. Wildlife Society Bulletin.
+● Creel, E. M. (2007). Effectiveness of deterrents on black bear (Ursus americanus). Disertație / teză (Humboldt State / California).
+● Beckmann, J. P. et al. (2004). Deterrent Techniques for Bears. (Raport / studiu experimental).
+● Herrero, S. (1998). Field Use of Capsicum Spray as a Bear Deterrent. Wildlife Society Bulletin.
+● Smith, T. S. (1998). Attraction of Brown Bears to Red Pepper Spray Deterrent: Caveats for Use. Wildlife Society Bulletin, 26:92-94.
+● Smith, T. S., Herrero, S., DeBruyn, T. D. (2005). Alaskan Brown Bears, Humans and Habituation. Ursus, 16.
+● Smith, T. S. (2012). Efficacy of Firearms for Bear Deterrence in Alaska. (revizuire / articol).
+● Smith, T. S., Herrero, S., DeBruyn, T. D. et al. (2008). Bear Spray Report / Federal Interagency Grizzly Bear Committee.
+● Smith, T. S., alții (2020). An Investigation of Factors Influencing Bear Spray Performance.
+● Bear Deterrents Bibliography (Hunt et al. 1983).
+● Human-Black Bear Conflicts: A Review of Common Management Practices. HWI Monograph.
+● Conservation Evidence. Use non-lethal methods to deter carnivores from attacking.
+● Fiveable. (2024, July 25). 15.3 Effects of infrasound on humans and structures - Acoustics
+● Intelligent Bear Prevention System Based on Computer Vision: An Approach to Reduce Human-Bear Conflicts in the Tibetan Plateau Area, China,Pengyu Chen Teng Fei1 Yunyan Du Jiawei Yi Yi Li John A. Kupfer School of Resources and Environmental Sciences, Wuhan University, Wuhan 430070, China Department of Geography, University of South Carolina, Columbia 29201, USA State Key Laboratory of Resources and Environmental Information System, Beijing 100101, China Institute of Zoology, arXiv:2503.23178v1 [cs.CV] 29 Mar 2025.
+
+ 
+
+
+
+

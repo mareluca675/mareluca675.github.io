@@ -77,6 +77,10 @@ body {
 .nav a.cta:hover{transform: scale(1.05) translateY(-2px); box-shadow: 0 8px 25px rgba(46,125,50,.25)}
 .nav a.cta::before {display: none}
 
+/* Language selector */
+#langSelect.lang-select{ appearance:none; background:#ffffff; color:#0c2b1e; border:1px solid rgba(0,0,0,.12); padding:.35rem .6rem; border-radius:8px; font-weight:600 }
+#langSelect.lang-select:focus{ outline:2px solid rgba(46,125,50,.25) }
+
 .hero{padding:2rem; background: radial-gradient(1200px 600px at 20% -10%, rgba(102,187,106,.15), transparent), var(--card); box-shadow: var(--shadow); position:relative; overflow:hidden}
 .hero::before{content:''; position:absolute; top:0; left:0; right:0; bottom:0; background:linear-gradient(45deg, transparent 0%, rgba(102,187,106,.08) 50%, transparent 100%); animation:shimmer 8s ease-in-out infinite}
 
