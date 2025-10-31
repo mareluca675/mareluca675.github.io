@@ -273,3 +273,94 @@ code{font-family: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Libe
 /* CTA banner */
 .cta-banner{display:flex; align-items:center; justify-content:space-between; gap:1rem}
 .cta-actions{display:flex; gap:.6rem}
+
+/* Hero enhancements */
+.hero-badge{display:inline-block; padding:.4rem .8rem; background:linear-gradient(135deg, rgba(46,125,50,.15), rgba(102,187,106,.15)); border:1px solid rgba(46,125,50,.3); border-radius:999px; font-size:.85rem; font-weight:600; margin-bottom:1rem; color:var(--accent)}
+.hero-stats{display:flex; gap:1.5rem; margin:1.5rem 0; flex-wrap:wrap}
+.hero-stat{text-align:center}
+.hero-stat-number{font-size:2rem; font-weight:900; color:var(--accent); line-height:1}
+.hero-stat-label{font-size:.75rem; color:var(--muted); margin-top:.25rem; text-transform:uppercase; letter-spacing:.5px}
+
+/* Problem urgency section */
+.problem-urgency{margin:2rem 0; padding:2rem; background:linear-gradient(135deg, rgba(255,107,107,.08), rgba(255,160,67,.08))}
+.problem-header{text-align:center; margin-bottom:2rem}
+.problem-subtitle{color:var(--muted); font-size:1.1rem; font-style:italic; margin-top:.5rem}
+.problem-stats{display:grid; gap:1rem}
+.problem-stat{background:rgba(255,255,255,.6); padding:1.5rem; border-radius:12px; text-align:center; border-left:4px solid #ff6b6b}
+.problem-number{font-size:2.5rem; font-weight:900; color:#ff6b6b; line-height:1}
+.problem-label{font-size:.95rem; color:var(--text); margin-top:.5rem; font-weight:600}
+.problem-causes h3{margin-top:0}
+
+/* System architecture */
+.system-architecture{margin:2rem 0; padding:2rem; background:linear-gradient(135deg, rgba(102,187,106,.05), rgba(46,125,50,.05)); border-radius:20px}
+.architecture-header{text-align:center; margin-bottom:2.5rem}
+.architecture-subtitle{color:var(--muted); font-size:1.05rem; margin-top:.5rem}
+.grid.three{grid-template-columns:repeat(3, 1fr)}
+@media (max-width: 920px){.grid.three{grid-template-columns:1fr}}
+.system-card{position:relative; padding:1.5rem; background:var(--card); border:2px solid rgba(46,125,50,.15); transition:all 0.4s ease}
+.system-card:hover{border-color:var(--accent); transform:translateY(-8px); box-shadow:0 20px 40px rgba(46,125,50,.2)}
+.system-icon{font-size:3rem; margin-bottom:.8rem}
+.system-badge{display:inline-block; padding:.25rem .6rem; background:rgba(46,125,50,.12); color:var(--accent); border-radius:999px; font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.5px; margin:.5rem 0}
+.system-tech{display:flex; gap:.4rem; flex-wrap:wrap; margin-top:1rem}
+.tech-badge{font-size:.7rem; padding:.2rem .5rem; background:rgba(46,125,50,.08); border:1px solid rgba(46,125,50,.2); border-radius:999px; color:var(--accent); font-weight:600}
+
+/* Workflow diagram */
+.workflow-diagram{margin-top:2rem; padding:2rem; background:linear-gradient(135deg, rgba(255,255,255,.9), rgba(245,255,247,.95))}
+.workflow{display:flex; align-items:center; gap:1rem; flex-wrap:wrap; justify-content:center}
+.workflow-step{flex:1; min-width:160px; text-align:center; padding:1rem; background:rgba(46,125,50,.05); border-radius:12px; border:1px solid rgba(46,125,50,.15)}
+.step-number{width:2.5rem; height:2.5rem; background:linear-gradient(135deg, var(--accent), var(--accent-2)); color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:1.2rem; margin:0 auto .5rem}
+.step-content h4{margin:.5rem 0 .25rem; font-size:.95rem}
+.step-content p{font-size:.8rem; color:var(--muted); margin:0}
+.workflow-arrow{font-size:1.5rem; color:var(--accent); font-weight:900}
+@media (max-width: 768px){.workflow{flex-direction:column} .workflow-arrow{transform:rotate(90deg)}}
+
+/* Scientific foundation */
+.scientific-foundation{margin:2rem 0; padding:2rem; background:linear-gradient(135deg, rgba(102,187,106,.06), rgba(46,125,50,.06))}
+.section-lead{text-align:center; color:var(--muted); font-size:1.05rem; margin-bottom:2rem; max-width:800px; margin-left:auto; margin-right:auto}
+.science-area{background:rgba(255,255,255,.5); padding:1.5rem; border-radius:12px; border-left:4px solid var(--accent)}
+.science-area h3{margin-top:0; color:var(--accent)}
+
+/* Objectives & Impact */
+.objectives-impact{margin:2rem 0}
+.objectives-header{text-align:center; margin-bottom:2rem}
+.objectives-subtitle{color:var(--muted); font-size:1.05rem; margin-top:.5rem}
+.objective-card{background:linear-gradient(135deg, rgba(255,255,255,.95), rgba(247,251,247,.95)); border-left:4px solid var(--accent)}
+.impact-expected{margin-top:2rem; padding:2rem; background:linear-gradient(135deg, rgba(46,125,50,.08), rgba(102,187,106,.08))}
+.grid.three-impact{display:grid; grid-template-columns:repeat(3, 1fr); gap:1.5rem; margin-top:1.5rem}
+@media (max-width: 820px){.grid.three-impact{grid-template-columns:1fr}}
+.impact-item{text-align:center; padding:1.5rem; background:rgba(255,255,255,.7); border-radius:12px}
+.impact-icon{font-size:2.5rem; margin-bottom:.8rem}
+.impact-item h4{margin:.5rem 0; color:var(--accent)}
+.impact-item p{font-size:.9rem; color:var(--muted); margin:0}
+
+/* Card note */
+.card-note{margin-top:1rem; padding:1rem; background:rgba(46,125,50,.08); border-left:3px solid var(--accent); border-radius:8px; font-size:.95rem}
+
+/* Educational impact */
+.educational-impact{margin:2rem 0; padding:2.5rem; background:linear-gradient(135deg, rgba(102,187,106,.1), rgba(46,125,50,.08))}
+.education-header{text-align:center; margin-bottom:2.5rem}
+.education-subtitle{color:var(--muted); font-size:1.05rem; margin-top:.5rem}
+.education-feature{background:rgba(255,255,255,.7); padding:1.5rem; border-radius:12px; border-left:4px solid var(--accent)}
+.edu-icon{font-size:2.5rem; margin-bottom:.8rem}
+.education-impact-stats{display:flex; gap:2rem; justify-content:center; margin:2rem 0; flex-wrap:wrap}
+.edu-stat{text-align:center; padding:1.5rem; background:rgba(255,255,255,.6); border-radius:12px; min-width:150px}
+.edu-stat-number{font-size:2.5rem; font-weight:900; color:var(--accent); line-height:1}
+.edu-stat-label{font-size:.85rem; color:var(--muted); margin-top:.5rem; font-weight:600}
+.education-quote{margin-top:2rem; text-align:center}
+.education-quote blockquote{font-size:1.2rem; font-style:italic; color:var(--text); max-width:700px; margin:0 auto; padding:1.5rem; background:rgba(255,255,255,.5); border-left:4px solid var(--accent); border-radius:12px}
+
+/* Why judges */
+.why-judges{margin:2rem 0; padding:2.5rem; background:linear-gradient(135deg, rgba(46,125,50,.06), rgba(102,187,106,.06)); border:2px solid var(--accent)}
+.why-judges h2{text-align:center; margin-bottom:2rem; color:var(--accent); font-size:2rem}
+.judge-criteria{background:rgba(255,255,255,.8); padding:1.5rem; border-radius:12px; border-top:3px solid var(--accent)}
+.judge-criteria h3{margin-top:0; color:var(--accent); font-size:1.3rem}
+
+/* Testimonial enhancements */
+.testimonial-card{background:linear-gradient(135deg, rgba(255,255,255,.95), rgba(247,251,247,.95)); border-left:4px solid var(--accent)}
+.testimonial-icon{font-size:2rem; margin-bottom:.8rem}
+
+/* Enhanced CTA */
+.cta-banner{flex-wrap:wrap; padding:2rem; background:linear-gradient(135deg, rgba(46,125,50,.12), rgba(102,187,106,.12)); border:2px solid var(--accent)}
+.cta-banner .cta-text{flex:1; min-width:300px}
+.cta-banner .cta-actions{flex-wrap:wrap}
+@media (max-width: 768px){.cta-banner{flex-direction:column; text-align:center} .cta-actions{justify-content:center}}
