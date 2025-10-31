@@ -225,3 +225,23 @@ code{font-family: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Libe
 .study-actions a{ text-decoration:none; color:var(--text); border:1px solid rgba(0,0,0,.12); padding:.35rem .6rem; border-radius:10px }
 .study-preview{ margin-top:.7rem; border:1px solid rgba(255,255,255,.12); border-radius:10px; overflow:hidden }
 .study-preview iframe{ width:100%; height:480px; border:0; background:#f0f7f2 }
+
+/* Badges */
+.badges{display:flex; flex-wrap:wrap; gap:.5rem}
+.badge{display:inline-block; padding:.25rem .6rem; border-radius:999px; background:rgba(46,125,50,.07); color:var(--text); border:1px solid rgba(46,125,50,.25); font-weight:600; font-size:.85rem}
+
+/* Timeline */
+.timeline{margin:1.2rem 0}
+.timeline-list{list-style:none; margin:0; padding:0 0 0 1rem; position:relative}
+.timeline-list::before{content:''; position:absolute; left:.5rem; top:0; bottom:0; width:2px; background:rgba(0,0,0,.1)}
+.timeline-list li{position:relative; margin:1rem 0 1rem 0}
+.tl-dot{position:absolute; left:-.1rem; top:.35rem; width:.8rem; height:.8rem; border-radius:50%; background:var(--accent); box-shadow:0 0 0 4px rgba(46,125,50,.15)}
+.tl-content{margin-left:1rem}
+.tl-content h3{margin:.1rem 0 .25rem}
+
+/* Testimonials */
+.testimonials blockquote{font-size:1.05rem; line-height:1.6; margin:0}
+
+/* CTA banner */
+.cta-banner{display:flex; align-items:center; justify-content:space-between; gap:1rem}
+.cta-actions{display:flex; gap:.6rem}

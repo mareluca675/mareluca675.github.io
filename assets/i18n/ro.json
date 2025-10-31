@@ -1,5 +1,5 @@
 {
-  "brand": "Sistem de Detectare a Urșilor",
+  "brand": "BearAware",
   "nav": {
     "home": "Acasă",
     "app": "Aplicație",
@@ -18,11 +18,11 @@
     "mobileApp": "Aplicație Mobilă"
   },
   "footer": {
-    "ecosystem": "Ecosistemul de Detectare a Urșilor",
+    "ecosystem": "Ecosistemul BearAware",
     "tagline": "Protejăm fauna și comunitățile prin tehnologie AI inovatoare",
     "projects": "Proiecte",
     "resources": "Resurse",
-    "copyright": "© 2025 Sistem de Detectare a Urșilor · Conservare inteligentă"
+    "copyright": "© 2025 BearAware · Conservare inteligentă"
   },
   "app": {
     "title": "Aplicație Mobilă · În curând",

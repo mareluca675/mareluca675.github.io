@@ -1,5 +1,5 @@
 {
-  "brand": "Bear Detection System",
+  "brand": "BearAware",
   "nav": {
     "home": "Home",
     "app": "App",
@@ -18,11 +18,11 @@
     "mobileApp": "Mobile App"
   },
   "footer": {
-    "ecosystem": "Bear Detection Ecosystem",
+    "ecosystem": "BearAware Ecosystem",
     "tagline": "Protecting wildlife and communities through innovative AI technology",
     "projects": "Projects",
     "resources": "Resources",
-    "copyright": "© 2025 Bear Detection System · Making wildlife conservation smarter"
+    "copyright": "© 2025 BearAware · Making wildlife conservation smarter"
   },
   "app": {
     "title": "Mobile App · Coming Soon",
