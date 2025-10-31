@@ -1,0 +1,39 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Implementation rocket/gear -->
+  <defs>
+    <linearGradient id="implGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#2e7d32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#66bb6a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rocket body -->
+  <path d="M 45 70 L 45 35 Q 45 20 50 15 Q 55 20 55 35 L 55 70 Z" fill="url(#implGrad)"/>
+
+  <!-- Rocket nose cone -->
+  <path d="M 45 35 Q 45 20 50 15 Q 55 20 55 35 Z" fill="#2e7d32"/>
+
+  <!-- Window -->
+  <circle cx="50" cy="42" r="6" fill="#ffffff" opacity="0.4"/>
+  <circle cx="50" cy="42" r="4" fill="#66bb6a"/>
+
+  <!-- Fins -->
+  <path d="M 45 60 L 35 70 L 45 70 Z" fill="#66bb6a" opacity="0.8"/>
+  <path d="M 55 60 L 65 70 L 55 70 Z" fill="#66bb6a" opacity="0.8"/>
+
+  <!-- Flames -->
+  <path d="M 42 70 Q 40 78 42 85 Q 44 80 42 70 Z" fill="#ff9f43" opacity="0.7"/>
+  <path d="M 50 70 Q 48 82 50 90 Q 52 82 50 70 Z" fill="#ff9f43"/>
+  <path d="M 58 70 Q 60 78 58 85 Q 56 80 58 70 Z" fill="#ff9f43" opacity="0.7"/>
+
+  <!-- Flame glow -->
+  <ellipse cx="50" cy="80" rx="15" ry="8" fill="#ff9f43" opacity="0.3"/>
+
+  <!-- Gear in background (implementation) -->
+  <circle cx="25" cy="30" r="8" fill="none" stroke="#2e7d32" stroke-width="2" opacity="0.3"/>
+  <circle cx="25" cy="30" r="4" fill="none" stroke="#2e7d32" stroke-width="2" opacity="0.3"/>
+  <line x1="25" y1="22" x2="25" y2="18" stroke="#2e7d32" stroke-width="2" opacity="0.3"/>
+  <line x1="25" y1="38" x2="25" y2="42" stroke="#2e7d32" stroke-width="2" opacity="0.3"/>
+  <line x1="33" y1="30" x2="37" y2="30" stroke="#2e7d32" stroke-width="2" opacity="0.3"/>
+  <line x1="17" y1="30" x2="13" y2="30" stroke="#2e7d32" stroke-width="2" opacity="0.3"/>
+</svg>

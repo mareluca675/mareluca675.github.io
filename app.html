@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>App · BearAware</title>
+  <title>Aplicație · BearAware</title>
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
   <link rel="alternate icon" href="assets/logo.svg" />
   <link rel="mask-icon" href="assets/logo.svg" color="#2e7d32" />
@@ -19,21 +19,12 @@
     <nav class="nav">
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">☰</button>
       <ul id="navlist">
-        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-        <li><a href="app.html" class="active" data-i18n="nav.app">App</a></li>
-        <li><a href="problems.html" data-i18n="nav.problems">Problems</a></li>
-        <li><a href="solution.html" data-i18n="nav.solution">Our Solution</a></li>
-        <li><a href="studies.html" data-i18n="nav.studies">Studies</a></li>
-        <li><a href="team.html" data-i18n="nav.team">Team</a></li>
-        <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
-        <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
-        <li>
-          <select id="langSelect" class="lang-select" aria-label="Language selector">
-            <option value="en">EN</option>
-            <option value="ro">RO</option>
-          </select>
-        </li>
-        <li><a class="cta" href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Acasă</a></li>
+        <li><a href="app.html" class="active" data-i18n="nav.app">Aplicație</a></li>
+        <li><a href="problems.html" data-i18n="nav.problems">Probleme</a></li>
+        <li><a href="solution.html" data-i18n="nav.solution">Soluția Noastră</a></li>
+        <li><a href="studies.html" data-i18n="nav.studies">Studii</a></li>
+        <li><a href="team.html" data-i18n="nav.team">Echipă</a></li>
       </ul>
     </nav>
   </div>
@@ -41,34 +32,137 @@
 
 <main class="container">
   <section class="card hero">
-    <h1 data-i18n="app.title">Mobile App · Coming Soon</h1>
-    <p class="lead" data-i18n="app.lead">Centrul rețelei: hartă live cu detecții, notificări și chatbot educațional pentru drumeți, localnici și autorități.</p>
+    <h1 data-i18n="app.title">BearAware Mobile App</h1>
+    <p class="lead" data-i18n="app.lead">Centrul coordonării: aplicația care conectează sistemele fixe și mobile cu utilizatorii, oferind alerte în timp real și educație pentru coexistență sigură.</p>
     <div class="hero-actions">
-      <a class="button" href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener" data-i18n="home.mobileApp">Mobile App</a>
-      <a class="button ghost" href="#notify" data-i18n="app.notify">Notify me at launch</a>
+      <a class="button" href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener">View on GitHub</a>
+      <a class="button ghost" href="#features">Explore Features</a>
     </div>
   </section>
 
-  <section id="notify" class="card">
-    <h2 data-i18n="app.featuresTitle">Funcționalități</h2>
-    <ul class="checklist">
-      <li data-i18n="app.f1">Hartă interactivă cu zone roșii la detecții</li>
-      <li data-i18n="app.f2">Notificări în timp real</li>
-      <li data-i18n="app.f3">Chatbot educațional cu sfaturi de siguranță</li>
-    </ul>
-    <p class="muted" data-i18n="app.notify">Urmărește noutățile și lansarea beta:</p>
-    <ul>
-      <li><a href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener">Repository</a></li>
-      <li><a href="https://github.com/mareluca675/bear-detection-app/releases" target="_blank" rel="noopener">Releases</a></li>
-    </ul>
+  <section class="card">
+    <h2>Rolul aplicației în ecosistemul BearAware</h2>
+    <p class="lead">Aplicația BearAware reprezintă <strong>centrul de legătură între cele două sisteme</strong> (fix și mobil), transformând datele de detecție în informații utile și acționabile pentru drumeți, rangeri, localnici și autorități.</p>
+    <p>Când un urs este detectat de sistemul fix sau de dronă, aplicația primește imediat coordonatele GPS și marchează zona pe hartă, asigurând transparență și siguranță în zonele frecventate de urși.</p>
+  </section>
+
+  <section id="features" class="grid two">
+    <article class="card">
+      <div class="icon-wrapper">
+        <img src="assets/icons/mobile-app.svg" alt="Interactive Map" class="feature-icon" />
+      </div>
+      <h3>Hartă interactivă în timp real</h3>
+      <ul class="checklist">
+        <li>Afișează prezența urșilor pe Google Maps cu <strong>zone roșii</strong> pentru detecții recente</li>
+        <li>Coordonate GPS exacte transmise de sistemele fixe și dronă</li>
+        <li>Actualizare automată la fiecare detecție nouă</li>
+        <li>Vizibilitate pentru toți utilizatorii din zonă</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="icon-wrapper">
+        <img src="assets/icons/chatbot.svg" alt="AI Chatbot" class="feature-icon" />
+      </div>
+      <h3>Asistent AI educațional</h3>
+      <ul class="checklist">
+        <li>Chatbot specializat în comportamentul urșilor</li>
+        <li>Răspunde la întrebări precum: "Ce fac dacă întâlnesc un urs?"</li>
+        <li>Informații biologice și sfaturi de siguranță</li>
+        <li>Enciclopedie digitală despre urși și coexistență</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="grid two">
+    <article class="card">
+      <div class="icon-wrapper">
+        <img src="assets/icons/bear.svg" alt="Real-time Alerts" class="feature-icon" />
+      </div>
+      <h3>Notificări în timp real</h3>
+      <ul class="checklist">
+        <li>Alerte push instant la detecția unui urs în apropiere</li>
+        <li>Sincronizare cu sistemul RoAlert</li>
+        <li>Informații despre distanță și direcție</li>
+        <li>Recomandări de siguranță personalizate</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="icon-wrapper">
+        <img src="assets/icons/community.svg" alt="For Everyone" class="feature-icon" />
+      </div>
+      <h3>Pentru toți utilizatorii</h3>
+      <ul class="checklist">
+        <li><strong>Drumeți</strong> - verifică traseele înainte de plecare</li>
+        <li><strong>Localnici</strong> - protecție pentru gospodării</li>
+        <li><strong>Rangeri</strong> - monitorizare și intervenție</li>
+        <li><strong>Autorități</strong> - date pentru management</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="card">
+    <h2>Integrare completă cu sistemele de detecție</h2>
+    <p>Aplicația comunică bidirecțional cu:</p>
+    <div class="grid two">
+      <div>
+        <h3>Sistem Fix</h3>
+        <ul class="bullets">
+          <li>Primește alerte de la camerele AI (YOLOv8)</li>
+          <li>Marchează zonele unde s-au activat ultrasunetele/infrasunetele</li>
+          <li>Loghează fiecare apariție cu timestamp și GPS</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Sistem Mobil (Dronă)</h3>
+        <ul class="bullets">
+          <li>Primește coordonatele detecțiilor aeriene</li>
+          <li>Afișează traseele scanate de dronă</li>
+          <li>Confirmă siguranța traseelor înainte de drumeție</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Componenta educațională</h2>
+    <p class="lead">Dimensiunea educativă derivă din prezența <strong>chatbot-ului AI</strong>, care oferă sfaturi, informații și curiozități despre urși, ajutând comunitățile umane să trăiască în armonie cu natura.</p>
+    <p>Este prima soluție complet integrată de acest fel: un sistem inteligent, ecologic și empatic, care apără oamenii, redă demnitatea urșilor și <strong>transformă teama în cunoaștere</strong>.</p>
+  </section>
+
+  <section class="card">
+    <h2>Tehnologii utilizate</h2>
+    <div class="grid two">
+      <ul class="checklist">
+        <li><strong>Google Maps API</strong> - hartă interactivă</li>
+        <li><strong>Real-time Database</strong> - sincronizare instant</li>
+        <li><strong>Push Notifications</strong> - alerte în timp real</li>
+      </ul>
+      <ul class="checklist">
+        <li><strong>AI Chatbot (LLM)</strong> - asistent educațional</li>
+        <li><strong>GPS Integration</strong> - localizare precisă</li>
+        <li><strong>Cross-platform</strong> - Android & iOS</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Dezvoltare și lansare</h2>
+    <p><strong>Status actual:</strong> Prototip funcțional cu funcții de bază pentru hartă și alerte</p>
+    <p class="muted">Urmărește progresul dezvoltării:</p>
+    <div class="hero-actions">
+      <a class="button" href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener">GitHub Repository</a>
+      <a class="button ghost" href="https://github.com/mareluca675/bear-detection-app/releases" target="_blank" rel="noopener">View Releases</a>
+    </div>
   </section>
 </main>
 
 <footer class="site-footer">
   <div class="container">
     <div class="footer-bottom">
-      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
-      <p data-i18n="footer.copyright">© 2025 BearAware · Making wildlife conservation smarter</p>
+      <p><a href="privacy.html">Politica de Confidențialitate</a> · <a href="terms.html">Termeni și Condiții</a></p>
+      <p data-i18n="footer.copyright">© 2025 BearAware · Conservarea faunei sălbatice mai inteligent</p>
     </div>
   </div>
 </footer>

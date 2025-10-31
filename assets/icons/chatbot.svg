@@ -1,0 +1,29 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- AI Chatbot -->
+  <defs>
+    <linearGradient id="chatbotGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e7d32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#66bb6a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Chat bubble -->
+  <rect x="20" y="25" width="60" height="45" rx="8" fill="url(#chatbotGrad)"/>
+  <path d="M 45 70 L 50 78 L 55 70 Z" fill="url(#chatbotGrad)"/>
+
+  <!-- Robot face -->
+  <circle cx="38" cy="45" r="4" fill="#ffffff"/>
+  <circle cx="62" cy="45" r="4" fill="#ffffff"/>
+
+  <!-- Antenna -->
+  <line x1="50" y1="25" x2="50" y2="18" stroke="#2e7d32" stroke-width="2"/>
+  <circle cx="50" cy="15" r="3" fill="#66bb6a"/>
+
+  <!-- Smile/chat lines -->
+  <path d="M 35 55 Q 50 62 65 55" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Message dots -->
+  <circle cx="35" cy="38" r="1.5" fill="#ffffff" opacity="0.6"/>
+  <circle cx="42" cy="38" r="1.5" fill="#ffffff" opacity="0.6"/>
+  <circle cx="49" cy="38" r="1.5" fill="#ffffff" opacity="0.6"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fixed system tower with sensors -->
+  <defs>
+    <linearGradient id="towerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e7d32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#66bb6a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base -->
+  <rect x="35" y="75" width="30" height="8" fill="#2e7d32" rx="2"/>
+
+  <!-- Tower pole -->
+  <rect x="47" y="25" width="6" height="50" fill="url(#towerGrad)" rx="1"/>
+
+  <!-- Camera/sensor box -->
+  <rect x="42" y="20" width="16" height="12" fill="#2e7d32" rx="2"/>
+  <circle cx="50" cy="26" r="3" fill="#66bb6a"/>
+
+  <!-- Sound waves (ultrasound representation) -->
+  <path d="M 60 26 Q 70 26 70 35" stroke="#66bb6a" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 40 26 Q 30 26 30 35" stroke="#66bb6a" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 65 26 Q 78 26 78 40" stroke="#66bb6a" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M 35 26 Q 22 26 22 40" stroke="#66bb6a" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Antenna -->
+  <line x1="50" y1="20" x2="50" y2="12" stroke="#2e7d32" stroke-width="2"/>
+  <circle cx="50" cy="10" r="2" fill="#66bb6a"/>
+</svg>

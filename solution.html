@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Our Solution · BearAware</title>
+  <title>Soluția Noastră · BearAware</title>
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
@@ -14,79 +14,262 @@
     <nav class="nav">
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">☰</button>
       <ul id="navlist">
-        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-        <li><a href="app.html" data-i18n="nav.app">App</a></li>
-        <li><a href="problems.html" data-i18n="nav.problems">Problems</a></li>
-        <li><a href="solution.html" class="active" data-i18n="nav.solution">Our Solution</a></li>
-        <li><a href="studies.html" data-i18n="nav.studies">Studies</a></li>
-        <li><a href="team.html" data-i18n="nav.team">Team</a></li>
-        <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
-        <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
-        <li>
-          <select id="langSelect" class="lang-select" aria-label="Language selector">
-            <option value="en">EN</option>
-            <option value="ro">RO</option>
-          </select>
-        </li>
+        <li><a href="index.html" data-i18n="nav.home">Acasă</a></li>
+        <li><a href="app.html" data-i18n="nav.app">Aplicație</a></li>
+        <li><a href="problems.html" data-i18n="nav.problems">Probleme</a></li>
+        <li><a href="solution.html" class="active" data-i18n="nav.solution">Soluția Noastră</a></li>
+        <li><a href="studies.html" data-i18n="nav.studies">Studii</a></li>
+        <li><a href="team.html" data-i18n="nav.team">Echipă</a></li>
       </ul>
     </nav>
   </div>
 </header>
 <main class="container">
+  <section class="card hero">
+    <h1 data-i18n="solution.title">Soluția BearAware</h1>
+    <p class="lead">Prima soluție complet integrată: un sistem inteligent, ecologic și empatic, care apără oamenii, redă demnitatea urșilor și transformă teama în cunoaștere.</p>
+  </section>
+
   <section class="card">
-    <h1 data-i18n="solution.title">Soluția noastră</h1>
-    <p class="lead" data-i18n="solution.lead">Sistem integrat în trei componente: stații fixe (ultrasunete + infrasunete + AI), dronă cu cameră termică și aplicația mobilă BearAware (hartă + chatbot).</p>
+    <h2>Concept tehnologic integrat în trei componente</h2>
+    <p class="lead" data-i18n="solution.lead">Sistem integrat care combină <strong>detecție AI, descurajare non-letală și educație</strong> - formând o rețea coordonată care detectează, descurajează și monitorizează urșii fără a-i răni.</p>
+    <p>Echipa de proiect avansează o soluție care ar putea contribui la relocarea urșilor în habitatul lor, pădurile devenind un "sanctuar natural" și, implicit, ar minimiza agresarea oamenilor de către urși. Ținem cont atât de securitatea omului, cât și a animalelor - soluțiile sunt ecologice, respectând legislația în vigoare.</p>
+  </section>
+
+  <section class="card">
+    <div class="icon-wrapper">
+      <img src="assets/icons/fixed-system.svg" alt="Fixed System" class="feature-icon" />
+    </div>
+    <h2 data-i18n="solution.fixedTitle">1. Sistem Fix - Protecție perimetrală inteligentă</h2>
+    <p class="lead">Instalat pe stâlpii de înaltă tensiune care delimitează localitatea frecventată de urși, acționează ca un <strong>gard de protecție invizibil</strong>.</p>
+
+    <h3>Componente și funcționare</h3>
+    <ul class="checklist">
+      <li><strong>Cameră video</strong> - monitorizare continuă a zonei</li>
+      <li><strong>AI (YOLOv8)</strong> - analizează în timp real fluxul video pentru detecția urșilor (~700 imagini de antrenament)</li>
+      <li><strong>Difuzor special</strong> - emite ultrasunete și infrasunete la intensitate controlată</li>
+      <li><strong>Mini-computer</strong> - procesare locală și comunicare cu aplicația</li>
+      <li><strong>LED luminos</strong> - semnal vizual de primejdie pentru urs</li>
+    </ul>
+
+    <h3>Parametri tehnici bioacustici</h3>
+    <div class="grid two">
+      <div>
+        <h4>Ultrasunete</h4>
+        <ul class="bullets">
+          <li><strong>Frecvență:</strong> ~21 kHz (±10%)</li>
+          <li><strong>Presiune acustică:</strong> 60-100 dB</li>
+          <li><strong>Durată:</strong> 20 secunde intermitent</li>
+          <li><strong>Unghi radiație:</strong> >120°</li>
+          <li><strong>Rază acoperire:</strong> până la 60m</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Infrasunete</h4>
+        <ul class="bullets">
+          <li><strong>Frecvență:</strong> <20 Hz</li>
+          <li><strong>Efect:</strong> panică și frică</li>
+          <li><strong>Durată:</strong> 10 secunde alternativ</li>
+          <li><strong>Propagare:</strong> sinusoidală, agresivă</li>
+          <li><strong>Siguranță:</strong> sub 80 dB la distanțe umane</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Procesul de descurajare</h3>
+    <ol class="numbered-list">
+      <li><strong>Detecție AI:</strong> Camera video trimite flux către algoritm YOLOv8 care identifică ursul</li>
+      <li><strong>Activare automată:</strong> Difuzorul emite alternanță ultrasunete (20s) + infrasunete (10s)</li>
+      <li><strong>Intensitate adaptivă:</strong> Sunetul devine mai puternic când ursul se apropie, mai slab când se îndepărtează</li>
+      <li><strong>Alertă instant:</strong> Trimite semnal către BearAware App și RoAlert, marcând zona cu cerc roșu</li>
+    </ol>
+
+    <p class="muted"><strong>Siguranță etică:</strong> Emisie intermitentă și alternativă pentru a nu provoca leziuni grave și a preveni obișnuința urșilor. Respectăm codul etic și siguranța sanitară a omului și ursului.</p>
+  </section>
+
+  <section class="card">
+    <div class="icon-wrapper">
+      <img src="assets/icons/drone-system.svg" alt="Drone System" class="feature-icon" />
+    </div>
+    <h2 data-i18n="solution.droneTitle">2. Sistem Mobil (Dronă) - Intervenție aeriană</h2>
+    <p class="lead">Dronă echipată cu camere multispectrale și mecanism de pulverizare cu repelent natural pe bază de mentol.</p>
+
+    <h3>Specificații tehnice</h3>
+    <div class="grid two">
+      <div>
+        <h4>Hardware</h4>
+        <ul class="bullets">
+          <li><strong>Distanță între motoare:</strong> 78mm</li>
+          <li><strong>Placă control:</strong> SpeedyBee F745 35A AIO</li>
+          <li><strong>Giroscop:</strong> MPU6000 (zbor stabil)</li>
+          <li><strong>Motoare:</strong> SpeedyBee 1404 4500KV</li>
+          <li><strong>Elice:</strong> Gemfan D63-3 (2.5 inchi)</li>
+          <li><strong>Greutate:</strong> ~140g (fără baterie)</li>
+          <li><strong>Baterie:</strong> LiPo 4S 650-900 mAh</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sisteme de detecție</h4>
+        <ul class="bullets">
+          <li><strong>Cameră RGB:</strong> RunCam Phoenix 2 Nano</li>
+          <li><strong>Cameră termoviziune:</strong> detecție infraroșu</li>
+          <li><strong>Transmițător:</strong> TX800 VTX</li>
+          <li><strong>Antenă:</strong> SpeedyBee 5.8 GHz V2</li>
+          <li><strong>AI onboard:</strong> detecție aeriană</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Repelent natural - Soluție pe bază de mentol</h3>
+    <p>Amestec neinvaziv care combină apă și uleiuri esențiale naturale, pulverizat sub formă de ceață fină:</p>
+
+    <h4>Compoziție chimică (formula per 1L)</h4>
+    <ul class="bullets">
+      <li><strong>950 ml apă curată</strong> - bază a amestecului</li>
+      <li><strong>20 ml ulei esențial</strong> (pin/eucalipt/mentă ~2%) - miros intens neplăcut pentru urși</li>
+      <li><strong>10 ml suc lămâie proaspăt</strong> - intensifică mirosul, conservare naturală</li>
+      <li><strong>5 ml săpun biodegradabil</strong> - dispersie omogenă</li>
+    </ul>
+
+    <h4>Componenți activi din uleiul de mentă</h4>
+    <ul class="bullets">
+      <li><strong>Mentol (C₁₀H₂₀O)</strong> - 30-55%, efect răcoritor și repelent</li>
+      <li><strong>Mentonă (C₁₀H₁₆O)</strong> - 10-30%, proprietăți terapeutice</li>
+      <li><strong>Eucaliptol (C₁₀H₁₈O)</strong> - 3-15%, efect antiseptic</li>
+      <li><strong>Mentil acetat (C₁₂H₂₀O₂)</strong> - 3-10%, volatilizant</li>
+    </ul>
+
+    <h4>Eficiență demonstrată</h4>
+    <p>Bazat pe studiul "Intelligent Bear Prevention System" (Tibet, 2025) cu capsaicină+mentol (75% eficiență), formula noastră doar cu mentol și compuși volatili naturali atinge <strong>~66% eficiență estimată</strong>, cu avantaje în siguranță și tolerabilitate.</p>
+
+    <h3>Mod de operare</h3>
+    <ol class="numbered-list">
+      <li><strong>Detecție aeriană:</strong> Camerele RGB și termoviziune identifică ursul prin AI</li>
+      <li><strong>Alertă aplicație:</strong> Trimite poziția GPS către BearAware App</li>
+      <li><strong>Pulverizare ceață:</strong> Eliberează substanța mentolată care îndepărtează ursul fără a-l răni</li>
+      <li><strong>Dublu stimul:</strong> Zgomotul dronei + mirosul mentolat creează efect sinergic</li>
+      <li><strong>Scanare preventivă:</strong> Poate fi trimisă în fața grupurilor de drumeți pentru verificarea traseelor</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <div class="icon-wrapper">
+      <img src="assets/icons/mobile-app.svg" alt="BearAware App" class="feature-icon" />
+    </div>
+    <h2 data-i18n="solution.appTitle">3. Aplicația BearAware - Centrul de coordonare</h2>
+    <p class="lead">Centrul de legătură între cele două sisteme, oferind date în timp real și instrumente educaționale.</p>
+
+    <ul class="checklist">
+      <li><strong>Hartă interactivă</strong> - Google Maps API cu zone roșii pentru detecții recente</li>
+      <li><strong>Notificări real-time</strong> - alerte push instant + sincronizare RoAlert</li>
+      <li><strong>Asistent AI specializat</strong> - chatbot educațional despre comportamentul urșilor</li>
+      <li><strong>Enciclopedie digitală</strong> - sfaturi de siguranță, informații biologice</li>
+      <li><strong>Transparență comunitară</strong> - acces pentru drumeți, rangeri, localnici și autorități</li>
+    </ul>
+    <div class="hero-actions">
+      <a class="button" href="app.html">Detalii despre aplicație</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Cum funcționează sistemul integrat</h2>
+    <p class="lead">Când un urs se apropie, sistemul fix îl recunoaște și îl alungă prin emiterea unei alternanțe de sunete (ultrasunete-infrasunete); dacă persistă, drona intervine din aer, eliberează ceața naturală cu mentol și trimite poziția exactă către aplicație. Oamenii primesc imediat o alertă și pot vedea pe hartă locația animalului.</p>
+
+    <div class="flow-diagram">
+      <div class="flow-step">
+        <h3>1. Detecție</h3>
+        <p>Sistem fix sau dronă detectează ursul prin AI (YOLOv8)</p>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <h3>2. Descurajare</h3>
+        <p>Ultrasunete/infrasunete sau ceață cu mentol</p>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <h3>3. Alertă</h3>
+        <p>Notificare instant în aplicație + RoAlert</p>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <h3>4. Acțiune</h3>
+        <p>Utilizatorii evită zona, autorități intervin</p>
+      </div>
+    </div>
   </section>
 
   <section class="grid two">
     <article class="card">
-      <h2 data-i18n="solution.fixedTitle">Sistem Fix</h2>
+      <div class="icon-wrapper">
+        <img src="assets/icons/innovation.svg" alt="Innovation" class="feature-icon" />
+      </div>
+      <h2>Noutate științifică</h2>
       <ul class="checklist">
-        <li data-i18n="solution.fixed1">Detecție AI (YOLOv8) pe flux video</li>
-        <li data-i18n="solution.fixed2">Alternanță ultrasunete/infrasunete, intermitentă</li>
-        <li data-i18n="solution.fixed3">Alerte către aplicație și RoAlert, marcaj pe hartă</li>
+        <li><strong>Integrare multiplatformă</strong> - unități fixe + coordonare cu dronă</li>
+        <li><strong>Detecție AI autonomă</strong> - YOLOv8 pentru recunoaștere precisă</li>
+        <li><strong>Mecanism neletal</strong> - repelent natural fără efecte toxice</li>
+        <li><strong>Alertă publică + educație</strong> - aplicație integrată</li>
+        <li><strong>Arhitectură stratificată</strong> - redundanță funcțională</li>
       </ul>
     </article>
-    <article class="card">
-      <h2 data-i18n="solution.droneTitle">Sistem Mobil (Dronă)</h2>
-      <ul class="checklist">
-        <li data-i18n="solution.drone1">Camere RGB + termoviziune; detecție aeriană</li>
-        <li data-i18n="solution.drone2">Pulverizare ceață fină cu mentol (repelent natural)</li>
-        <li data-i18n="solution.drone3">Scanare trasee și confirmare vizuală</li>
-      </ul>
-    </article>
-  </section>
 
-  <section class="grid two">
     <article class="card">
-      <h2 data-i18n="solution.appTitle">Aplicația BearAware</h2>
+      <div class="icon-wrapper">
+        <img src="assets/icons/impact.svg" alt="Benefits" class="feature-icon" />
+      </div>
+      <h2 data-i18n="solution.benefitsTitle">Beneficii și impact</h2>
       <ul class="checklist">
-        <li data-i18n="solution.app1">Hartă interactivă cu zone roșii</li>
-        <li data-i18n="solution.app2">Chatbot educațional cu bune practici</li>
-        <li data-i18n="solution.app3">Notificări și transparență pentru comunități</li>
-      </ul>
-    </article>
-    <article class="card">
-      <h2 data-i18n="solution.benefitsTitle">Beneficii</h2>
-      <ul class="checklist">
-        <li data-i18n="solution.b1">Prevenție non-letală și coexistență sigură</li>
-        <li data-i18n="solution.b2">Reducerea alarmelor false prin AI</li>
-        <li data-i18n="solution.b3">Platformă de educație și alertare</li>
+        <li><strong>Prevenție non-letală</strong> - coexistență sigură om-urs</li>
+        <li><strong>Reducere alarme false</strong> - filtrare prin AI</li>
+        <li><strong>Urși în habitatul natural</strong> - redobândirea demnității</li>
+        <li><strong>Trasee montane sigure</strong> - verificare preventivă</li>
+        <li><strong>Educație comunitară</strong> - transformarea fricii în cunoaștere</li>
+        <li><strong>Date pentru autorități</strong> - loghează apariții cu GPS</li>
       </ul>
     </article>
   </section>
 
   <section class="card">
-    <h2 data-i18n="solution.resourcesTitle">Resurse și studii</h2>
-    <p data-i18n="solution.resourcesLead">Vezi <a href="studies.html">Studii</a> pentru bibliografie, modelare acustică și recomandări de prototip.</p>
+    <h2>Fundamentare științifică</h2>
+    <p>Soluția se bazează pe:</p>
+    <ul class="bullets">
+      <li><strong>Bioacustică:</strong> Frecvențe 21 kHz ultrasonic + <20 Hz infrasonic, conform studiilor de sensibilitate auditivă la Ursidae</li>
+      <li><strong>Modelare matematică:</strong> Legea inversului pătrat pentru intensitatea sonoră - asigură siguranță umană (<80 dB) și eficiență pentru urși (60-100 dB)</li>
+      <li><strong>Chimie organică:</strong> Compoziție repelent natural pe bază de mentol (C₁₀H₂₀O) și compuși volatili</li>
+      <li><strong>Computer Vision:</strong> Rețele neuronale convoluționale (CNN) - YOLOv8 antrenat pe ~700 imagini</li>
+      <li><strong>Studii de referință:</strong> "Intelligent Bear Prevention System" (Tibet 2025), cercetări NASA pe infrasunete</li>
+    </ul>
+    <div class="hero-actions">
+      <a class="button" href="studies.html" data-i18n="solution.resourcesTitle">Vezi studiile complete</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Concluzii și viziune</h2>
+    <div class="grid two">
+      <div>
+        <h3>Rezultate așteptate</h3>
+        <ul class="checklist">
+          <li>Urșii vor evita zonele cu dispozitive active</li>
+          <li>Reîntoarcerea în habitatul natural</li>
+          <li>Așezări umane și trasee mai sigure</li>
+          <li>Reducerea conflictelor om-urs</li>
+          <li>Creșterea conștientizării publice</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Finalitate</h3>
+        <p class="lead">Spre care tindem este ca <strong>urșii să își regăsească demnitatea</strong> - cu ajutorul voluntarilor și rangerilor îi ajutăm să își reia obiceiurile alimentare și să își caute singuri hrana.</p>
+      </div>
+    </div>
   </section>
 </main>
 
 <footer class="site-footer">
   <div class="container">
     <div class="footer-bottom">
-      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
-      <p data-i18n="footer.copyright">© 2025 BearAware · Making wildlife conservation smarter</p>
+      <p><a href="privacy.html">Politica de Confidențialitate</a> · <a href="terms.html">Termeni și Condiții</a></p>
+      <p data-i18n="footer.copyright">© 2025 BearAware · Conservarea faunei sălbatice mai inteligent</p>
     </div>
   </div>
 </footer>

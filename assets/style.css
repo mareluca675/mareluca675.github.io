@@ -364,3 +364,42 @@ code{font-family: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Libe
 .cta-banner .cta-text{flex:1; min-width:300px}
 .cta-banner .cta-actions{flex-wrap:wrap}
 @media (max-width: 768px){.cta-banner{flex-direction:column; text-align:center} .cta-actions{justify-content:center}}
+
+/* New Roadmap Timeline Design */
+.roadmap-section{margin:2rem 0; padding:2rem; background:var(--card); border-radius:16px; box-shadow:var(--shadow)}
+.roadmap-header{text-align:center; margin-bottom:3rem}
+.roadmap-subtitle{color:var(--muted); font-size:1.05rem; margin-top:.5rem}
+.roadmap-timeline{position:relative; max-width:900px; margin:0 auto}
+.roadmap-item{display:flex; gap:2rem; margin-bottom:3rem; position:relative}
+.roadmap-item:last-child{margin-bottom:0}
+.roadmap-marker{position:relative; flex-shrink:0; width:40px; display:flex; flex-direction:column; align-items:center}
+.marker-circle{width:20px; height:20px; border-radius:50%; background:var(--accent); border:4px solid #fff; box-shadow:0 0 0 2px var(--accent); z-index:2; position:relative}
+.marker-line{flex:1; width:3px; background:linear-gradient(180deg, var(--accent), var(--accent-2)); margin-top:.5rem}
+.roadmap-item:last-child .marker-line{display:none}
+.roadmap-content{flex:1; background:rgba(46,125,50,.04); padding:1.5rem; border-radius:12px; border-left:3px solid var(--accent)}
+.roadmap-status{display:inline-block; padding:.25rem .6rem; border-radius:999px; font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.5px; margin-bottom:.5rem}
+.roadmap-item.completed .roadmap-status{background:rgba(46,125,50,.15); color:var(--accent)}
+.roadmap-item.completed .marker-circle{background:var(--accent)}
+.roadmap-item.in-progress .roadmap-status{background:rgba(255,160,67,.15); color:#ff9f43}
+.roadmap-item.in-progress .marker-circle{background:#ff9f43; border-color:#fff; box-shadow:0 0 0 2px #ff9f43, 0 0 15px rgba(255,160,67,.4); animation:pulse 2s infinite}
+.roadmap-item.upcoming .roadmap-status{background:rgba(100,100,100,.1); color:#666}
+.roadmap-item.upcoming .marker-circle{background:#ccc; border-color:#fff; box-shadow:0 0 0 2px #ccc}
+.roadmap-item.upcoming .marker-line{background:linear-gradient(180deg, #ccc, #e0e0e0)}
+.roadmap-content h3{margin:.5rem 0; font-size:1.3rem; color:var(--text)}
+.roadmap-content p{margin:.5rem 0 1rem; color:var(--muted); line-height:1.6}
+.roadmap-details{display:flex; gap:.5rem; flex-wrap:wrap}
+.detail-item{font-size:.75rem; padding:.3rem .6rem; background:rgba(255,255,255,.7); border:1px solid rgba(46,125,50,.2); border-radius:999px; color:var(--text)}
+@keyframes pulse{0%, 100%{box-shadow:0 0 0 2px #ff9f43, 0 0 15px rgba(255,160,67,.4)} 50%{box-shadow:0 0 0 2px #ff9f43, 0 0 25px rgba(255,160,67,.7)}}
+@media (max-width: 768px){.roadmap-item{flex-direction:row; gap:1rem} .roadmap-marker{width:30px}}
+
+/* Icon wrappers for custom images */
+.system-icon-wrapper, .science-icon-wrapper, .objective-icon-wrapper, .edu-icon-wrapper, .judge-icon-wrapper, .impact-icon-wrapper{display:flex; justify-content:center; align-items:center; margin-bottom:1rem; height:60px}
+.system-icon-img, .science-icon, .objective-icon, .edu-icon-img, .judge-icon, .impact-icon-img{max-width:50px; max-height:50px; object-fit:contain; filter:drop-shadow(0 2px 4px rgba(0,0,0,.1))}
+.science-icon-wrapper{margin-bottom:.8rem}
+.objective-icon-wrapper{margin-bottom:.8rem}
+
+/* Remove emoji styles that are no longer needed */
+.system-icon{display:none}
+.edu-icon{display:none}
+.impact-icon{display:none}
+.testimonial-icon{display:none}
