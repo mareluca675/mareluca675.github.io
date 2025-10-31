@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Solution · Bear Detection System</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Logo" /><span class="brand-text" data-i18n="brand">Bear Detection System</span></a>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">☰</button>
+      <ul id="navlist">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="app.html" data-i18n="nav.app">App</a></li>
+        <li><a href="problems.html" data-i18n="nav.problems">Problems</a></li>
+        <li><a href="solution.html" class="active" data-i18n="nav.solution">Our Solution</a></li>
+        <li><a href="studies.html" data-i18n="nav.studies">Studies</a></li>
+        <li><a href="team.html" data-i18n="nav.team">Team</a></li>
+        <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+        <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
+        <li>
+          <select id="langSelect" aria-label="Language selector">
+            <option value="en">EN</option>
+            <option value="ro">RO</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <section class="card">
+    <h1 data-i18n="solution.title">Our Solution</h1>
+    <p class="lead" data-i18n="solution.lead">YOLO-based detection across static stations and mobile devices with real-time alerts.</p>
+  </section>
+
+  <section class="grid two">
+    <article class="card">
+      <h2>Architecture</h2>
+      <ul class="checklist">
+        <li>Static stations with cameras running YOLOv8 inference</li>
+        <li>Mobile app with on-device detection and notifications</li>
+        <li>Configurable thresholds and sources (webcam, RTSP, files)</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h2>Benefits</h2>
+      <ul class="checklist">
+        <li>Early warnings reduce risks for people and wildlife</li>
+        <li>Portable and deployable in connectivity-limited areas</li>
+        <li>Open-source for transparency and collaboration</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="card">
+    <h2>Try It</h2>
+    <p>Visit <a href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">AI System</a> and <a href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener">Mobile App</a>.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2025 Bear Detection System · Making wildlife conservation smarter</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+<script src="assets/i18n.js"></script>
+</body>
+</html>
+
+

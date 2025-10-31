@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Studies · Bear Detection System</title>
+  <title>App · Bear Detection System</title>
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
   <link rel="alternate icon" href="assets/logo.svg" />
-  <link rel="mask-icon" href="assets/logo.svg" color="#1b4d3e" />
+  <link rel="mask-icon" href="assets/logo.svg" color="#2e7d32" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -20,10 +20,10 @@
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">☰</button>
       <ul id="navlist">
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-        <li><a href="app.html" data-i18n="nav.app">App</a></li>
+        <li><a href="app.html" class="active" data-i18n="nav.app">App</a></li>
         <li><a href="problems.html" data-i18n="nav.problems">Problems</a></li>
         <li><a href="solution.html" data-i18n="nav.solution">Our Solution</a></li>
-        <li><a href="studies.html" class="active" data-i18n="nav.studies">Studies</a></li>
+        <li><a href="studies.html" data-i18n="nav.studies">Studies</a></li>
         <li><a href="team.html" data-i18n="nav.team">Team</a></li>
         <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
         <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
@@ -33,45 +33,42 @@
             <option value="ro">RO</option>
           </select>
         </li>
-        <li><a class="cta" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a class="cta" href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
     </nav>
   </div>
 </header>
+
 <main class="container">
+  <section class="card hero">
+    <h1 data-i18n="app.title">Mobile App · Coming Soon</h1>
+    <p class="lead" data-i18n="app.lead">Our smartphone app brings real-time detection and alerts to your pocket.</p>
+    <div class="hero-actions">
+      <a class="button" href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener" data-i18n="home.mobileApp">Mobile App</a>
+      <a class="button ghost" href="#notify" data-i18n="app.notify">Notify me at launch</a>
+    </div>
+  </section>
 
-<section class="card">
-  <h1>Studies</h1>
-  <p class="lead">Attach PDFs, DOCX files, and other references. To add items, commit your files into the <code>/studies</code> folder of this site and list them in <code>/studies/studies.json</code>.</p>
-  <ol>
-    <li>Drop your documents into <code>/studies/</code> (e.g., <code>studies/bear-paper.pdf</code>).</li>
-    <li>Edit <code>studies/studies.json</code> and add a new entry with the filename and metadata.</li>
-    <li>Commit and push — this page will auto-render the list.</li>
-  </ol>
-</section>
-
-<section id="studies-root" class="grid two"></section>
-
-<section class="card">
-  <h2>Example JSON entry</h2>
-  <pre><code>{
-  "title": "Bear Activity and Habitat 2025",
-  "filename": "bear-activity-2025.pdf",
-  "authors": "A. Researcher, B. Scientist",
-  "year": 2025,
-  "tags": ["behavior","habitat"]
-}</code></pre>
-  <p class="muted">Note: PDFs can be previewed inline below each card. DOCX and other formats will show a download link (browser preview support varies).</p>
-</section>
-
+  <section id="notify" class="card">
+    <h2>Beta Access</h2>
+    <p class="muted">Subscribe via GitHub Discussions or watch the repository to be notified on releases.</p>
+    <ul>
+      <li><a href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener">Repository</a></li>
+      <li><a href="https://github.com/mareluca675/bear-detection-app/releases" target="_blank" rel="noopener">Releases</a></li>
+    </ul>
+  </section>
 </main>
+
 <footer class="site-footer">
   <div class="container">
-    <p>© 2025 Bear Detection System</p>
-    <p><a href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">Project Repository</a></p>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2025 Bear Detection System · Making wildlife conservation smarter</p>
+    </div>
   </div>
 </footer>
 <script src="assets/script.js"></script>
 <script src="assets/i18n.js"></script>
 </body>
 </html>
+
+

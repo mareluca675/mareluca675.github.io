@@ -1,0 +1,43 @@
+{
+  "brand": "Bear Detection System",
+  "nav": {
+    "home": "Home",
+    "app": "App",
+    "problems": "Problems",
+    "solution": "Our Solution",
+    "studies": "Studies",
+    "team": "Team",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "home": {
+    "heroTitle": "Real‑time Bear Detection",
+    "heroLead": "AI-powered detection to protect people and bears through early warnings.",
+    "getStarted": "Get Started",
+    "aiSystem": "AI System",
+    "mobileApp": "Mobile App"
+  },
+  "footer": {
+    "ecosystem": "Bear Detection Ecosystem",
+    "tagline": "Protecting wildlife and communities through innovative AI technology",
+    "projects": "Projects",
+    "resources": "Resources",
+    "copyright": "© 2025 Bear Detection System · Making wildlife conservation smarter"
+  },
+  "app": {
+    "title": "Mobile App · Coming Soon",
+    "lead": "Our smartphone app brings real-time detection and alerts to your pocket.",
+    "notify": "Notify me at launch"
+  },
+  "problems": {
+    "title": "The Problem",
+    "lead": "Human–bear conflicts, late detection, and lack of timely alerts increase risks for both."
+  },
+  "solution": {
+    "title": "Our Solution",
+    "lead": "YOLO-based detection across static stations and mobile devices with real-time alerts."
+  },
+  "privacy": {"title": "Privacy Policy"},
+  "terms": {"title": "Terms & Conditions"}
+}
+

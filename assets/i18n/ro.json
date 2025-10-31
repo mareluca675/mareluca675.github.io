@@ -1,0 +1,43 @@
+{
+  "brand": "Sistem de Detectare a Urșilor",
+  "nav": {
+    "home": "Acasă",
+    "app": "Aplicație",
+    "problems": "Probleme",
+    "solution": "Soluția Noastră",
+    "studies": "Studii",
+    "team": "Echipă",
+    "privacy": "Confidențialitate",
+    "terms": "Termeni"
+  },
+  "home": {
+    "heroTitle": "Detecție în timp real a urșilor",
+    "heroLead": "Detecție bazată pe AI pentru a proteja oamenii și urșii prin alerte timpurii.",
+    "getStarted": "Începe",
+    "aiSystem": "Sistem AI",
+    "mobileApp": "Aplicație Mobilă"
+  },
+  "footer": {
+    "ecosystem": "Ecosistemul de Detectare a Urșilor",
+    "tagline": "Protejăm fauna și comunitățile prin tehnologie AI inovatoare",
+    "projects": "Proiecte",
+    "resources": "Resurse",
+    "copyright": "© 2025 Sistem de Detectare a Urșilor · Conservare inteligentă"
+  },
+  "app": {
+    "title": "Aplicație Mobilă · În curând",
+    "lead": "Aplicația noastră aduce detecția și alertele în timp real pe telefon.",
+    "notify": "Anunță-mă la lansare"
+  },
+  "problems": {
+    "title": "Problema",
+    "lead": "Conflictele om–urs, detecția târzie și lipsa alertelor cresc riscurile pentru toți."
+  },
+  "solution": {
+    "title": "Soluția Noastră",
+    "lead": "Detecție bazată pe YOLO pe stații fixe și mobile, cu alerte în timp real."
+  },
+  "privacy": {"title": "Politica de Confidențialitate"},
+  "terms": {"title": "Termeni și Condiții"}
+}
+

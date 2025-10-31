@@ -14,17 +14,25 @@
   <div class="container header-inner">
     <a class="brand" href="index.html">
       <img id="brandLogoSvg" src="assets/logo.svg" alt="Bear Detection System logo" onerror="this.src='assets/logo-placeholder.svg';" />
-      <span class="brand-text">Bear Detection System</span>
+      <span class="brand-text" data-i18n="brand">Bear Detection System</span>
     </a>
     <nav class="nav">
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">☰</button>
       <ul id="navlist">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="installation.html">Install</a></li>
-        <li><a href="team.html" class="active">Team</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="studies.html">Studies</a></li>
-        <li><a href="troubleshooting.html">Troubleshooting</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="app.html" data-i18n="nav.app">App</a></li>
+        <li><a href="problems.html" data-i18n="nav.problems">Problems</a></li>
+        <li><a href="solution.html" data-i18n="nav.solution">Our Solution</a></li>
+        <li><a href="studies.html" data-i18n="nav.studies">Studies</a></li>
+        <li><a href="team.html" class="active" data-i18n="nav.team">Team</a></li>
+        <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+        <li><a href="terms.html" data-i18n="nav.terms">Terms</a></li>
+        <li>
+          <select id="langSelect" aria-label="Language selector">
+            <option value="en">EN</option>
+            <option value="ro">RO</option>
+          </select>
+        </li>
         <li><a class="cta" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
     </nav>
@@ -99,10 +107,12 @@
 </main>
 <footer class="site-footer">
   <div class="container">
-    <p>© 2025 Bear Detection System</p>
-    <p><a href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">Project Repository</a></p>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2025 Bear Detection System · Making wildlife conservation smarter</p>
+    </div>
   </div>
 </footer>
 <script src="assets/script.js"></script>
+<script src="assets/i18n.js"></script>
 </body>
 </html>
