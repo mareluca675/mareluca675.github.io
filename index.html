@@ -1,609 +1,276 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BearAware - Sistem Integrat pentru Coexistență Om-Urs | Protecție Non-Letală cu AI</title>
-  <meta name="description" content="BearAware combină sisteme fixe inteligente (ultrasunete/infrasunete + AI YOLOv8), drone autonome cu camere termice și aplicație mobilă cu hartă în timp real. Prima soluție integrată din România pentru reducerea conflictelor om-urs și reintroducerea urșilor în habitat natural." />
-  <meta name="keywords" content="BearAware, detectie ursi, AI YOLOv8, ultrasunete, infrasunete, drona termica, coexistenta om-urs, conservare fauna, Romania, Carpati" />
-  <meta property="og:title" content="BearAware - Sistem Integrat pentru Coexistență Om-Urs" />
-  <meta property="og:description" content="Prima rețea integrată din România care combină AI, bioacustică și tehnologie dronă pentru protecția urșilor și a comunităților." />
-  <meta property="og:type" content="website" />
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
-  <link rel="alternate icon" href="assets/logo.svg" />
-  <link rel="mask-icon" href="assets/logo.svg" color="#1b4d3e" />
-  <link rel="stylesheet" href="assets/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Vocabulary Learning App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html"><img id="brandLogoSvg" src="assets/logo.svg" alt="BearAware logo" onerror="this.src='assets/logo-placeholder.svg';" /><span class="brand-text" data-i18n="brand">BearAware</span></a>
-    <nav class="nav">
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">☰</button>
-      <ul id="navlist">
-        <li><a href="index.html" data-i18n="nav.home">Acasă</a></li>
-        <li><a href="app.html" data-i18n="nav.app">Aplicație</a></li>
-        <li><a href="problems.html" data-i18n="nav.problems">Probleme</a></li>
-        <li><a href="solution.html" data-i18n="nav.solution">Soluția Noastră</a></li>
-        <li><a href="studies.html" data-i18n="nav.studies">Studii</a></li>
-        <li><a href="team.html" data-i18n="nav.team">Echipă</a></li>
-        <li><a class="cta" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener">GitHub</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<main class="container">
+    <div class="container">
+        <header>
+            <h1>📚 English Vocabulary Learning</h1>
+            <nav class="mode-selector">
+                <button class="mode-btn active" data-mode="browse">Browse</button>
+                <button class="mode-btn" data-mode="flashcards">Flashcards</button>
+                <button class="mode-btn" data-mode="quiz">Quiz</button>
+                <button class="mode-btn" data-mode="fillin">Fill-in</button>
+                <button class="mode-btn" data-mode="matching">Matching</button>
+                <button class="mode-btn" data-mode="statistics">Statistics</button>
+                <button class="mode-btn" data-mode="challenges">Daily</button>
+            </nav>
+            <div class="header-controls">
+                <button class="btn-icon" id="theme-toggle" title="Toggle dark mode">🌙</button>
+                <button class="btn-icon" id="favorites-btn" title="View favorites">⭐</button>
+            </div>
+        </header>
 
-<section class="hero card">
-  <div class="hero-content">
-    <div class="hero-visual">
-      <div class="bear-animation">
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXdvYTIxemprcTRxNDNtOGM2MmZ3bnU1b2dqNW4xZmcxczdhMG51byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/IThjAlJnD9WNO/giphy.gif" alt="Bear walking in forest" class="hero-gif" />
-      </div>
-    </div>
-    <div class="hero-text">
-      <div class="hero-badge">Științe Aplicate • Categoria Seniori</div>
-      <h1 data-i18n="home.heroTitle">BearAware: Prima Rețea Integrată pentru Coexistență Om–Urs</h1>
-      <p class="lead" data-i18n="home.heroLead">Un ecosistem tehnologic complet non-letal care combină sisteme fixe inteligente cu ultrasunete/infrasunete, drone autonome cu camere termice și repelent natural, plus o aplicație mobilă cu hartă în timp real și chatbot educațional — protejând oamenii și ajutând urșii să revină în habitatul lor natural.</p>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="hero-stat-number">3</div>
-          <div class="hero-stat-label">Sisteme Integrate</div>
+        <!-- Browse Mode -->
+        <div id="browse-mode" class="mode-content active">
+            <div class="browse-controls">
+                <div class="search-container">
+                    <input type="text" class="search-input" id="search-input" placeholder="🔍 Search vocabulary...">
+                    <button class="btn-icon" id="clear-search" title="Clear search" style="display: none;">✕</button>
+                </div>
+                <div class="filter-controls">
+                    <select class="filter-select" id="sort-select">
+                        <option value="default">Sort: Default</option>
+                        <option value="alphabetical">Sort: A-Z</option>
+                        <option value="category">Sort: Category</option>
+                        <option value="difficulty">Sort: Difficulty</option>
+                    </select>
+                    <button class="btn btn-secondary" id="show-favorites-only" title="Show only favorites">⭐ Favorites</button>
+                </div>
+            </div>
+            <div class="category-selector">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="words">Words</button>
+                <button class="category-btn" data-category="adverb-adjectives">Adverb + Adjectives</button>
+                <button class="category-btn" data-category="adjective-nouns">Adjective + Nouns</button>
+                <button class="category-btn" data-category="idioms">Idioms</button>
+                <button class="category-btn" data-category="phrases">Phrases</button>
+                <button class="category-btn" data-category="verb-phrases">Verb + Phrases</button>
+                <button class="category-btn" data-category="phrasal-verbs">Phrasal Verbs</button>
+            </div>
+            <div class="vocabulary-list" id="vocabulary-list"></div>
         </div>
-        <div class="hero-stat">
-          <div class="hero-stat-number">AI</div>
-          <div class="hero-stat-label">YOLOv8 Detection</div>
+
+        <!-- Flashcard Mode -->
+        <div id="flashcard-mode" class="mode-content">
+            <div class="flashcard-container">
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <div class="flashcard-category" id="flashcard-category"></div>
+                            <div class="flashcard-term" id="flashcard-term"></div>
+                            <button class="btn-icon flashcard-audio" id="flashcard-audio-front" title="Pronounce">🔊</button>
+                            <div class="flashcard-hint">Click to reveal meaning</div>
+                        </div>
+                        <div class="flashcard-back">
+                            <div class="flashcard-category" id="flashcard-category-back"></div>
+                            <div class="flashcard-term" id="flashcard-term-back"></div>
+                            <div class="flashcard-meaning" id="flashcard-meaning"></div>
+                            <button class="btn-icon flashcard-audio" id="flashcard-audio-back" title="Pronounce">🔊</button>
+                            <div class="flashcard-examples" id="flashcard-examples"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flashcard-controls">
+                    <button class="btn btn-secondary" id="prev-card">← Previous</button>
+                    <button class="btn btn-primary" id="flip-card">Flip Card</button>
+                    <button class="btn btn-secondary" id="next-card">Next →</button>
+                </div>
+                <div class="flashcard-progress">
+                    <span id="flashcard-counter">1 / 0</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="flashcard-progress"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="hero-stat">
-          <div class="hero-stat-number">0</div>
-          <div class="hero-stat-label">Răniri Animale</div>
+
+        <!-- Quiz Mode -->
+        <div id="quiz-mode" class="mode-content">
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <h2>Quiz Mode</h2>
+                    <div class="quiz-stats">
+                        <span>Score: <strong id="quiz-score">0</strong></span>
+                        <span>Question: <strong id="quiz-question-num">1</strong> / <strong id="quiz-total">0</strong></span>
+                    </div>
+                </div>
+                <div class="quiz-question" id="quiz-question">
+                    <div class="quiz-category" id="quiz-category"></div>
+                    <div class="quiz-prompt" id="quiz-prompt"></div>
+                    <div class="quiz-options" id="quiz-options"></div>
+                </div>
+                <div class="quiz-result" id="quiz-result" style="display: none;">
+                    <div class="result-message" id="result-message"></div>
+                    <button class="btn btn-primary" id="next-question">Next Question</button>
+                </div>
+                <div class="quiz-complete" id="quiz-complete" style="display: none;">
+                    <h2>Quiz Complete! 🎉</h2>
+                    <div class="final-score">
+                        <p>Your Score: <strong id="final-score">0</strong> / <strong id="final-total">0</strong></p>
+                        <p class="score-percentage" id="score-percentage">0%</p>
+                    </div>
+                    <button class="btn btn-primary" id="restart-quiz">Start New Quiz</button>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="hero-actions">
-        <a class="button" href="solution.html" data-i18n="home.viewSolution">Explorează Soluția</a>
-        <a class="button ghost" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener" data-i18n="home.aiSystem">Sistem AI</a>
-        <a class="button ghost" href="https://github.com/mareluca675/bear-detection-app" target="_blank" rel="noopener" data-i18n="home.mobileApp">Aplicație Mobilă</a>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="problem-urgency card">
-  <div class="problem-header">
-    <h2 data-i18n="home.problemTitle">Criza Urșilor Carpatini: O Problemă Urgentă</h2>
-    <p class="problem-subtitle" data-i18n="home.problemSubtitle">Din "Legendele Carpaților" în "Urși Cerșetori" — România se confruntă cu o criză de coexistență</p>
-  </div>
-  <div class="grid two">
-    <div class="problem-stats">
-      <div class="problem-stat">
-        <div class="problem-number">10,500-13,000</div>
-        <div class="problem-label">Urși în România (Studii ADN 2024-2025)</div>
-      </div>
-      <div class="problem-stat">
-        <div class="problem-number">5,553</div>
-        <div class="problem-label">Apeluri 112 despre Urși (Feb 2024 - Mar 2025)</div>
-      </div>
-      <div class="problem-stat">
-        <div class="problem-number">3x</div>
-        <div class="problem-label">Peste Populația Optimă (4,000 exemplare)</div>
-      </div>
-    </div>
-    <div class="problem-causes">
-      <h3>Cauze Principale</h3>
-      <ul class="feature-list">
-        <li>Defrișări masive — urșii și-au părăsit habitatul natural</li>
-        <li>Dependență de deșeuri menajere — hibernare redusă</li>
-        <li>Hrănire de către oameni — instinct pierdut de căutare a hranei</li>
-        <li>Lipsa fondurilor pentru sanctuare și relocare</li>
-        <li>Braconaj și turism cinegetic pentru trofee</li>
-        <li>Ultimele 20 de ani: 26 de decese și 274 de răniți</li>
-        <li>Peste 53 milioane lei pagube în anii recenți</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="system-architecture">
-  <div class="architecture-header">
-    <h2 data-i18n="home.architectureTitle">Arhitectură Integrată în 3 Straturi</h2>
-    <p class="architecture-subtitle" data-i18n="home.architectureSubtitle">Prima soluție complet integrată care combină detecție, descurajare și educație</p>
-  </div>
-
-  <div class="grid three">
-    <article class="card system-card">
-      <div class="system-icon-wrapper">
-        <img src="assets/icons/fixed-system.svg" alt="Sistem Fix" class="system-icon-img" onerror="this.style.display='none';" />
-      </div>
-      <h3>Sistem Fix</h3>
-      <div class="system-badge">Protecție Perimetrală</div>
-      <p>Unități montate pe stâlpi înalți cu AI, camere termice și difuzoare specializate pentru ultrasunete/infrasunete.</p>
-      <ul class="feature-list">
-        <li><strong>AI YOLOv8</strong> — recunoaștere în timp real</li>
-        <li><strong>Ultrasunete</strong> (21 kHz, 60-100 dB) — 20 sec</li>
-        <li><strong>Infrasunete</strong> (&lt;20 Hz) — 10 sec alternant</li>
-        <li><strong>Rază de acțiune</strong> — 60m</li>
-        <li><strong>Sincronizare RoAlert</strong> — alertă publică</li>
-      </ul>
-      <div class="system-tech">
-        <span class="tech-badge">AI Vision</span>
-        <span class="tech-badge">Bioacoustics</span>
-        <span class="tech-badge">IoT</span>
-      </div>
-    </article>
-
-    <article class="card system-card">
-      <div class="system-icon-wrapper">
-        <img src="assets/icons/drone-system.svg" alt="Sistem Mobil Dronă" class="system-icon-img" onerror="this.style.display='none';" />
-      </div>
-      <h3>Sistem Mobil (Dronă)</h3>
-      <div class="system-badge">Intervenție Aeriană</div>
-      <p>Dronă autonomă cu camere RGB și termoviziune pentru detecție și răspuns rapid în zone extinse.</p>
-      <ul class="feature-list">
-        <li><strong>Cameră termică</strong> — detecție nocturnă</li>
-        <li><strong>AI onboard</strong> — identificare automată</li>
-        <li><strong>Spray mentolat</strong> — ceață fină non-toxică</li>
-        <li><strong>SpeedyBee F745</strong> — flight controller</li>
-        <li><strong>Autonomie</strong> — baterie LiPo 4S (650-900mAh)</li>
-      </ul>
-      <div class="system-tech">
-        <span class="tech-badge">Thermal Vision</span>
-        <span class="tech-badge">Natural Repellent</span>
-        <span class="tech-badge">Autonomous</span>
-      </div>
-    </article>
-
-    <article class="card system-card">
-      <div class="system-icon-wrapper">
-        <img src="assets/icons/mobile-app.svg" alt="Aplicație Mobilă" class="system-icon-img" onerror="this.style.display='none';" />
-      </div>
-      <h3>Aplicație Mobilă BearAware</h3>
-      <div class="system-badge">Educație & Alertare</div>
-      <p>Hub central de comunicare cu hartă în timp real, notificări push și asistent AI educațional.</p>
-      <ul class="feature-list">
-        <li><strong>Hartă interactivă</strong> — Google Maps API</li>
-        <li><strong>Zone roșii</strong> — detecții recente</li>
-        <li><strong>Chatbot AI</strong> — sfaturi de siguranță</li>
-        <li><strong>Notificări push</strong> — alerte în timp real</li>
-        <li><strong>Enciclopedie digitală</strong> — comportament urși</li>
-      </ul>
-      <div class="system-tech">
-        <span class="tech-badge">Real-time</span>
-        <span class="tech-badge">AI Chatbot</span>
-        <span class="tech-badge">Education</span>
-      </div>
-    </article>
-  </div>
-
-  <div class="workflow-diagram card">
-    <h3>Flux de Lucru Integrat</h3>
-    <div class="workflow">
-      <div class="workflow-step">
-        <div class="step-number">1</div>
-        <div class="step-content">
-          <h4>Detecție</h4>
-          <p>Sistem fix detectează urs cu AI → trimite coordonate GPS</p>
+        <!-- Fill-in Mode -->
+        <div id="fillin-mode" class="mode-content">
+            <div class="fillin-container">
+                <div class="fillin-header">
+                    <h2>Fill-in-the-Blank</h2>
+                    <div class="fillin-stats">
+                        <span>Score: <strong id="fillin-score">0</strong></span>
+                        <span>Question: <strong id="fillin-question-num">1</strong> / <strong id="fillin-total">0</strong></span>
+                    </div>
+                </div>
+                <div class="fillin-question" id="fillin-question">
+                    <div class="fillin-category" id="fillin-category"></div>
+                    <div class="fillin-prompt" id="fillin-prompt"></div>
+                    <div class="fillin-input-container">
+                        <input type="text" class="fillin-input" id="fillin-input" placeholder="Type your answer here...">
+                        <button class="btn btn-primary" id="fillin-submit">Submit</button>
+                    </div>
+                    <div class="fillin-hint" id="fillin-hint"></div>
+                </div>
+                <div class="fillin-result" id="fillin-result" style="display: none;">
+                    <div class="result-message" id="fillin-result-message"></div>
+                    <div class="fillin-correct-answer" id="fillin-correct-answer"></div>
+                    <button class="btn btn-primary" id="fillin-next">Next Question</button>
+                </div>
+                <div class="fillin-complete" id="fillin-complete" style="display: none;">
+                    <h2>Exercise Complete! 🎉</h2>
+                    <div class="final-score">
+                        <p>Your Score: <strong id="fillin-final-score">0</strong> / <strong id="fillin-final-total">0</strong></p>
+                        <p class="score-percentage" id="fillin-score-percentage">0%</p>
+                    </div>
+                    <button class="btn btn-primary" id="fillin-restart">Start New Exercise</button>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="workflow-arrow">→</div>
-      <div class="workflow-step">
-        <div class="step-number">2</div>
-        <div class="step-content">
-          <h4>Descurajare Primară</h4>
-          <p>Alternanță ultrasunete/infrasunete (30 sec) + LED luminos</p>
+
+        <!-- Matching Mode -->
+        <div id="matching-mode" class="mode-content">
+            <div class="matching-container">
+                <div class="matching-header">
+                    <h2>Matching Exercise</h2>
+                    <div class="matching-stats">
+                        <span>Matched: <strong id="matching-score">0</strong> / <strong id="matching-total">0</strong></span>
+                    </div>
+                </div>
+                <div class="matching-instructions">
+                    <p>Match each term on the left with its correct meaning on the right by clicking pairs.</p>
+                </div>
+                <div class="matching-game" id="matching-game">
+                    <div class="matching-columns">
+                        <div class="matching-column" id="matching-terms">
+                            <h3>Terms</h3>
+                        </div>
+                        <div class="matching-column" id="matching-meanings">
+                            <h3>Meanings</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="matching-complete" id="matching-complete" style="display: none;">
+                    <h2>Matching Complete! 🎉</h2>
+                    <div class="final-score">
+                        <p>You matched <strong id="matching-final-score">0</strong> out of <strong id="matching-final-total">0</strong> correctly!</p>
+                        <p class="score-percentage" id="matching-score-percentage">0%</p>
+                    </div>
+                    <button class="btn btn-primary" id="matching-restart">Start New Exercise</button>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="workflow-arrow">→</div>
-      <div class="workflow-step">
-        <div class="step-number">3</div>
-        <div class="step-content">
-          <h4>Intervenție Secundară</h4>
-          <p>Dacă persistă → dronă intervine cu spray mentolat</p>
+
+        <!-- Statistics Mode -->
+        <div id="statistics-mode" class="mode-content">
+            <div class="statistics-container">
+                <h2>Your Learning Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📚</div>
+                        <div class="stat-value" id="stat-total-studied">0</div>
+                        <div class="stat-label">Total Items Studied</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">✅</div>
+                        <div class="stat-value" id="stat-mastered">0</div>
+                        <div class="stat-label">Words Mastered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📈</div>
+                        <div class="stat-value" id="stat-accuracy">0%</div>
+                        <div class="stat-label">Overall Accuracy</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🔥</div>
+                        <div class="stat-value" id="stat-streak">0</div>
+                        <div class="stat-label">Day Streak</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⏱️</div>
+                        <div class="stat-value" id="stat-time">0h</div>
+                        <div class="stat-label">Study Time</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⭐</div>
+                        <div class="stat-value" id="stat-favorites">0</div>
+                        <div class="stat-label">Favorites</div>
+                    </div>
+                </div>
+                <div class="stats-details">
+                    <h3>Category Progress</h3>
+                    <div id="category-stats-list"></div>
+                </div>
+                <div class="stats-details">
+                    <h3>Recent Activity</h3>
+                    <div id="recent-activity"></div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="workflow-arrow">→</div>
-      <div class="workflow-step">
-        <div class="step-number">4</div>
-        <div class="step-content">
-          <h4>Alertare Publică</h4>
-          <p>App marchează zona roșie + notificări RoAlert</p>
+
+        <!-- Daily Challenges Mode -->
+        <div id="challenges-mode" class="mode-content">
+            <div class="challenges-container">
+                <div class="challenge-header">
+                    <h2>Daily Challenges</h2>
+                    <div class="challenge-date" id="challenge-date"></div>
+                </div>
+                <div class="word-of-day" id="word-of-day">
+                    <h3>📖 Word of the Day</h3>
+                    <div class="wotd-card">
+                        <div class="wotd-term" id="wotd-term"></div>
+                        <div class="wotd-category" id="wotd-category"></div>
+                        <div class="wotd-meaning" id="wotd-meaning"></div>
+                        <div class="wotd-example" id="wotd-example"></div>
+                        <button class="btn-icon" id="wotd-audio" title="Pronounce">🔊</button>
+                        <button class="btn btn-secondary" id="wotd-favorite">⭐ Add to Favorites</button>
+                    </div>
+                </div>
+                <div class="daily-quiz" id="daily-quiz">
+                    <h3>🎯 Daily Quiz Challenge</h3>
+                    <p>Test your knowledge with 5 random words!</p>
+                    <button class="btn btn-primary" id="start-daily-quiz">Start Daily Quiz</button>
+                </div>
+                <div class="streak-info">
+                    <h3>🔥 Your Streak</h3>
+                    <div class="streak-display">
+                        <span class="streak-number" id="streak-display">0</span>
+                        <span class="streak-label">days in a row!</span>
+                    </div>
+                    <p class="streak-message" id="streak-message">Keep it up! 🎉</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="grid two">
-  <article class="card">
-    <h2 data-i18n="home.whyTitle">De ce BearAware Funcționează</h2>
-    <ul class="feature-list">
-      <li><strong>Redundanță Funcțională</strong> — Sistem fix + mobil = acoperire completă</li>
-      <li><strong>AI pentru Precizie</strong> — Eliminare alarme false prin recunoaștere vizuală</li>
-      <li><strong>Non-Letal 100%</strong> — Fără răniri, fără toxice, fără impact permanent</li>
-      <li><strong>Educație Continuă</strong> — Chatbot transformă frica în cunoaștere</li>
-      <li><strong>Transparență Publică</strong> — Date în timp real pentru toți utilizatorii</li>
-    </ul>
-  </article>
-  <article class="card">
-    <h2 data-i18n="home.noveltyTitle">Noutatea Absolută a Proiectului</h2>
-    <div class="badges">
-      <span class="badge">Integrare Multiplatformă Fix + Mobil</span>
-      <span class="badge">AI Vision (YOLOv8) pentru Recunoaștere Țintă</span>
-      <span class="badge">Bioacustică Avansată (Ultrasunete + Infrasunete)</span>
-      <span class="badge">Repelent Natural pe Bază de Mentol</span>
-      <span class="badge">Alertă Publică în Timp Real</span>
-      <span class="badge">Componentă Educațională (Chatbot AI)</span>
-    </div>
-    <p class="card-note"><strong>Prima soluție din România</strong> care integrează toate aceste tehnologii într-un singur ecosistem coordonat.</p>
-  </article>
-  </section>
-
-<section class="scientific-foundation card">
-  <h2 data-i18n="home.scienceTitle">Fundament Științific Solid</h2>
-  <p class="section-lead">BearAware este construit pe cercetare multidisciplinară riguroasă, combinând fizică acustică, chimie organică, inteligență artificială și etologie.</p>
-
-  <div class="grid two">
-    <div class="science-area">
-      <div class="science-icon-wrapper">
-        <img src="assets/icons/bioacoustics.svg" alt="Bioacustică" class="science-icon" onerror="this.style.display='none';" />
-      </div>
-      <h3>Bioacustică & Fizică</h3>
-      <ul class="feature-list">
-        <li><strong>Frecvență Ultrasonică:</strong> 21 kHz (±10%) — optimizată pentru sensibilitatea auditivă maximă a urșilor</li>
-        <li><strong>Presiune Acustică:</strong> 60-100 dB — suficient pentru descurajare, sub pragul de deteriorare auditivă</li>
-        <li><strong>Propagare Sinusoidală:</strong> Unde pure pentru penetrare maximă în teren montan</li>
-        <li><strong>Modelare Matematică:</strong> Legea Inversului Pătrat (I₁/I₂ = r₂²/r₁²) pentru calculul razei de siguranță</li>
-        <li><strong>Alternanță Temporală:</strong> 20s ultrasunete + 10s infrasunete — previne habituarea și optimizează eficiența</li>
-      </ul>
     </div>
 
-    <div class="science-area">
-      <div class="science-icon-wrapper">
-        <img src="assets/icons/chemistry.svg" alt="Chimie" class="science-icon" onerror="this.style.display='none';" />
-      </div>
-      <h3>Chimie & Repelent Natural</h3>
-      <ul class="feature-list">
-        <li><strong>Mentol (C₁₀H₂₀O):</strong> 30-55% — efect răcoritor și respingător olfactiv</li>
-        <li><strong>Mentonă (C₁₀H₁₆O):</strong> 10-30% — intensifică aromă și efectul terapeutic</li>
-        <li><strong>Eucaliptol (C₁₀H₁₈O):</strong> 3-15% — notă camforată, antiseptic natural</li>
-        <li><strong>Metil-Acetat:</strong> Agent volatilizant pentru dispersie rapidă</li>
-        <li><strong>Eficiență Estimată:</strong> ~66% (model probabilistic bazat pe studii comparative)</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="grid two">
-    <div class="science-area">
-      <div class="science-icon-wrapper">
-        <img src="assets/icons/ai-neural.svg" alt="AI" class="science-icon" onerror="this.style.display='none';" />
-      </div>
-      <h3>Inteligență Artificială</h3>
-      <ul class="feature-list">
-        <li><strong>Model YOLOv8:</strong> Rețea neuronală convoluțională (CNN) pentru detecție în timp real</li>
-        <li><strong>Training Dataset:</strong> ~700 imagini annotate cu urși + clase negative (oameni, animale domestice)</li>
-        <li><strong>Validare Multi-Spectrală:</strong> RGB + infraroșu pentru detecție nocturnă</li>
-        <li><strong>Activare Condiționată:</strong> Repelenți activați doar la confirmare vizuală — zero alarme false</li>
-        <li><strong>Logging Automat:</strong> GPS + timestamp pentru analiză etologică</li>
-      </ul>
-    </div>
-
-    <div class="science-area">
-      <div class="science-icon-wrapper">
-        <img src="assets/icons/research.svg" alt="Cercetare" class="science-icon" onerror="this.style.display='none';" />
-      </div>
-      <h3>Cercetare Aplicată</h3>
-      <ul class="feature-list">
-        <li><strong>Studii de Referință:</strong> Miller (1978) — ultrasunete pe urși polari (69% succes)</li>
-        <li><strong>Bioacustică Avansată:</strong> Vocalize agresive sintetizate — relevanță biologică pentru <em>Ursus arctos</em></li>
-        <li><strong>Studiu Tibetan (2025):</strong> AI + spray capsaicină (75% eficiență) — adaptat cu mentol natural</li>
-        <li><strong>Colaborare Viitoare:</strong> Sanctuare urși + Salvamont pentru validare experimentală</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="objectives-impact">
-  <div class="objectives-header">
-    <h2 data-i18n="home.objectivesTitle">Obiective & Impact Așteptat</h2>
-    <p class="objectives-subtitle">O viziune clară pentru coexistență sustenabilă om-urs în România</p>
-  </div>
-
-  <div class="grid two">
-    <article class="card objective-card">
-      <div class="objective-icon-wrapper">
-        <img src="assets/icons/target.svg" alt="Obiective" class="objective-icon" onerror="this.style.display='none';" />
-      </div>
-      <h3>Obiective Principale</h3>
-      <ul class="feature-list">
-        <li><strong>Protejarea Oamenilor</strong> — Alerte în timp real și descurajare automată pentru reducerea atacurilor</li>
-        <li><strong>Reintroducerea Urșilor</strong> — Sisteme non-letale care îi îndrumă treptat înapoi în habitate naturale</li>
-        <li><strong>Restabilirea Echilibrului</strong> — Coexistență armonioasă între așezări umane și fauna carpatină</li>
-        <li><strong>Educație Comunitară</strong> — Chatbot AI și campanii pentru comportament responsabil în natură</li>
-      </ul>
-    </article>
-
-    <article class="card objective-card">
-      <div class="objective-icon-wrapper">
-        <img src="assets/icons/roadmap.svg" alt="Roadmap" class="objective-icon" onerror="this.style.display='none';" />
-      </div>
-      <h3>Obiective Viitoare (Roadmap)</h3>
-      <ul class="feature-list">
-        <li><strong>Integrare Completă</strong> — Sincronizare fix-mobil-app în timp real (API unificat)</li>
-        <li><strong>Testare Supravegheată</strong> — Colaborare cu sanctuare și Salvamont pentru validare pe teren</li>
-        <li><strong>Optimizare Hardware</strong> — Mecanismul de pulverizare pentru dronă + integrare cameră termică</li>
-        <li><strong>Campanii Publice</strong> — Lansare app + site educațional + parteneriate locale</li>
-        <li><strong>Scalare & Extindere</strong> — Adapatare pentru alte carnivore (lupi, râși, vulpi)</li>
-        <li><strong>AI Predictiv</strong> — Identificarea zonelor cu risc crescut prin analiză de pattern-uri</li>
-      </ul>
-    </article>
-  </div>
-
-  <div class="impact-expected card">
-    <h3>Impact Așteptat</h3>
-    <div class="grid three-impact">
-      <div class="impact-item">
-        <div class="impact-icon-wrapper">
-          <img src="assets/icons/bear.svg" alt="Pentru Urși" class="impact-icon-img" onerror="this.style.display='none';" />
-        </div>
-        <h4>Pentru Urși</h4>
-        <p>Reintroducere treptată în habitat natural, recuperarea instinctului de căutare a hranei, și redarea demnității "Legendelor Carpaților"</p>
-      </div>
-      <div class="impact-item">
-        <div class="impact-icon-wrapper">
-          <img src="assets/icons/community.svg" alt="Pentru Comunități" class="impact-icon-img" onerror="this.style.display='none';" />
-        </div>
-        <h4>Pentru Comunități</h4>
-        <p>Reducere drastică a conflictelor om-urs, așezări și trasee montane mai sigure, creșterea gradului de conștientizare publică</p>
-      </div>
-      <div class="impact-item">
-        <div class="impact-icon-wrapper">
-          <img src="assets/icons/ecosystem.svg" alt="Pentru Ecosistem" class="impact-icon-img" onerror="this.style.display='none';" />
-        </div>
-        <h4>Pentru Ecosistem</h4>
-        <p>Echilibru ecologic restaurat, biodiversitate menținută, abordare etică și sustenabilă fără impact toxic</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="roadmap-section">
-  <div class="roadmap-header">
-    <h2 data-i18n="home.roadmapTitle">Etape Parcurse & Roadmap</h2>
-    <p class="roadmap-subtitle">De la cercetare fundamentală la implementare la scară largă</p>
-  </div>
-
-  <div class="roadmap-timeline">
-    <div class="roadmap-item completed">
-      <div class="roadmap-marker">
-        <div class="marker-circle"></div>
-        <div class="marker-line"></div>
-      </div>
-      <div class="roadmap-content">
-        <div class="roadmap-status">Finalizat</div>
-        <h3 data-i18n="home.roadmap1Title">Cercetare Fundamentală</h3>
-        <p data-i18n="home.roadmap1Desc">Documentare științifică extensivă, analiză literatură de specialitate, modelare matematică acustică.</p>
-        <div class="roadmap-details">
-          <span class="detail-item">50+ studii analizate</span>
-          <span class="detail-item">Modelare acustică</span>
-          <span class="detail-item">Design arhitectură</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="roadmap-item completed">
-      <div class="roadmap-marker">
-        <div class="marker-circle"></div>
-        <div class="marker-line"></div>
-      </div>
-      <div class="roadmap-content">
-        <div class="roadmap-status">Finalizat</div>
-        <h3 data-i18n="home.roadmap2Title">Prototip AI & Hardware</h3>
-        <p data-i18n="home.roadmap2Desc">Model AI funcțional (YOLOv8 antrenat pe dataset propriu); prototip sistem fix cu cameră și difuzor; dronă asamblată (SpeedyBee F745).</p>
-        <div class="roadmap-details">
-          <span class="detail-item">YOLOv8 operațional</span>
-          <span class="detail-item">Sistem fix construit</span>
-          <span class="detail-item">Dronă asamblată</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="roadmap-item completed">
-      <div class="roadmap-marker">
-        <div class="marker-circle"></div>
-        <div class="marker-line"></div>
-      </div>
-      <div class="roadmap-content">
-        <div class="roadmap-status">Finalizat</div>
-        <h3 data-i18n="home.roadmap3Title">Beta App BearAware</h3>
-        <p data-i18n="home.roadmap3Desc">Hartă în timp real (Google Maps API), funcții de bază pentru alerte și notificări, arhitectură pentru chatbot AI.</p>
-        <div class="roadmap-details">
-          <span class="detail-item">Hartă Google Maps</span>
-          <span class="detail-item">Sistem alerte</span>
-          <span class="detail-item">Arhitectură chatbot</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="roadmap-item in-progress">
-      <div class="roadmap-marker">
-        <div class="marker-circle"></div>
-        <div class="marker-line"></div>
-      </div>
-      <div class="roadmap-content">
-        <div class="roadmap-status">În Progres</div>
-        <h3 data-i18n="home.roadmap4Title">Testare pe Teren</h3>
-        <p data-i18n="home.roadmap4Desc">În colaborare cu sanctuare și Salvamont; optimizare parametri acustici și concentrație repelent.</p>
-        <div class="roadmap-details">
-          <span class="detail-item">Parteneriate</span>
-          <span class="detail-item">Teste controlate</span>
-          <span class="detail-item">Optimizare parametri</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="roadmap-item upcoming">
-      <div class="roadmap-marker">
-        <div class="marker-circle"></div>
-      </div>
-      <div class="roadmap-content">
-        <div class="roadmap-status">Planificat</div>
-        <h3 data-i18n="home.roadmap5Title">Implementare & Scalare</h3>
-        <p data-i18n="home.roadmap5Desc">Parteneriate cu autoritățile locale, instalare sisteme fixe în zone cu risc ridicat, lansare publică app.</p>
-        <div class="roadmap-details">
-          <span class="detail-item">Instalare sisteme</span>
-          <span class="detail-item">Lansare publică</span>
-          <span class="detail-item">Scalare regională</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="educational-impact card">
-  <div class="education-header">
-    <h2 data-i18n="home.educationTitle">Dimensiunea Educativă: Transformând Frica în Cunoaștere</h2>
-    <p class="education-subtitle">BearAware nu doar protejează — educă comunitățile pentru coexistență sustenabilă</p>
-  </div>
-
-  <div class="grid two">
-    <article class="education-feature">
-      <div class="edu-icon-wrapper">
-        <img src="assets/icons/chatbot.svg" alt="Chatbot AI" class="edu-icon-img" onerror="this.style.display='none';" />
-      </div>
-      <h3>Chatbot AI Specializat</h3>
-      <p>Asistent virtual dedicat comportamentului urșilor și siguranței în natură, disponibil 24/7 în aplicația mobilă.</p>
-      <ul class="feature-list">
-        <li><strong>Întrebări Frecvente:</strong> "Ce fac dacă întâlnesc un urs?" / "Este sigur să hrănesc urșii?"</li>
-        <li><strong>Sfaturi de Siguranță:</strong> Ghiduri pentru drumeți, turişti și locuitori din zone rurale</li>
-        <li><strong>Enciclopedie Digitală:</strong> Informații biologice despre <em>Ursus arctos</em> carpatini</li>
-        <li><strong>Curiozități:</strong> Comportament, habitat, ecologie și conservare</li>
-      </ul>
-    </article>
-
-    <article class="education-feature">
-      <div class="edu-icon-wrapper">
-        <img src="assets/icons/education.svg" alt="Educație" class="edu-icon-img" onerror="this.style.display='none';" />
-      </div>
-      <h3>Campanii de Conștientizare</h3>
-      <p>Programe educaționale pentru comunități locale, școli și organizații de conservare.</p>
-      <ul class="feature-list">
-        <li><strong>Materiale Educative:</strong> Infografice, ghiduri și tutoriale video</li>
-        <li><strong>Parteneriate:</strong> Colaborare cu autoritățile locale, rangeri și Salvamont</li>
-        <li><strong>Workshops:</strong> Training pentru comportament responsabil în natură</li>
-        <li><strong>Social Media:</strong> Campanii de informare publică via app și site</li>
-      </ul>
-    </article>
-  </div>
-
-  <div class="education-impact-stats">
-    <div class="edu-stat">
-      <div class="edu-stat-number">100%</div>
-      <div class="edu-stat-label">Acces Gratuit la Educație</div>
-    </div>
-    <div class="edu-stat">
-      <div class="edu-stat-number">24/7</div>
-      <div class="edu-stat-label">Disponibilitate Chatbot</div>
-    </div>
-    <div class="edu-stat">
-      <div class="edu-stat-number">∞</div>
-      <div class="edu-stat-label">Întrebări Răspunse</div>
-    </div>
-  </div>
-
-  <div class="education-quote">
-    <blockquote>"Educația este cheia coexistenței — când comunitatea înțelege comportamentul urșilor, conflictele scad dramatic."</blockquote>
-  </div>
-</section>
-
-<section class="why-judges card">
-  <h2>De Ce BearAware Merită Atenția Juriului</h2>
-  <div class="grid two">
-    <div class="judge-criteria">
-      <div class="judge-icon-wrapper">
-        <img src="assets/icons/innovation.svg" alt="Inovație" class="judge-icon" onerror="this.style.display='none';" />
-      </div>
-      <h3>Inovație & Originalitate</h3>
-      <ul class="feature-list">
-        <li><strong>Prima Soluție Integrată</strong> din România care combină fix + mobil + app</li>
-        <li><strong>Bioacustică Avansată</strong> — alternanță ultrasunete/infrasunete niciodată testată pe urși carpatini</li>
-        <li><strong>AI Multi-Spectral</strong> — YOLOv8 cu validare RGB + termică pentru zero alarme false</li>
-        <li><strong>Repelent Ecologic</strong> — formulă naturală pe bază de mentol (fără capsaicină toxică)</li>
-      </ul>
-    </div>
-
-    <div class="judge-criteria">
-      <div class="judge-icon-wrapper">
-        <img src="assets/icons/science.svg" alt="Știință" class="judge-icon" onerror="this.style.display='none';" />
-      </div>
-      <h3>Rigoare Științifică</h3>
-      <ul class="feature-list">
-        <li><strong>Cercetare Fundamentată</strong> — 50+ studii științifice analizate și citate</li>
-        <li><strong>Modelare Matematică</strong> — calculul razei de siguranță prin Legea Inversului Pătrat</li>
-        <li><strong>Chimie Organică</strong> — analiză moleculară compușilor repelenti (mentol, mentonă, eucaliptol)</li>
-        <li><strong>Dataset AI Propriu</strong> — 700 imagini annotate manual pentru antrenare</li>
-      </ul>
-    </div>
-
-    <div class="judge-criteria">
-      <div class="judge-icon-wrapper">
-        <img src="assets/icons/impact.svg" alt="Impact" class="judge-icon" onerror="this.style.display='none';" />
-      </div>
-      <h3>Impact Social & Ecologic</h3>
-      <ul class="feature-list">
-        <li><strong>Protejează Oamenii</strong> — reducere atacuri prin alerte și descurajare timpurie</li>
-        <li><strong>Salvează Urșii</strong> — reintroducere în habitat fără răniri sau relocare forțată</li>
-        <li><strong>Educație Comunitară</strong> — transformă frica în cunoaștere prin chatbot AI</li>
-        <li><strong>Scalabil & Sustenabil</strong> — adaptat pentru alte carnivore și ecosisteme</li>
-      </ul>
-    </div>
-
-    <div class="judge-criteria">
-      <div class="judge-icon-wrapper">
-        <img src="assets/icons/implementation.svg" alt="Implementare" class="judge-icon" onerror="this.style.display='none';" />
-      </div>
-      <h3>Implementare & Viabilitate</h3>
-      <ul class="feature-list">
-        <li><strong>Prototip Funcțional</strong> — AI operațional, sistem fix construit, dronă asamblată</li>
-        <li><strong>App Beta</strong> — hartă în timp real și arhitectură chatbot deja implementate</li>
-        <li><strong>Parteneriate Planificate</strong> — sanctuare urși, Salvamont, autorități locale</li>
-        <li><strong>Roadmap Clar</strong> — etape definite pentru testare, optimizare și lansare</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="testimonials grid two">
-  <article class="card testimonial-card">
-    <blockquote>"Un proiect care combină tehnologie de vârf cu empatie pentru natură — exact ce România are nevoie pentru a rezolva criza urșilor."</blockquote>
-    <p class="muted">— Viziune Proiect</p>
-  </article>
-  <article class="card testimonial-card">
-    <blockquote>"Integrarea AI, bioacustică și educație într-un singur ecosistem este remarcabilă — un model pentru conservare inteligentă."</blockquote>
-    <p class="muted">— Potențial Impact</p>
-  </article>
-</section>
-
-<section class="cta-banner card">
-  <div class="cta-text">
-    <h2 data-i18n="home.ctaTitle">Alătură-te Revoluției în Conservarea Urșilor</h2>
-    <p class="lead" data-i18n="home.ctaLead">BearAware nu este doar un proiect — este o mișcare pentru coexistență sustenabilă. Explorează sistemele, contribuie la dezvoltare sau urmărește-ne progresul.</p>
-  </div>
-  <div class="cta-actions">
-    <a class="button" href="solution.html" data-i18n="home.ctaExplore">Explorează Soluția Completă</a>
-    <a class="button ghost" href="https://github.com/mareluca675/bear-detection-system" target="_blank" rel="noopener" data-i18n="home.ctaGithub">Contribuie pe GitHub</a>
-    <a class="button ghost" href="team.html" data-i18n="home.ctaTeam">Cunoaște Echipa</a>
-  </div>
-  </section>
-
-</main>
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-bottom">
-      <p><a href="privacy.html">Politica de Confidențialitate</a> · <a href="terms.html">Termeni și Condiții</a></p>
-      <p data-i18n="footer.copyright">© 2025 BearAware · Conservarea faunei sălbatice mai inteligent</p>
-    </div>
-  </div>
-</footer>
-<script src="assets/script.js"></script>
-<script src="assets/i18n.js"></script>
+    <script src="vocabulary-data.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
+
